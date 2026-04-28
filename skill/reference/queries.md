@@ -198,6 +198,89 @@ GROUP BY strftime('%w', start_date)
 ORDER BY swim_sessions DESC;
 ```
 
+## Trail & Mountain Analysis
+
+```sql
+-- Trail volume by week (EFD = equivalent flat distance)
+SELECT
+  strftime('%Y-W%W', start_date) AS week,
+  COUNT(*) AS sessions,
+  ROUND(SUM(distance) / 1000.0, 1) AS flat_km,
+  ROUND(SUM(total_elevation_gain), 0) AS total_dplus,
+  ROUND(SUM(equivalent_distance_m) / 1000.0, 1) AS efd_km
+FROM activities
+WHERE sport_type IN ('Run', 'TrailRun', 'Trail Run', 'Hike')
+  AND start_date >= date('now', '-12 weeks')
+GROUP BY week
+ORDER BY week DESC;
+
+-- Longest trail sessions (by EFD)
+SELECT
+  date(start_date) AS date,
+  name,
+  ROUND(distance / 1000.0, 1) AS km,
+  ROUND(total_elevation_gain, 0) AS dplus,
+  ROUND(equivalent_distance_m / 1000.0, 1) AS efd_km,
+  ROUND(moving_time / 3600.0, 2) AS hours,
+  average_heartrate AS avg_hr
+FROM activities
+WHERE sport_type IN ('Run', 'TrailRun', 'Trail Run')
+  AND total_elevation_gain > 200
+ORDER BY equivalent_distance_m DESC
+LIMIT 10;
+
+-- D+ trend over 12 weeks (mountain load)
+SELECT
+  strftime('%Y-W%W', start_date) AS week,
+  ROUND(SUM(total_elevation_gain), 0) AS weekly_dplus
+FROM activities
+WHERE sport_type IN ('Run', 'TrailRun', 'Trail Run', 'Hike')
+  AND start_date >= date('now', '-12 weeks')
+GROUP BY week
+ORDER BY week DESC;
+```
+
+## Morning Check-In
+
+```sql
+-- Most recent check-in (used to adjust training load)
+SELECT * FROM morning_checkin
+ORDER BY date DESC, created_at DESC
+LIMIT 1;
+
+-- Check-ins from last 48h
+SELECT * FROM morning_checkin
+WHERE date >= date('now', '-2 days')
+ORDER BY created_at DESC;
+
+-- Check-in trend over last 2 weeks
+SELECT date, sleep_hours, sleep_quality, legs, energy, motivation, stress, notes
+FROM morning_checkin
+WHERE date >= date('now', '-14 days')
+ORDER BY date DESC;
+```
+
+## Wellness Data (Garmin archive)
+
+```sql
+-- Sleep trend (last 4 weeks)
+SELECT date, duration_h, quality, deep_pct, rem_pct
+FROM sleep
+WHERE date >= date('now', '-4 weeks')
+ORDER BY date DESC;
+
+-- HRV trend (last 4 weeks)
+SELECT date, rmssd, hrv_score
+FROM hrv
+WHERE date >= date('now', '-4 weeks')
+ORDER BY date DESC;
+
+-- Athlete physiological profile
+SELECT firstname, lastname, weight, max_heartrate, lthr,
+       threshold_pace_sec_per_km, profile_source
+FROM athlete LIMIT 1;
+```
+
 ## HR / Zone Data
 
 ```sql

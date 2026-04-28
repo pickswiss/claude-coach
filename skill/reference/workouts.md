@@ -287,3 +287,71 @@ For endurance events, 80% of volume should be easy (Zone 1-2), 20% hard (Zone 4+
 | 1-2 (Easy)   | 75-80%             | Aerobic development, recovery |
 | 3 (Moderate) | 5-10%              | Race-specific only            |
 | 4-5 (Hard)   | 15-20%             | Stimulus for adaptation       |
+
+---
+
+## Trail Running (Julien — Wild 25)
+
+Trail running requires a different load model from road running. Use EFD (Equivalent Flat Distance) as the primary volume metric, with D+ as a second load axis. See `skill/reference/trail.md` for the complete model and structured workout JSON templates.
+
+### FC Zones (FCmax 186 / LTHR 170)
+
+| Zone | Name              | BPM     | Effort                |
+| ---- | ----------------- | ------- | --------------------- |
+| Z1   | Récupération      | < 148   | Conversation facile   |
+| Z2   | Aérobie (base)    | 148–162 | Conversation possible |
+| Z3   | Tempo / seuil bas | 163–170 | Phrases courtes       |
+| Z4   | Seuil haut        | 171–178 | Mots seulement        |
+| Z5   | VO2max            | > 178   | Insoutenable > 5 min  |
+
+**Z2 est la zone cible principale pour les sorties longues trail.** L'effort semble facile — c'est normal et voulu.
+
+### Trail Workout Types
+
+| Session Type                  | Durée              | Zone FC    | EFD indicatif | Quand utiliser             |
+| ----------------------------- | ------------------ | ---------- | ------------- | -------------------------- |
+| Récupération route            | 30–40 min          | Z1         | 5–7 km        | Lendemain de sortie longue |
+| Endurance Z2 route            | 45–60 min          | Z2         | 8–11 km       | 2× par semaine en base     |
+| Long trail (stacked climbing) | 1h30–3h            | Z2         | 18–30 km      | 1× semaine, weekend        |
+| Fartlek trail                 | 50–60 min          | Z2–Z3      | 10–13 km      | Build phase, 1×/sem        |
+| Intervalles verticaux         | 70–80 min          | Z3–Z4      | 12–16 km      | Phase 2–3, 1×/sem          |
+| Back-to-back weekend          | J1 : 2h+ / J2 : 1h | Z2 / Z1–Z2 | Phase 3 pic   | Phase 3, 2–3 semaines      |
+| Renforcement musculaire       | 45 min             | —          | —             | 1×/sem obligatoire         |
+
+### Strength Training for Trail (45 min — avec pull-up bar)
+
+**Priorité trail :** quadriceps (descentes), fessiers (montées), stabilité cheville, gainage latéral.
+
+**Programme hebdomadaire type :**
+
+```
+Échauffement (5 min) : jumping jacks, leg swings, hip circles
+
+Circuit A — Bas du corps (3 rounds) :
+  - Squats sautés ou pistol squat assisté : 10 reps
+  - Fentes marchées : 10 reps/jambe
+  - Single-leg Romanian deadlift : 8 reps/jambe
+  - Calf raises sur marche (excentrique lent) : 15 reps
+
+Circuit B — Haut du corps + gainage (3 rounds) :
+  - Tractions (pull-up bar) : max ou 5–8
+  - Pompes : 12 reps
+  - Planche latérale : 30s/côté
+  - Dead bug : 10 reps/côté
+
+Étirements (5 min) : mollets, quadriceps, fléchisseurs de hanche
+```
+
+**FIT export :** les séances de renforcement ne génèrent pas de FIT (sport "training" sans structure de zones FC).
+
+### Structured Trail Workouts — FIT Export
+
+Pour les séances structurées (intervalles verticaux, fartlek trail), les templates JSON complets sont dans `skill/reference/trail.md`. Ces séances utilisent `intensity.unit: "hr_zone"` avec `valueLow`/`valueHigh` en BPM réels, compatibles avec l'exporteur FIT existant.
+
+**Procédure export FIT :**
+
+1. Le plan JSON inclut le champ `structure` pour ces séances
+2. `npx claude-coach render <plan.json> -o plan.html --set-active`
+3. Ouvrir plan.html dans le navigateur
+4. Cliquer sur la séance structurée → bouton "Export FIT"
+5. Télécharger le .fit → glisser-déposer dans Garmin Connect (connect.garmin.com → Entraînement → Séances)

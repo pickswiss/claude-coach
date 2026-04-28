@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS activities (
   workout_type INTEGER,             -- 0=default, 1=race, 2=workout, 3=long run
   gear_id TEXT,
   raw_json TEXT,                    -- full Strava response as JSON
+  equivalent_distance_m REAL,       -- flat-equivalent distance: distance + elevation_gain * 10 (100m D+ ≈ 1km flat)
   synced_at TEXT DEFAULT (datetime('now'))
 );
 
@@ -47,6 +48,9 @@ CREATE TABLE IF NOT EXISTS athlete (
   weight REAL,                      -- kg
   ftp INTEGER,                      -- functional threshold power (watts)
   max_heartrate INTEGER,
+  lthr INTEGER,                     -- lactate threshold heart rate (bpm)
+  threshold_pace_sec_per_km REAL,   -- threshold pace in seconds per km
+  profile_source TEXT,              -- 'strava', 'garmin_archive', 'manual'
   raw_json TEXT,
   updated_at TEXT DEFAULT (datetime('now'))
 );
@@ -58,6 +62,45 @@ CREATE TABLE IF NOT EXISTS goals (
   event_date TEXT,                  -- ISO 8601
   event_type TEXT,                  -- triathlon, marathon, ultra, century
   notes TEXT,                       -- constraints, injuries, etc.
+  created_at TEXT DEFAULT (datetime('now'))
+);
+
+-- Wellness data from Garmin archive (one-shot import)
+CREATE TABLE IF NOT EXISTS sleep (
+  date TEXT PRIMARY KEY,            -- YYYY-MM-DD
+  duration_h REAL,                  -- total sleep hours
+  quality INTEGER,                  -- 1-5 scale (mapped from Garmin score)
+  deep_pct REAL,                    -- % deep sleep
+  rem_pct REAL,                     -- % REM sleep
+  source TEXT DEFAULT 'garmin_archive'
+);
+
+CREATE TABLE IF NOT EXISTS hrv (
+  date TEXT PRIMARY KEY,            -- YYYY-MM-DD
+  rmssd REAL,                       -- root mean square of successive differences (ms)
+  hrv_score INTEGER,                -- Garmin HRV status score (0-100)
+  source TEXT DEFAULT 'garmin_archive'
+);
+
+CREATE TABLE IF NOT EXISTS training_load (
+  date TEXT PRIMARY KEY,            -- YYYY-MM-DD
+  acute_load REAL,                  -- 7-day acute training load
+  chronic_load REAL,                -- 42-day chronic training load
+  form REAL,                        -- form = chronic - acute (positive = fresh)
+  source TEXT DEFAULT 'garmin_archive'
+);
+
+-- Optional morning check-in (user-initiated, not daily)
+CREATE TABLE IF NOT EXISTS morning_checkin (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  date TEXT NOT NULL,               -- YYYY-MM-DD
+  sleep_hours REAL,                 -- subjective sleep duration
+  sleep_quality INTEGER,            -- 1-5
+  legs INTEGER,                     -- perceived leg fatigue 1-5 (1=heavy, 5=fresh)
+  energy INTEGER,                   -- overall energy 1-5
+  motivation INTEGER,               -- motivation to train 1-5
+  stress INTEGER,                   -- stress level 1-5 (1=calm, 5=high stress)
+  notes TEXT,
   created_at TEXT DEFAULT (datetime('now'))
 );
 

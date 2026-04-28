@@ -82,6 +82,24 @@ export function tokensExpired(tokens: Tokens): boolean {
   return Date.now() / 1000 > tokens.expires_at - 60;
 }
 
+const ACTIVE_PLAN_FILE = join(CONFIG_DIR, "active-plan.txt");
+const SNAPSHOT_FILE = join(CONFIG_DIR, "snapshot.json");
+
+export function getSnapshotPath(): string {
+  return SNAPSHOT_FILE;
+}
+
+export function getActivePlanPath(): string | null {
+  if (!existsSync(ACTIVE_PLAN_FILE)) return null;
+  const content = readFileSync(ACTIVE_PLAN_FILE, "utf-8").trim();
+  return content || null;
+}
+
+export function setActivePlanPath(planPath: string): void {
+  ensureConfigDir();
+  writeFileSync(ACTIVE_PLAN_FILE, planPath);
+}
+
 async function prompt(question: string): Promise<string> {
   const rl = readline.createInterface({
     input: process.stdin,

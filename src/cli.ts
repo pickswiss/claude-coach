@@ -7,6 +7,8 @@ import {
   tokensExist,
   getDbPath,
   createConfig,
+  setActivePlanPath,
+  getSnapshotPath,
   type Tokens,
 } from "./lib/config.js";
 import { log } from "./lib/logging.js";
@@ -15,8 +17,10 @@ import { execute, initDatabase, query, queryJson } from "./db/client.js";
 import { getValidTokens } from "./strava/oauth.js";
 import { getAllActivities, getAthlete } from "./strava/api.js";
 import type { StravaActivity, StravaTokenResponse } from "./strava/types.js";
+import { importArchive } from "./garmin/import-archive.js";
+import { generateSnapshot } from "./snapshot.js";
 import { readFileSync, writeFileSync } from "fs";
-import { dirname, join } from "path";
+import { dirname, join, resolve } from "path";
 import { fileURLToPath } from "url";
 import { ProxyAgent, setGlobalDispatcher } from "undici";
 
@@ -53,6 +57,7 @@ interface RenderArgs {
   command: "render";
   inputFile: string;
   outputFile?: string;
+  setActive?: boolean;
 }
 
 interface QueryArgs {
@@ -68,11 +73,42 @@ interface AuthArgs {
   code?: string;
 }
 
+interface GarminArgs {
+  command: "garmin";
+  subcommand: "import-archive";
+  archivePath: string;
+  verbose: boolean;
+}
+
+interface CheckinArgs {
+  command: "checkin";
+  date?: string;
+  sleepHours?: number;
+  sleepQuality?: number;
+  legs?: number;
+  energy?: number;
+  motivation?: number;
+  stress?: number;
+  notes?: string;
+}
+
 interface HelpArgs {
   command: "help";
 }
 
-type CliArgs = SyncArgs | RenderArgs | QueryArgs | AuthArgs | HelpArgs;
+interface SnapshotArgs {
+  command: "snapshot";
+}
+
+type CliArgs =
+  | SyncArgs
+  | RenderArgs
+  | QueryArgs
+  | AuthArgs
+  | GarminArgs
+  | CheckinArgs
+  | SnapshotArgs
+  | HelpArgs;
 
 function parseArgs(): CliArgs {
   const args = process.argv.slice(2);
@@ -115,6 +151,8 @@ function parseArgs(): CliArgs {
         i++;
       } else if (args[i].startsWith("--output=")) {
         renderArgs.outputFile = args[i].split("=")[1];
+      } else if (args[i] === "--set-active") {
+        renderArgs.setActive = true;
       }
     }
 
@@ -152,6 +190,45 @@ function parseArgs(): CliArgs {
     return authArgs;
   }
 
+  if (args[0] === "garmin") {
+    if (args[1] === "import-archive") {
+      if (!args[2]) {
+        log.error("garmin import-archive requires a path to the ZIP file");
+        process.exit(1);
+      }
+      return {
+        command: "garmin",
+        subcommand: "import-archive",
+        archivePath: args[2],
+        verbose: args.includes("--verbose"),
+      };
+    }
+    log.error(`Unknown garmin subcommand: ${args[1]}`);
+    process.exit(1);
+  }
+
+  if (args[0] === "checkin") {
+    const checkinArgs: CheckinArgs = { command: "checkin" };
+    for (const arg of args.slice(1)) {
+      if (arg.startsWith("--date=")) checkinArgs.date = arg.slice("--date=".length);
+      else if (arg.startsWith("--sleep-hours="))
+        checkinArgs.sleepHours = parseFloat(arg.split("=")[1]);
+      else if (arg.startsWith("--sleep-quality="))
+        checkinArgs.sleepQuality = parseInt(arg.split("=")[1]);
+      else if (arg.startsWith("--legs=")) checkinArgs.legs = parseInt(arg.split("=")[1]);
+      else if (arg.startsWith("--energy=")) checkinArgs.energy = parseInt(arg.split("=")[1]);
+      else if (arg.startsWith("--motivation="))
+        checkinArgs.motivation = parseInt(arg.split("=")[1]);
+      else if (arg.startsWith("--stress=")) checkinArgs.stress = parseInt(arg.split("=")[1]);
+      else if (arg.startsWith("--notes=")) checkinArgs.notes = arg.slice("--notes=".length);
+    }
+    return checkinArgs;
+  }
+
+  if (args[0] === "snapshot") {
+    return { command: "snapshot" };
+  }
+
   if (args[0] === "--help" || args[0] === "-h" || args[0] === "help") {
     return { command: "help" };
   }
@@ -167,11 +244,14 @@ Claude Coach - Training Plan Tools
 Usage: npx claude-coach <command> [options]
 
 Commands:
-  sync              Sync activities from Strava
-  auth              Get Strava authorization URL or exchange code for tokens
-  render <file>     Render a training plan JSON to HTML
-  query <sql>       Run a SQL query against the database
-  help              Show this help message
+  sync                        Sync activities from Strava
+  auth                        Get Strava authorization URL or exchange code for tokens
+  garmin import-archive <zip> Import wellness data from a Garmin Connect export ZIP
+  checkin                     Record an optional morning check-in
+  snapshot                    Generate/update the athlete snapshot (~/.claude-coach/snapshot.json)
+  render <file>               Render a training plan JSON to HTML
+  query <sql>                 Run a SQL query against the database
+  help                        Show this help message
 
 Auth Options (for headless/Claude environments):
   --client-id=ID        Strava API client ID
@@ -188,8 +268,22 @@ Sync Options:
   --client-secret=SEC   Strava API client secret (for OAuth flow)
   --days=N              Days of history to sync (default: 730)
 
+Garmin Import Options:
+  --verbose             List all skipped/unrecognized CSV files
+
+Check-in Options:
+  --date=YYYY-MM-DD     Date (default: today)
+  --sleep-hours=N       Subjective sleep duration in hours
+  --sleep-quality=N     Sleep quality 1-5
+  --legs=N              Leg freshness 1-5 (1=heavy, 5=fresh)
+  --energy=N            Overall energy 1-5
+  --motivation=N        Motivation to train 1-5
+  --stress=N            Stress level 1-5 (1=calm, 5=stressed)
+  --notes="..."         Free text notes
+
 Render Options:
   --output, -o FILE     Output HTML file (default: <input>.html)
+  --set-active          Mark this plan JSON as the active plan for weekly coaching
 
 Query Options:
   --json                Output as JSON (default: plain text)
@@ -197,17 +291,19 @@ Query Options:
 Examples:
   # Headless auth flow (for Claude/automated environments)
   npx claude-coach auth --client-id=12345 --client-secret=abc123
-  # User clicks URL, copies code from failed redirect
   npx claude-coach auth --code=AUTHORIZATION_CODE
-  npx claude-coach sync
+  npx claude-coach sync --days=1095
 
-  # Interactive auth flow (opens browser)
-  npx claude-coach sync --client-id=12345 --client-secret=abc123
+  # Import Garmin archive (download from garmin.com/account/datamanagement/exportData)
+  npx claude-coach garmin import-archive ~/Downloads/garmin-data.zip
 
-  # Render a training plan to HTML
-  npx claude-coach render plan.json --output my-plan.html
+  # Record a morning check-in (via Claude conversationally)
+  npx claude-coach checkin --sleep-hours=7.5 --sleep-quality=4 --legs=3 --energy=4 --motivation=5 --stress=2
 
-  # Query the database
+  # Query last check-in
+  npx claude-coach query "SELECT * FROM morning_checkin ORDER BY date DESC LIMIT 1" --json
+
+  # Query weekly volume
   npx claude-coach query "SELECT * FROM weekly_volume LIMIT 5"
 `);
 }
@@ -318,6 +414,15 @@ function escapeString(str: string | null | undefined): string {
   return `'${str.replace(/'/g, "''")}'`;
 }
 
+function calcEFD(
+  distance: number | null | undefined,
+  elevationGain: number | null | undefined
+): string {
+  if (distance == null || elevationGain == null) return "NULL";
+  // Trail approximation: 100m D+ ≈ 1km flat (10m/m factor)
+  return String(Math.round(distance + elevationGain * 10));
+}
+
 function insertActivity(activity: StravaActivity): void {
   const sql = `
     INSERT OR REPLACE INTO activities (
@@ -325,7 +430,8 @@ function insertActivity(activity: StravaActivity): void {
       distance, total_elevation_gain, average_speed, max_speed,
       average_heartrate, max_heartrate, average_watts, max_watts,
       weighted_average_watts, kilojoules, suffer_score, average_cadence,
-      calories, description, workout_type, gear_id, raw_json, synced_at
+      calories, description, workout_type, gear_id, raw_json,
+      equivalent_distance_m, synced_at
     ) VALUES (
       ${activity.id},
       ${escapeString(activity.name)},
@@ -350,11 +456,22 @@ function insertActivity(activity: StravaActivity): void {
       ${activity.workout_type ?? "NULL"},
       ${escapeString(activity.gear_id)},
       ${escapeString(JSON.stringify(activity))},
+      ${calcEFD(activity.distance, activity.total_elevation_gain)},
       datetime('now')
     );
   `;
 
   execute(sql);
+}
+
+function backfillEFD(): void {
+  execute(`
+    UPDATE activities
+    SET equivalent_distance_m = ROUND(distance + total_elevation_gain * 10)
+    WHERE equivalent_distance_m IS NULL
+      AND distance IS NOT NULL
+      AND total_elevation_gain IS NOT NULL
+  `);
 }
 
 function insertAthlete(athlete: {
@@ -364,8 +481,10 @@ function insertAthlete(athlete: {
   weight?: number;
   ftp?: number;
 }): void {
+  // Use upsert instead of INSERT OR REPLACE to preserve lthr/threshold_pace_sec_per_km
+  // set by Garmin archive import — Strava does not provide these values.
   const sql = `
-    INSERT OR REPLACE INTO athlete (id, firstname, lastname, weight, ftp, raw_json, updated_at)
+    INSERT INTO athlete (id, firstname, lastname, weight, ftp, raw_json, updated_at, profile_source)
     VALUES (
       ${athlete.id},
       ${escapeString(athlete.firstname)},
@@ -373,8 +492,16 @@ function insertAthlete(athlete: {
       ${athlete.weight ?? "NULL"},
       ${athlete.ftp ?? "NULL"},
       ${escapeString(JSON.stringify(athlete))},
-      datetime('now')
-    );
+      datetime('now'),
+      'strava'
+    )
+    ON CONFLICT(id) DO UPDATE SET
+      firstname    = excluded.firstname,
+      lastname     = excluded.lastname,
+      weight       = excluded.weight,
+      ftp          = excluded.ftp,
+      raw_json     = excluded.raw_json,
+      updated_at   = excluded.updated_at;
   `;
   execute(sql);
 }
@@ -441,10 +568,22 @@ async function runSync(args: SyncArgs): Promise<void> {
     log.progressEnd();
     log.success(`Stored ${activities.length} activities`);
 
+    // Backfill EFD for any activities that didn't get it on insert
+    log.start("Computing equivalent flat distance for all activities...");
+    backfillEFD();
+
     execute(`
       INSERT INTO sync_log (started_at, completed_at, activities_synced, status)
       VALUES (datetime('now'), datetime('now'), ${activities.length}, 'success');
     `);
+
+    // Generate athlete snapshot post-sync
+    try {
+      generateSnapshot();
+      log.success("Snapshot athlète mis à jour");
+    } catch {
+      // Non-fatal: snapshot may fail if insufficient data
+    }
 
     log.info(`Database: ${getDbPath()}`);
     log.ready("Sync complete! You can now create training plans.");
@@ -500,14 +639,80 @@ async function runSync(args: SyncArgs): Promise<void> {
   log.progressEnd();
   log.success(`Stored ${activities.length} activities`);
 
-  // Step 7: Log sync
+  // Step 7: Backfill EFD for all activities (including pre-existing ones)
+  log.start("Computing equivalent flat distance for all activities...");
+  backfillEFD();
+
+  // Step 8: Log sync
   execute(`
     INSERT INTO sync_log (started_at, completed_at, activities_synced, status)
     VALUES (datetime('now'), datetime('now'), ${activities.length}, 'success');
   `);
 
+  // Generate athlete snapshot post-sync
+  try {
+    generateSnapshot();
+    log.success("Snapshot athlète mis à jour");
+  } catch {
+    // Non-fatal: snapshot may fail if insufficient data
+  }
+
   log.info(`Database: ${getDbPath()}`);
   log.ready(`Query with: sqlite3 -json "${getDbPath()}" "SELECT * FROM weekly_volume"`);
+}
+
+// ============================================================================
+// Garmin Command
+// ============================================================================
+
+async function runGarmin(args: GarminArgs): Promise<void> {
+  await initDatabase();
+  migrate();
+  await importArchive(args.archivePath, args.verbose);
+}
+
+// ============================================================================
+// Check-in Command
+// ============================================================================
+
+async function runCheckin(args: CheckinArgs): Promise<void> {
+  await initDatabase();
+  migrate();
+
+  const date = args.date ?? new Date().toISOString().split("T")[0];
+
+  const sql = `
+    INSERT INTO morning_checkin (date, sleep_hours, sleep_quality, legs, energy, motivation, stress, notes, created_at)
+    VALUES (
+      '${date}',
+      ${args.sleepHours ?? "NULL"},
+      ${args.sleepQuality ?? "NULL"},
+      ${args.legs ?? "NULL"},
+      ${args.energy ?? "NULL"},
+      ${args.motivation ?? "NULL"},
+      ${args.stress ?? "NULL"},
+      ${args.notes ? `'${args.notes.replace(/'/g, "''")}'` : "NULL"},
+      datetime('now')
+    );
+  `;
+  execute(sql);
+  log.success(`Check-in recorded for ${date}`);
+
+  // Show what was saved
+  const rows = queryJson<Record<string, unknown>>(
+    `SELECT * FROM morning_checkin WHERE date = '${date}' ORDER BY created_at DESC LIMIT 1`
+  );
+  if (rows.length > 0) {
+    const r = rows[0];
+    const parts: string[] = [];
+    if (r.sleep_hours != null) parts.push(`sleep ${r.sleep_hours}h (quality ${r.sleep_quality}/5)`);
+    if (r.legs != null) parts.push(`legs ${r.legs}/5`);
+    if (r.energy != null) parts.push(`energy ${r.energy}/5`);
+    if (r.motivation != null) parts.push(`motivation ${r.motivation}/5`);
+    if (r.stress != null) parts.push(`stress ${r.stress}/5`);
+    if (r.notes) parts.push(`"${r.notes}"`);
+    if (parts.length > 0) log.info(parts.join(" · "));
+  }
 }
 
 // ============================================================================
@@ -567,9 +772,34 @@ function runRender(args: RenderArgs): void {
   if (args.outputFile) {
     writeFileSync(args.outputFile, template);
     log.success(`Training plan rendered to: ${args.outputFile}`);
+    if (args.setActive) {
+      const absPath = resolve(args.inputFile);
+      setActivePlanPath(absPath);
+      log.success(`Plan actif défini : ${absPath}`);
+    }
   } else {
     // Output to stdout
     console.log(template);
+  }
+}
+
+// ============================================================================
+// Snapshot Command
+// ============================================================================
+
+async function runSnapshot(): Promise<void> {
+  await initDatabase();
+  migrate();
+  const snapshot = generateSnapshot();
+  log.success(`Snapshot athlète mis à jour : ${getSnapshotPath()}`);
+  const currentWeek = snapshot.rolling4w[0];
+  if (currentWeek) {
+    log.info(
+      `Semaine courante : ${currentWeek.efd_km} km EFD / ${currentWeek.dplus_m} m D+ / ${currentWeek.hours}h`
+    );
+  }
+  for (const flag of snapshot.readinessFlags) {
+    log.info(`⚠  ${flag}`);
   }
 }
 
@@ -605,6 +835,15 @@ async function main() {
       break;
     case "sync":
       await runSync(args);
+      break;
+    case "garmin":
+      await runGarmin(args);
+      break;
+    case "checkin":
+      await runCheckin(args);
+      break;
+    case "snapshot":
+      await runSnapshot();
       break;
     case "render":
       runRender(args);

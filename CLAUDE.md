@@ -6,6 +6,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Réponds toujours en français dans ce projet.
 
+## Decisions log
+
+### 2026-04-26 — Import archive Garmin (one-shot)
+
+- Sleep: 34 records (2026-02-11 → 2026-04-26)
+- HRV: 37 records (2026-02-26 → 2026-04-26)
+- Training load: 97 records
+- Athlete profile updated: yes (LTHR)
+
+### 2026-04-26 — Abandon de l'intégration Garmin MCP automatique
+
+**Package abandonné :** `@etweisberg/garmin-connect-mcp` v0.1.22 ([@etweisberg](https://github.com/etweisberg/garmin-connect-mcp))
+
+**Raison :** Garmin bloque la soumission du formulaire SSO côté serveur ("AN UNEXPECTED ERROR HAS OCCURRED" après clic sur Sign In). Le problème est côté Garmin, pas côté package. Pas d'issue GitHub correspondante, pas de contournement disponible au moment de l'abandon.
+
+**Alternative adoptée :** Import one-shot via export ZIP manuel depuis Garmin Connect (commande `claude-coach garmin import-archive <path.zip>`). Strava reste la source pérenne pour les activités.
+
 ## Contexte du fork
 
 Ce dépôt est un fork personnel de claude-coach, adapté à l'athlète suivant :
@@ -40,8 +57,10 @@ Ce dépôt est un fork personnel de claude-coach, adapté à l'athlète suivant 
     "weight_kg": 84.8,
     "weightTrend": "losing_5kg_since_january_peak_90kg",
     "height_cm": 184,
-    "hrMax": null,
-    "lthr": null,
+    "hrMax": 186,
+    "hrMax_source": "manual_known_value",
+    "lthr": 170,
+    "lthr_source": "garmin_estimated_from_archive_2026-04",
     "thresholdPace_min_per_km": null,
     "ftp_watts": null,
     "swimBackground": "7_years_water_polo_solid_base"
@@ -109,9 +128,14 @@ Ce dépôt est un fork personnel de claude-coach, adapté à l'athlète suivant 
       "status": "reprise_course_cette_semaine_2_seances_ok"
     },
     "next": {
-      "name": "Wildstrubel 25",
-      "date": "2026-summer",
-      "type": "trail_alpine"
+      "name": "Wild 25",
+      "date": "2026-09-13",
+      "event": "Wildstrubel 2026",
+      "location": "Crans-Montana",
+      "type": "trail_alpine",
+      "distance_km": 26,
+      "dplus_m": 1200,
+      "efd_km": 38
     },
     "philosophy": "beautiful_races_for_wellbeing_not_elite_performance",
     "ideasPool": [
