@@ -124,8 +124,10 @@ Ce dépôt est un fork personnel de claude-coach, adapté à l'athlète suivant 
       }
     ],
     "current": {
-      "phase": "recovery_post_marathon",
-      "status": "reprise_course_cette_semaine_2_seances_ok"
+      "phase": "reprise_post_marathon",
+      "status": "semaine_4_reprise_progressive",
+      "context": "semaines_2_et_3_amputees_hanche_laterale_TFL_irritation_mecanique_marche_job",
+      "plan": "2_footings_25_30min_facile_plus_1_renfo_au_ressenti_semaine_4"
     },
     "next": {
       "name": "Wild 25",
