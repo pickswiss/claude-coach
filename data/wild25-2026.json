@@ -1,0 +1,3959 @@
+{
+  "version": "1.0",
+  "meta": {
+    "id": "wild25-julien-2026",
+    "athlete": "Julien Picard",
+    "event": "Wild 25 — Wildstrubel 2026",
+    "eventDate": "2026-09-13",
+    "planStartDate": "2026-04-13",
+    "planEndDate": "2026-09-13",
+    "createdAt": "2026-04-28T00:00:00Z",
+    "updatedAt": "2026-04-29T00:00:00Z",
+    "totalWeeks": 22,
+    "generatedBy": "Claude Coach"
+  },
+  "preferences": {
+    "swim": "meters",
+    "bike": "kilometers",
+    "run": "kilometers",
+    "firstDayOfWeek": "monday"
+  },
+  "assessment": {
+    "foundation": {
+      "raceHistory": [
+        "Sierre-Zinal 2022 (~52 km EFD, 2200m D+)",
+        "Sierre-Zinal 2023 (~52 km EFD)",
+        "Sierre-Zinal 2025 (~52 km EFD)",
+        "Semi-marathon d'Aletsch 2025 (31 km EFD, 1097m D+)",
+        "Marathon de Paris 2026 (3h49, sub-4h atteint)"
+      ],
+      "peakTrainingLoad": 6,
+      "foundationLevel": "advanced",
+      "yearsInSport": 5
+    },
+    "currentForm": {
+      "weeklyVolume": {
+        "total": 2,
+        "run": 2
+      },
+      "longestSessions": {
+        "run": 31
+      },
+      "consistency": 2,
+      "timeSincePeakFitness": "8 months",
+      "reasonForTimeOff": "Reprise post-marathon Paris (12 avril 2026)"
+    },
+    "strengths": [
+      {
+        "sport": "run",
+        "evidence": "3× Sierre-Zinal finisher (52 km EFD, 2200m D+) — Wild 25 (38 EFD) bien en-deçà du niveau historique"
+      },
+      {
+        "sport": "run",
+        "evidence": "Base aérobie solide (marathon 3h49, long runs jusqu'à 31 km EFD trail en entraînement 2025)"
+      }
+    ],
+    "limiters": [
+      {
+        "sport": "run",
+        "evidence": "D+ hebdo quasi nul depuis 4 semaines, descentes techniques non pratiquées depuis août 2025"
+      },
+      {
+        "sport": "run",
+        "evidence": "Aucun trail depuis Sierre-Zinal 2025 — retour terrain nécessaire, pas apprentissage de zéro"
+      }
+    ],
+    "constraints": [
+      "3 séances run maximum par semaine",
+      "1 renforcement musculaire par semaine (pull-up bar disponible)",
+      "Pas de vélo, pas de natation prévue avant automne",
+      "Activités complémentaires : pilates, yoga, stretching (non tracées dans le plan)"
+    ]
+  },
+  "zones": {
+    "run": {
+      "hr": {
+        "lthr": 170,
+        "zones": [
+          {
+            "zone": 1,
+            "name": "Récupération",
+            "percentLow": 0,
+            "percentHigh": 80,
+            "hrLow": 0,
+            "hrHigh": 148
+          },
+          {
+            "zone": 2,
+            "name": "Aérobie",
+            "percentLow": 80,
+            "percentHigh": 87,
+            "hrLow": 148,
+            "hrHigh": 162
+          },
+          {
+            "zone": 3,
+            "name": "Tempo / Seuil bas",
+            "percentLow": 87,
+            "percentHigh": 92,
+            "hrLow": 163,
+            "hrHigh": 170
+          },
+          {
+            "zone": 4,
+            "name": "Seuil haut",
+            "percentLow": 92,
+            "percentHigh": 96,
+            "hrLow": 171,
+            "hrHigh": 178
+          },
+          {
+            "zone": 5,
+            "name": "VO2max",
+            "percentLow": 96,
+            "percentHigh": 100,
+            "hrLow": 179,
+            "hrHigh": 186
+          }
+        ]
+      }
+    },
+    "maxHR": 186
+  },
+  "phases": [
+    {
+      "name": "Reprise post-marathon",
+      "startWeek": 1,
+      "endWeek": 3,
+      "focus": "Récupération, retour progressif à la course, aucun trail technique",
+      "weeklyHoursRange": {
+        "low": 0,
+        "high": 2.9
+      },
+      "keyWorkouts": ["Footings faciles Z1-Z2", "Renforcement musculaire maintenu"],
+      "physiologicalGoals": [
+        "Récupérer la fraîcheur musculaire post-marathon",
+        "Remettre en place la routine d'entraînement"
+      ]
+    },
+    {
+      "name": "Base — Retour terrain trail",
+      "startWeek": 4,
+      "endWeek": 7,
+      "focus": "Reconstruction aérobie, réintroduction trail et D+, mécanique descentes",
+      "weeklyHoursRange": {
+        "low": 2.5,
+        "high": 4.5
+      },
+      "keyWorkouts": [
+        "Long trail Z2 (D+ progressif)",
+        "Trail facile mid-semaine (D+ hebdo, pas uniquement weekend)",
+        "Renforcement musculaire"
+      ],
+      "physiologicalGoals": [
+        "Reconditionner les muscles pour le trail (quadriceps, chevilles)",
+        "Atteindre EFD 26 km sur la sortie longue en fin de phase",
+        "S9 légère pour transition Build"
+      ]
+    },
+    {
+      "name": "Build trail",
+      "startWeek": 8,
+      "endWeek": 15,
+      "focus": "Volume et D+ progressifs, 4 fartleks + 3 intervalles verticaux alternés, semaines récup S11 (-35%) et S15 (récup+test)",
+      "weeklyHoursRange": {
+        "low": 3,
+        "high": 6.1
+      },
+      "keyWorkouts": [
+        "Fartlek trail 1 (S8, familiarisation)",
+        "IV 1 (S10)",
+        "Fartlek 2 (S12)",
+        "IV 2 (S13)",
+        "Fartlek 3 (S14)",
+        "Long trail peak 31 km EFD (S14)",
+        "TEST VALIDATION pré-Spécificité — 26 km EFD + 1000m D+ (S15)"
+      ],
+      "physiologicalGoals": [
+        "Développer la puissance en montée",
+        "Long run peak 31 km EFD (82% de la distance EFD course)",
+        "Accumulation D+ : 300 → 1300 m/semaine",
+        "Semaines récup S11 et S15 calibrées -35%"
+      ]
+    },
+    {
+      "name": "Spécificité montagne",
+      "startWeek": 16,
+      "endWeek": 18,
+      "focus": "Back-to-back weekends, terrain alpin, IV 3 (S16), pic de forme, reconnaissance Wild 25",
+      "weeklyHoursRange": {
+        "low": 4.9,
+        "high": 6.4
+      },
+      "keyWorkouts": [
+        "Intervalles verticaux Z3-Z4 IV3 (S16)",
+        "Back-to-back Sat+Sun (S16, S17)",
+        "Long trail Z2 pic 32 km EFD (S17)",
+        "Reconnaissance terrain Wild 25 si possible (S18)"
+      ],
+      "physiologicalGoals": [
+        "Résistance à la fatigue spécifique course",
+        "Long run peak 32 km EFD (84% de 38 km EFD course)",
+        "D+ hebdo 1200-2200 m",
+        "Transition vers affûtage S19"
+      ]
+    },
+    {
+      "name": "Affûtage",
+      "startWeek": 19,
+      "endWeek": 21,
+      "focus": "Réduction volume -45%, maintien qualité terrain trail, fartlek 4 / simulation course (S20), préparation mentale et logistique",
+      "weeklyHoursRange": {
+        "low": 1.4,
+        "high": 3.8
+      },
+      "keyWorkouts": [
+        "Trail léger Z2 (S19-S20)",
+        "Fartlek 4 / Simulation course allure Wild 25 (S20) — 3 × allure course avec descentes",
+        "Footing léger Z1 (S21)"
+      ],
+      "physiologicalGoals": [
+        "Éliminer la fatigue accumulée tout en maintenant les adaptations",
+        "Confirmer équipement, nutrition, stratégie course",
+        "Arriver frais et confiant au départ"
+      ]
+    },
+    {
+      "name": "Race week",
+      "startWeek": 22,
+      "endWeek": 22,
+      "focus": "Préservation, activation légère, logistique Crans-Montana",
+      "weeklyHoursRange": {
+        "low": 0.75,
+        "high": 1
+      },
+      "keyWorkouts": [
+        "2 activations légères Z1 (mar, jeu)",
+        "Repos vendredi-samedi",
+        "Wild 25 dimanche"
+      ],
+      "physiologicalGoals": ["Arriver au départ reposé et confiant"]
+    }
+  ],
+  "weeks": [
+    {
+      "weekNumber": 1,
+      "startDate": "2026-04-13",
+      "endDate": "2026-04-19",
+      "phase": "Reprise post-marathon",
+      "focus": "J+1 → J+7 post-marathon Paris — récupération totale, aucune course",
+      "targetHours": 0,
+      "isRecoveryWeek": true,
+      "completed": true,
+      "days": [
+        {
+          "date": "2026-04-13",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w1-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "J+1 — douleurs musculaires intenses, sommeil prioritaire",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "date": "2026-04-14",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w1-tue",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "J+2 — marche légère OK, pas de course",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "date": "2026-04-15",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w1-wed",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "J+3 — étirements doux, massage si possible",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "date": "2026-04-16",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w1-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "J+4 — marche, yoga doux",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "date": "2026-04-17",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w1-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "J+5 — récupération active légère",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "date": "2026-04-18",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w1-sat",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "J+6 — marche, étirements",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "date": "2026-04-19",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w1-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "J+7 — fin de la première semaine de récup",
+              "completed": true
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 0,
+        "bySport": {}
+      }
+    },
+    {
+      "weekNumber": 2,
+      "startDate": "2026-04-20",
+      "endDate": "2026-04-26",
+      "phase": "Reprise post-marathon",
+      "focus": "J+8 → J+14 — 2 reprises effectuées (données Strava réelles)",
+      "targetHours": 1.4,
+      "isRecoveryWeek": false,
+      "completed": true,
+      "days": [
+        {
+          "date": "2026-04-20",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w2-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "J+8 — repos",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "date": "2026-04-21",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w2-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Reprise post marathon ✌🏻",
+              "description": "Première reprise — footing très facile, jambes encore lourdes",
+              "durationMinutes": 37,
+              "distanceMeters": 6010,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "actualData": {
+                "distanceMeters": 6010,
+                "durationSeconds": 2238,
+                "averageHR": 126,
+                "elevationGain": 66
+              },
+              "humanReadable": "37 min footing — 6.01 km, FC moy 126 bpm, D+ 66m\nReprise post-marathon Paris — allure libre, aucune pression",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "date": "2026-04-22",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w2-wed",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "date": "2026-04-23",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w2-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "date": "2026-04-24",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w2-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "date": "2026-04-25",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w2-sat",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos",
+              "completed": true
+            }
+          ]
+        },
+        {
+          "date": "2026-04-26",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w2-sun-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Reprise légère",
+              "description": "Deuxième reprise — D+ léger, jambes mieux",
+              "durationMinutes": 43,
+              "distanceMeters": 6100,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "actualData": {
+                "distanceMeters": 6100,
+                "durationSeconds": 2591,
+                "averageHR": 125,
+                "elevationGain": 195
+              },
+              "humanReadable": "43 min footing — 6.1 km, FC moy 125 bpm, D+ 195m\nDeuxième reprise post-marathon — terrain légèrement vallonné",
+              "completed": true
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 1.4,
+        "bySport": {
+          "run": {
+            "sessions": 2,
+            "hours": 1.33,
+            "km": 12.1
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 3,
+      "startDate": "2026-04-27",
+      "endDate": "2026-05-03",
+      "phase": "Reprise post-marathon",
+      "focus": "Reprise douce, volume minimal, aucune intensité",
+      "targetHours": 1.9,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-04-27",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w3-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Récupération active : étirements, yoga, marche",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-04-28",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w3-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "description": "Footing très facile, jambes libres, aucune pression de performance",
+              "durationMinutes": 30,
+              "distanceMeters": 5000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "30 min footing très facile — route plate\nFC < 148 bpm, conversation permanente\nEFD cible : ~5 km",
+              "completed": false,
+              "skipped": true,
+              "skipReason": "Reporté au mercredi, non réalisé — douleur hanche latérale (TFL) apparue en journée le 2026-04-29"
+            }
+          ]
+        },
+        {
+          "date": "2026-04-29",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w3-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "description": "Circuit trail complet — maintien pendant la reprise",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min) : jumping jacks, leg swings, hip circles\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg Romanian deadlift : 8 reps/jambe\n  Calf raises excentrique lent : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions pull-up bar : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min) : mollets, quadriceps, fléchisseurs hanche",
+              "completed": false,
+              "skipped": true,
+              "skipReason": "Annulé — douleur hanche latérale (TFL) active, repos prescrit"
+            }
+          ]
+        },
+        {
+          "date": "2026-04-30",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w3-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga/pilates",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-01",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w3-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-02",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w3-sat-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Aérobie facile",
+              "description": "Course confortable, route plate, Z1-Z2",
+              "durationMinutes": 40,
+              "distanceMeters": 7000,
+              "primaryZone": "Zone 1-2",
+              "targetHR": {
+                "low": 130,
+                "high": 155
+              },
+              "rpe": 4,
+              "humanReadable": "40 min route plate — FC 130–155 bpm\nRythme conversationnel, aucune pression\nEFD cible : ~7 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-03",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w3-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 1.9,
+        "bySport": {
+          "run": {
+            "sessions": 2,
+            "hours": 1.2,
+            "km": 12
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 4,
+      "startDate": "2026-05-04",
+      "endDate": "2026-05-10",
+      "phase": "Base — Retour terrain trail",
+      "focus": "Reprise progressive — 2 footings faciles + 1 renforcement",
+      "targetHours": 2.2,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-05-04",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w4-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-05",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w4-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "description": "Footing facile, début de retour à Z2",
+              "durationMinutes": 35,
+              "distanceMeters": 6000,
+              "primaryZone": "Zone 1-2",
+              "targetHR": {
+                "low": 120,
+                "high": 155
+              },
+              "rpe": 3,
+              "humanReadable": "35 min route — FC 120–155 bpm\nCommencer à sentir le plaisir de courir à nouveau\nEFD cible : ~6 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-06",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w4-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "description": "Circuit trail complet",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min) : jumping jacks, leg swings, hip circles\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg Romanian deadlift : 8 reps/jambe\n  Calf raises excentrique lent : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions pull-up bar : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-07",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w4-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-08",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w4-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-09",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w4-sat-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Aérobie Z2 trail léger",
+              "description": "Première sortie trail de la phase — allure Z2, terrain légèrement vallonné",
+              "durationMinutes": 50,
+              "distanceMeters": 8000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 4,
+              "humanReadable": "50 min trail Z2 — 8 km + 150m D+ → EFD ~9.5 km\nFC 148–162 bpm, allure naturelle\nPremière sortie trail de la phase Base — terrain vallonné",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-10",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w4-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 2.2,
+        "bySport": {
+          "run": {
+            "sessions": 2,
+            "hours": 1.42,
+            "km": 14
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 5,
+      "startDate": "2026-05-11",
+      "endDate": "2026-05-17",
+      "phase": "Base — Retour terrain trail",
+      "focus": "Trail mid-semaine, D+ progressif samedi (~11 EFD)",
+      "targetHours": 2.9,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-05-11",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w5-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-12",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w5-tue-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Aérobie Z2",
+              "durationMinutes": 40,
+              "distanceMeters": 7000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 4,
+              "humanReadable": "40 min route — FC 148–162 bpm (Z2)\nEFD cible : ~7 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-13",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w5-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg RDL : 8 reps/jambe\n  Calf raises excentrique : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-14",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w5-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Trail léger Z1-Z2 — D+ mid-semaine",
+              "description": "Trail doux mid-semaine — confirmer la routine D+ hors weekend",
+              "durationMinutes": 35,
+              "distanceMeters": 5500,
+              "primaryZone": "Zone 1-2",
+              "targetHR": {
+                "low": 100,
+                "high": 155
+              },
+              "rpe": 3,
+              "humanReadable": "35 min trail Z1-Z2 — 5.5 km + 150m D+ → EFD ~7 km\nFC < 155 bpm, très facile\nD+ mid-semaine : habituer les quadriceps progressivement",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-15",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w5-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-16",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w5-sat-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Aérobie Z2 — intro D+",
+              "description": "Première sortie avec un peu de relief, reste Z2",
+              "durationMinutes": 60,
+              "distanceMeters": 10000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 4,
+              "humanReadable": "60 min — 10 km plat + ~100m D+ → EFD ~11 km\nFC 148–162 bpm, marche en montée si FC monte\nPremier retour au terrain vallonné",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-17",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w5-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 3,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 2.25,
+            "km": 23
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 6,
+      "startDate": "2026-05-18",
+      "endDate": "2026-05-24",
+      "phase": "Base — Retour terrain trail",
+      "focus": "Premier long trail avec D+, retour aux appuis et descentes",
+      "targetHours": 4.1,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-05-18",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w6-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-19",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w6-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "durationMinutes": 30,
+              "distanceMeters": 5000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "30 min footing Z1 — route plate\nFC < 148 bpm — garder les jambes fraîches pour le long trail samedi\nEFD cible : ~5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-20",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w6-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg RDL : 8 reps/jambe\n  Calf raises excentrique : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-21",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w6-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Trail facile Z2 — D+ mid-semaine",
+              "description": "Trail mid-semaine avec D+ modéré — renforcement des jambes trail, D+ pas uniquement le samedi",
+              "durationMinutes": 45,
+              "distanceMeters": 7000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 4,
+              "humanReadable": "45 min trail Z2 — 7 km + 200m D+ → EFD ~9 km\nFC 148–162 bpm, marche en montée si FC > 162\nD+ en milieu de semaine : quadriceps, chevilles, appuis variés",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-22",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w6-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-23",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w6-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue trail Z2",
+              "description": "Premier long trail avec D+. Marche en montée raide = tactique, pas une faiblesse.",
+              "durationMinutes": 120,
+              "distanceMeters": 15000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 5,
+              "humanReadable": "2h trail Z2 — 15 km plat + 400m D+ → EFD 19 km\nFC 148–162 bpm. Marche en montée raide autorisée (FC > 162 bpm).\nRetrouver les appuis trail, tester les descentes à faible vitesse.\nNutrition : eau + 1 gel si > 75 min",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-24",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w6-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos actif, étirements mollets et quadriceps",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 4.1,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 3.38,
+            "km": 34
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 7,
+      "startDate": "2026-05-25",
+      "endDate": "2026-05-31",
+      "phase": "Base — Retour terrain trail",
+      "focus": "Progression volume et D+, technique descentes",
+      "targetHours": 4.4,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-05-25",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w7-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-26",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w7-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "durationMinutes": 35,
+              "distanceMeters": 6000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "35 min footing Z1 — FC < 148 bpm\nEFD cible : ~6 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-27",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w7-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg RDL : 8 reps/jambe\n  Calf raises excentrique : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-28",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w7-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Trail facile Z2 — D+ mid-semaine",
+              "description": "Trail mid-semaine avec D+ modéré — renforcement des jambes trail",
+              "durationMinutes": 45,
+              "distanceMeters": 7000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 4,
+              "humanReadable": "45 min trail Z2 — 7 km + 200m D+ → EFD ~9 km\nFC 148–162 bpm, marche en montée si FC monte\nD+ en milieu de semaine : s'y habituer progressivement",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-29",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w7-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-30",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w7-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue trail Z2",
+              "description": "Progression D+ et durée. Focus : descentes fluides.",
+              "durationMinutes": 135,
+              "distanceMeters": 15000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 5,
+              "humanReadable": "2h15 trail Z2 — 15 km plat + 600m D+ → EFD 21 km\nFC 148–162 bpm. Marche en montée raide.\nTravail spécifique descentes : courtes foulées, appui avant-pied, regard loin.\nNutrition : 1 gel à 60 min si durée > 90 min",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-31",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w7-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Récupération active, rouleau mousse mollets",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 4.4,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 3.67,
+            "km": 37
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 8,
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-07",
+      "phase": "Build trail",
+      "focus": "Fartlek 1 — entrée en Build, long trail 26 EFD maintenu",
+      "targetHours": 5.2,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-06-01",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w8-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-02",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w8-tue-run",
+              "sport": "run",
+              "type": "hills",
+              "name": "Fartlek trail 1 — familiarisation Build",
+              "description": "Jeu d'allures libre sur terrain varié — accélérer en montée, récupérer en descente",
+              "durationMinutes": 50,
+              "distanceMeters": -17000,
+              "primaryZone": "Zone 2-3",
+              "targetHR": {
+                "low": 148,
+                "high": 172
+              },
+              "rpe": 6,
+              "humanReadable": "50 min — 13 km EFD (D+ ~300m)\nFC 148–172 bpm selon terrain\nEn montée : accélérer Z3 (163-172 bpm)\nEn descente / plat : revenir Z2 (148-162 bpm)\n1er fartlek de la prépa — ne pas se griller. Jouer le terrain librement.",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement Z1",
+                    "duration": {
+                      "value": 10,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 145
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "work",
+                    "name": "Fartlek terrain libre",
+                    "duration": {
+                      "value": 30,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 2,
+                      "valueLow": 148,
+                      "valueHigh": 172
+                    },
+                    "notes": "1er fartlek de la prépa — ne pas se griller. Jouer le terrain librement."
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme",
+                    "duration": {
+                      "value": 10,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 140
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-03",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w8-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg RDL : 8 reps/jambe\n  Calf raises excentrique : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-04",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w8-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "durationMinutes": 30,
+              "distanceMeters": 5000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "30 min footing Z1 — garder les jambes pour samedi\nEFD cible : ~5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-05",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w8-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-06",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w8-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue trail Z2 — 26 EFD, baseline Build",
+              "description": "Plus longue sortie trail de la phase de base. Gérer la fatigue en fin de sortie.",
+              "durationMinutes": 180,
+              "distanceMeters": 18000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 6,
+              "humanReadable": "3h trail Z2 — 18 km plat + 800m D+ → EFD 26 km\nFC 148–162 bpm. Marche en montée raide, descentes fluides.\nNutrition : 1 gel à 45 min, 1 gel à 90 min, eau régulière\nTest : manger même sans faim en fin de sortie",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-07",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w8-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Récupération complète — dîner riche en protéines ce soir",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.2,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 4.42,
+            "km": 40
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 9,
+      "startDate": "2026-06-08",
+      "endDate": "2026-06-14",
+      "phase": "Build trail",
+      "focus": "Semaine légère — transition Build post-fartlek S8 et long 26 EFD",
+      "targetHours": 3.3,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-06-08",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w9-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga doux",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-09",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w9-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "durationMinutes": 35,
+              "distanceMeters": 6000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "35 min footing Z1 — route plate\nSemaine récup : ne pas pousser\nEFD cible : ~6 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-10",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w9-wed-str",
+              "sport": "strength",
+              "type": "recovery",
+              "name": "Renforcement léger",
+              "description": "2 rounds au lieu de 3 — semaine de récupération",
+              "durationMinutes": 35,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (2 rounds) :\n  Squats : 10 reps\n  Fentes marchées : 8 reps/jambe\n  Calf raises excentrique : 12 reps\n\nCircuit B — Gainage (2 rounds) :\n  Planche : 45s\n  Planche latérale : 25s/côté\n  Dead bug : 8 reps/côté\n\nÉtirements (5 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-11",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w9-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou marche légère",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-12",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w9-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-13",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w9-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Trail facile Z2",
+              "description": "Sortie récup — terrain trail mais allure très confortable",
+              "durationMinutes": 90,
+              "distanceMeters": 12000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 4,
+              "humanReadable": "1h30 trail facile — 12 km + 300m D+ → EFD 15 km\nFC 148–162 bpm, allure détendue\nPas d'objectif de performance — profiter",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-14",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w9-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 3.3,
+        "bySport": {
+          "run": {
+            "sessions": 2,
+            "hours": 2.5,
+            "km": 21
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.58
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 10,
+      "startDate": "2026-06-15",
+      "endDate": "2026-06-21",
+      "phase": "Build trail",
+      "focus": "IV 1 — premier intervalle vertical, long trail 23 EFD",
+      "targetHours": 5,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-06-15",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w10-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-16",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w10-tue-run",
+              "sport": "run",
+              "type": "hills",
+              "name": "Intervalles verticaux 1 — montées seuil Z3-Z4",
+              "description": "Montées seuil + descentes récupération — économie de montée, tolérance lactique",
+              "durationMinutes": 85,
+              "distanceMeters": 8000,
+              "primaryZone": "Zone 3-4",
+              "targetHR": {
+                "low": 163,
+                "high": 178
+              },
+              "rpe": 7,
+              "humanReadable": "85 min — 8 km + 400m D+ → EFD ~12 km\n\nÉchauffement : 15 min progressif Z1→Z2\nPrincipal : 4 × (10 min montée seuil Z3-Z4 + 5 min descente récup Z1)\nRetour au calme : 10 min Z1\n\nMontées : effort soutenu FC 163–178 bpm, cadence courte, appui avant-pied\nDescentes : récupération contrôlée",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement progressif",
+                    "duration": {
+                      "value": 15,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 148
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "interval_set",
+                    "name": "Montée seuil / descente récup",
+                    "repeats": 4,
+                    "steps": [
+                      {
+                        "type": "work",
+                        "name": "Montée seuil",
+                        "duration": {
+                          "value": 10,
+                          "unit": "minutes"
+                        },
+                        "intensity": {
+                          "unit": "hr_zone",
+                          "value": 4,
+                          "valueLow": 163,
+                          "valueHigh": 178
+                        },
+                        "notes": "Effort soutenu montée, cadence courte, appui avant-pied"
+                      },
+                      {
+                        "type": "recovery",
+                        "name": "Descente récupération",
+                        "duration": {
+                          "value": 5,
+                          "unit": "minutes"
+                        },
+                        "intensity": {
+                          "unit": "hr_zone",
+                          "value": 1,
+                          "valueLow": 110,
+                          "valueHigh": 148
+                        },
+                        "notes": "Descente contrôlée, récupération active"
+                      }
+                    ]
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme",
+                    "duration": {
+                      "value": 10,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 140
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-17",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w10-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg RDL : 8 reps/jambe\n  Calf raises excentrique : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-18",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w10-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "durationMinutes": 30,
+              "distanceMeters": 5000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "30 min footing Z1 — récupérer du fartlek mardi\nEFD cible : ~5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-19",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w10-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-20",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w10-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue trail Z2",
+              "description": "Long trail avec montées soutenues, descentes travaillées",
+              "durationMinutes": 150,
+              "distanceMeters": 16000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 6,
+              "humanReadable": "2h30 trail Z2 — 16 km plat + 700m D+ → EFD 23 km\nFC 148–162 bpm, marche en montée raide\nDescentes : foulées courtes, regard loin, appui avant-pied\nNutrition : 1 gel à 45 min, 1 gel à 90 min",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-21",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w10-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Récupération — dîner récupération ce soir (protéines + glucides)",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 4.25,
+            "km": 39.5
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 11,
+      "startDate": "2026-06-22",
+      "endDate": "2026-06-28",
+      "phase": "Build trail",
+      "focus": "Semaine de récupération — -35% vs S10, recharger avant fartlek S12",
+      "targetHours": 3.4,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2026-06-22",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w11-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-23",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w11-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "durationMinutes": 35,
+              "distanceMeters": 6000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "35 min footing Z1 — route plate\nSemaine récup : vraiment facile\nEFD cible : ~6 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-24",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w11-wed-str",
+              "sport": "strength",
+              "type": "recovery",
+              "name": "Renforcement léger",
+              "durationMinutes": 35,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (2 rounds) :\n  Squats : 10 reps\n  Fentes marchées : 8 reps/jambe\n  Calf raises : 12 reps\n\nCircuit B — Gainage (2 rounds) :\n  Planche : 45s\n  Planche latérale : 25s/côté\n  Dead bug : 8 reps/côté\n\nÉtirements (5 min)",
+              "completed": false,
+              "description": "2 rounds — semaine de récupération"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-25",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w11-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Trail récupération Z1-Z2",
+              "description": "Trail doux mid-semaine — garder les appuis tout en récupérant",
+              "durationMinutes": 35,
+              "distanceMeters": 6000,
+              "primaryZone": "Zone 1-2",
+              "targetHR": {
+                "low": 100,
+                "high": 155
+              },
+              "rpe": 3,
+              "humanReadable": "35 min trail Z1-Z2 — 6 km + 150m D+ → EFD ~7.5 km\nFC 100–155 bpm, très facile\nSemaine récup : terrain trail mais sans pression",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-26",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w11-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-27",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w11-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Trail facile Z2 — récup",
+              "description": "Sortie récup — terrain trail mais allure très confortable",
+              "durationMinutes": 90,
+              "distanceMeters": 12000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 4,
+              "humanReadable": "1h30 trail Z2 — 12 km + 350m D+ → EFD ~15.5 km\nFC 148–162 bpm, allure détendue\nPas d'objectif de performance — récupérer et apprécier\n-35% vs S10 : semaine récup Build",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-28",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w11-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Récupération complète",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 3.4,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 2.67,
+            "km": 27.5
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.58
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 12,
+      "startDate": "2026-06-29",
+      "endDate": "2026-07-05",
+      "phase": "Build trail",
+      "focus": "Fartlek + long trail 29 EFD — pic intermédiaire Build",
+      "targetHours": 5.3,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-06-29",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w12-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-06-30",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w12-tue-run",
+              "sport": "run",
+              "type": "hills",
+              "name": "Fartlek trail",
+              "durationMinutes": 60,
+              "distanceMeters": 11000,
+              "primaryZone": "Zone 2-3",
+              "targetHR": {
+                "low": 148,
+                "high": 172
+              },
+              "rpe": 6,
+              "humanReadable": "60 min — 11 km + 350m D+ → EFD ~14.5 km\nFartlek libre sur terrain varié\nAccélérer en montée Z3 (163-172 bpm), récupérer en descente/plat Z2",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement Z1",
+                    "duration": {
+                      "value": 10,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 145
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "work",
+                    "name": "Fartlek terrain libre",
+                    "duration": {
+                      "value": 40,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 2,
+                      "valueLow": 148,
+                      "valueHigh": 172
+                    },
+                    "notes": "Accélérer en montée (Z3 163-172 bpm), récupérer en descente/plat (Z2 148-162 bpm)."
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme",
+                    "duration": {
+                      "value": 10,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 140
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-01",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w12-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg RDL : 8 reps/jambe\n  Calf raises excentrique : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-02",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w12-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "durationMinutes": 35,
+              "distanceMeters": 6000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "35 min footing Z1 — garder les jambes pour le long trail\nEFD cible : ~6 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-03",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w12-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-04",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w12-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue trail Z2",
+              "durationMinutes": 180,
+              "distanceMeters": 19000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 6,
+              "humanReadable": "3h trail Z2 — 19 km plat + 1000m D+ → EFD 29 km\nFC 148–162 bpm, marche en montée raide\nNutrition complète : gel à 45, 90, 135 min, eau régulière\nConfiance en descente technique",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-05",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w12-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Récupération active — recharger avant IV 2 en S13",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.3,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 4.58,
+            "km": 49.5
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 13,
+      "startDate": "2026-07-06",
+      "endDate": "2026-07-12",
+      "phase": "Build trail",
+      "focus": "IV 2 — allures affirmées, long trail 29 EFD",
+      "targetHours": 5.5,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-07-06",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w13-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet ou yoga doux",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-07",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w13-tue-run",
+              "sport": "run",
+              "type": "hills",
+              "name": "Intervalles verticaux 2 — allures plus affirmées qu'en S10",
+              "description": "Montées seuil + descentes récupération — économie de montée, tolérance lactique",
+              "durationMinutes": 85,
+              "distanceMeters": 8000,
+              "primaryZone": "Zone 3-4",
+              "targetHR": {
+                "low": 163,
+                "high": 178
+              },
+              "rpe": 7,
+              "humanReadable": "85 min — 8 km + 400m D+ → EFD ~12 km\n\nÉchauffement : 15 min progressif Z1→Z2\nPrincipal : 4 × (10 min montée seuil Z3-Z4 + 5 min descente récup Z1)\nRetour au calme : 10 min Z1\n\nMontées : effort soutenu FC 163–178 bpm, cadence courte, appui avant-pied\nDescentes : récupération contrôlée",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement progressif",
+                    "duration": {
+                      "value": 15,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 148
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "interval_set",
+                    "name": "Montée seuil / descente récup",
+                    "repeats": 4,
+                    "steps": [
+                      {
+                        "type": "work",
+                        "name": "Montée seuil",
+                        "duration": {
+                          "value": 10,
+                          "unit": "minutes"
+                        },
+                        "intensity": {
+                          "unit": "hr_zone",
+                          "value": 4,
+                          "valueLow": 163,
+                          "valueHigh": 178
+                        },
+                        "notes": "Effort soutenu montée, cadence courte, appui avant-pied"
+                      },
+                      {
+                        "type": "recovery",
+                        "name": "Descente récupération",
+                        "duration": {
+                          "value": 5,
+                          "unit": "minutes"
+                        },
+                        "intensity": {
+                          "unit": "hr_zone",
+                          "value": 1,
+                          "valueLow": 110,
+                          "valueHigh": 148
+                        },
+                        "notes": "Descente contrôlée, récupération active"
+                      }
+                    ]
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme",
+                    "duration": {
+                      "value": 10,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 140
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-08",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w13-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg RDL : 8 reps/jambe\n  Calf raises excentrique : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions pull-up bar : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "completed": false,
+              "description": ""
+            }
+          ]
+        },
+        {
+          "date": "2026-07-09",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w13-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "durationMinutes": 35,
+              "distanceMeters": 6000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "35 min footing Z1 — récupérer des IV mardi\nEFD cible : ~6 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-10",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w13-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-11",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w13-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue trail Z2",
+              "description": "Long trail avec D+ significatif — consolidation après récup S11",
+              "durationMinutes": 180,
+              "distanceMeters": 19000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 6,
+              "humanReadable": "3h trail Z2 — 19 km plat + 1000m D+ → EFD 29 km\nFC 148–162 bpm, marche en montée raide\nNutrition : gel à 45, 90, 135 min + eau régulière\nConfiance en descente technique",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-12",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w13-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.5,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 4.75,
+            "km": 45.5
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 14,
+      "startDate": "2026-07-13",
+      "endDate": "2026-07-19",
+      "phase": "Build trail",
+      "focus": "Fartlek 3 — progression sur terrain, long trail 31 EFD pic Build",
+      "targetHours": 5.8,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-07-13",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w14-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-14",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w14-tue-run",
+              "sport": "run",
+              "type": "hills",
+              "name": "Fartlek trail 3",
+              "description": "Jeu d'allures libre sur terrain varié — accélérer en montée, récupérer en descente",
+              "durationMinutes": 55,
+              "distanceMeters": -17000,
+              "primaryZone": "Zone 2-3",
+              "targetHR": {
+                "low": 148,
+                "high": 172
+              },
+              "rpe": 6,
+              "humanReadable": "55 min — 13 km EFD (D+ ~300m)\nFC 148–172 bpm selon terrain\nEn montée : accélérer Z3 (163-172 bpm)\nEn descente / plat : revenir Z2 (148-162 bpm)\nFartlek 3 — accélérer en montée Z3, récupérer en descente/plat Z2. Garder des ressources pour le long trail samedi.",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement Z1",
+                    "duration": {
+                      "value": 10,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 145
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "work",
+                    "name": "Fartlek terrain libre",
+                    "duration": {
+                      "value": 35,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 2,
+                      "valueLow": 148,
+                      "valueHigh": 172
+                    },
+                    "notes": "Fartlek 3 — accélérer en montée Z3, récupérer en descente/plat Z2. Garder des ressources pour le long trail samedi."
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme",
+                    "duration": {
+                      "value": 10,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 140
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-15",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w14-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg RDL : 8 reps/jambe\n  Calf raises excentrique : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-16",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w14-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "durationMinutes": 35,
+              "distanceMeters": 6000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "35 min footing Z1 — récupérer des intervalles, préparer le long\nEFD cible : ~6 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-17",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w14-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-18",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w14-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue trail — pic Phase Build",
+              "description": "Long trail avec D+ significatif — 82% de la distance EFD race",
+              "durationMinutes": 210,
+              "distanceMeters": 18000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 7,
+              "humanReadable": "3h30 trail Z2 — 18 km plat + 1300m D+ → EFD 31 km\nFC 148–162 bpm, marche en montée\nNutrition race : gel à 45, 90, 135 min + eau régulière\nDernière heure : gérer la fatigue, maintenir la forme\nRécupération post-sortie dans les 90 min (protéines + glucides)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-19",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w14-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet — récupération prioritaire avant Phase 3",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.8,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 5.08,
+            "km": 47.5
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 15,
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-26",
+      "phase": "Build trail",
+      "focus": "Récup Build + test validation — aptitude Spécificité confirmée",
+      "targetHours": 3.9,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2026-07-20",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w15-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-21",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w15-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Trail léger Z1-Z2",
+              "description": "Semaine récup — jambes fraîches pour le test validation samedi",
+              "durationMinutes": 30,
+              "distanceMeters": 5000,
+              "primaryZone": "Zone 1-2",
+              "targetHR": {
+                "low": 120,
+                "high": 155
+              },
+              "rpe": 3,
+              "humanReadable": "30 min trail léger Z1-Z2 — 5 km + 100m D+\nFC < 155 bpm, allure très facile\nÉconomiser les jambes pour le test validation samedi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-22",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w15-wed-str",
+              "sport": "strength",
+              "type": "recovery",
+              "name": "Gainage léger",
+              "durationMinutes": 20,
+              "humanReadable": "15 min gainage (2 rounds) :\n  Planche : 45s\n  Planche latérale : 25s/côté\n  Dead bug : 8 reps/côté\n\n5 min étirements ciblés\n\nTrès léger — semaine de récup, juste maintenir le tonus",
+              "completed": false,
+              "description": "Gainage uniquement — récup, pas de circuit complet"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-23",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w15-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "durationMinutes": 35,
+              "distanceMeters": 6000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "35 min footing Z1 — garder les jambes fraîches\nEFD cible : ~6 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-24",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w15-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-25",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w15-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "TEST VALIDATION pré-Spécificité — 26 km EFD",
+              "durationMinutes": 180,
+              "distanceMeters": 18000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 6,
+              "humanReadable": "3h trail Z2 — 18 km plat + 1000m D+ → EFD 28 km\nLégère décharge avant Phase 3 — ne pas forcer\nNutrition : gel à 45, 90, 135 min\nDernière longue avant les back-to-back de Phase 3",
+              "completed": false,
+              "description": "Sortie test : valider l'aptitude aux back-to-back de S16. 26 km EFD + 1000m D+. Si tu termines en forme → GO Spécificité. Si tu souffres trop → recalibre S16 J1 à 18 km EFD."
+            }
+          ]
+        },
+        {
+          "date": "2026-07-26",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w15-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Récupération — Phase 3 commence lundi",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 3.9,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 3.17,
+            "km": 27
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.33
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 16,
+      "startDate": "2026-07-27",
+      "endDate": "2026-08-02",
+      "phase": "Spécificité montagne",
+      "focus": "Intro back-to-back weekend + intervalles verticaux — Phase 3 démarre",
+      "targetHours": 5.5,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-07-27",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w16-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-28",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w16-tue-run",
+              "sport": "run",
+              "type": "hills",
+              "name": "Intervalles verticaux",
+              "description": "IV en Phase 3 — allures maîtrisées, économiser pour le back-to-back",
+              "durationMinutes": 75,
+              "distanceMeters": 8000,
+              "primaryZone": "Zone 3-4",
+              "targetHR": {
+                "low": 163,
+                "high": 178
+              },
+              "rpe": 7,
+              "humanReadable": "75 min — 8 km + 400m D+ → EFD ~12 km\n\nÉchauffement : 15 min Z1→Z2\nPrincipal : 4 × (10 min montée Z3-Z4 + 5 min descente Z1)\nRetour au calme : 10 min Z1\n\nNote : back-to-back samedi-dimanche — ne pas vider le réservoir aujourd'hui",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement progressif",
+                    "duration": {
+                      "value": 15,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 148
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "interval_set",
+                    "name": "Montée seuil / descente récup",
+                    "repeats": 4,
+                    "steps": [
+                      {
+                        "type": "work",
+                        "name": "Montée seuil",
+                        "duration": {
+                          "value": 10,
+                          "unit": "minutes"
+                        },
+                        "intensity": {
+                          "unit": "hr_zone",
+                          "value": 4,
+                          "valueLow": 163,
+                          "valueHigh": 178
+                        },
+                        "notes": "Effort soutenu montée, cadence courte, appui avant-pied"
+                      },
+                      {
+                        "type": "recovery",
+                        "name": "Descente récupération",
+                        "duration": {
+                          "value": 5,
+                          "unit": "minutes"
+                        },
+                        "intensity": {
+                          "unit": "hr_zone",
+                          "value": 1,
+                          "valueLow": 110,
+                          "valueHigh": 148
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme",
+                    "duration": {
+                      "value": 10,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 140
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-29",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w16-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg RDL : 8 reps/jambe\n  Calf raises excentrique : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-30",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w16-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos — préserver les jambes pour le back-to-back",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-07-31",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w16-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet avant back-to-back",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-01",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w16-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Back-to-back J1 — Sortie montagne",
+              "description": "J1 du premier back-to-back. Effort contrôlé Z2 — garder des ressources pour demain.",
+              "durationMinutes": 135,
+              "distanceMeters": 15000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 6,
+              "humanReadable": "2h15 trail Z2 — 15 km plat + 700m D+ → EFD 22 km\nFC 148–162 bpm, effort très contrôlé\nObjectif : arriver fatigué mais PAS épuisé — demain compte aussi\nNutrition : gel à 45, 90 min. Dîner récupération ce soir (protéines + glucides).",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-02",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w16-sun-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Back-to-back J2 — Sortie montagne",
+              "description": "J2 avec jambes volontairement fatiguées. Apprendre à courir fatigué.",
+              "durationMinutes": 75,
+              "distanceMeters": 10000,
+              "primaryZone": "Zone 1-2",
+              "targetHR": {
+                "low": 130,
+                "high": 162
+              },
+              "rpe": 5,
+              "humanReadable": "1h15 trail Z1-Z2 — 10 km plat + 250m D+ → EFD ~12.5 km\nJambes fatiguées = normal et voulu\nFC peut être plus haute qu'habituellement pour même vitesse — c'est l'objectif\nAllure très modérée, ne pas forcer",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.5,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 4.75,
+            "km": 46.5
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 17,
+      "startDate": "2026-08-03",
+      "endDate": "2026-08-09",
+      "phase": "Spécificité montagne",
+      "focus": "Pic de volume — back-to-back avec long trail 32 EFD (84% course)",
+      "targetHours": 6.4,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-08-03",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w17-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Récupération prioritaire après back-to-back S14",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-04",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w17-tue",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Récupération après back-to-back S16 — séance déplacée jeudi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-05",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w17-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg RDL : 8 reps/jambe\n  Calf raises excentrique : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-06",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w17-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Trail léger Z2 — D+ mid-semaine",
+              "description": "Séance déplacée depuis mardi — trail léger avec D+ pour activer les jambes à 2 jours du back-to-back pic. Vrai repos vendredi.",
+              "durationMinutes": 45,
+              "distanceMeters": 7000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 4,
+              "humanReadable": "45 min trail Z2 — 7 km + 200m D+ → EFD ~9 km\nFC 148–162 bpm, allure confortable\nD+ mid-semaine pic : habituer les quadriceps avant le back-to-back\nVendredi = repos complet — ne pas ajouter de séance",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-07",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w17-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet — hydratation, nutrition optimale",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-08",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w17-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Back-to-back J1 — Long trail pic",
+              "description": "Sortie la plus longue du plan. 84% de la distance EFD Wild 25. Gestion pacing et nutrition en conditions race.",
+              "durationMinutes": 225,
+              "distanceMeters": 18000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 165
+              },
+              "rpe": 7,
+              "humanReadable": "3h45 trail Z2 — 18 km plat + 1400m D+ → EFD 32 km\nFC 148–165 bpm (Z2, Z3 toléré en montée courte)\nNutrition complète race-day : gel à 45, 90, 135, 180 min + eau régulière\nSi disponible : terrain alpin avec 2 ascensions (simulation Wild 25)\nDîner récupération immédiat ce soir — ne pas négliger",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-09",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w17-sun-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Back-to-back J2 — Récupération active trail",
+              "description": "Très court J2 — jambes épuisées, objectif : tenir debout sur le terrain",
+              "durationMinutes": 70,
+              "distanceMeters": 8000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 120,
+                "high": 155
+              },
+              "rpe": 4,
+              "humanReadable": "1h10 trail Z1 — 8 km plat + 200m D+ → EFD ~10 km\nFC < 155 bpm, allure très facile\nJambes fatiguées = succès du back-to-back\nL'affûtage commence la semaine prochaine",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 6.4,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 5.67,
+            "km": 50
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 18,
+      "startDate": "2026-08-10",
+      "endDate": "2026-08-16",
+      "phase": "Spécificité montagne",
+      "focus": "Consolidation — sortie longue standalone, reconnaissance terrain Wild 25 si possible",
+      "targetHours": 4.9,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-08-10",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w18-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Récupération après back-to-back peak S15",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-11",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w18-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Trail léger Z1 — D+ mid-semaine",
+              "description": "Récupération sur terrain trail avec petit D+ — habituer le corps au D+ hors weekend",
+              "durationMinutes": 40,
+              "distanceMeters": 7000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "40 min trail Z1 — 7 km + 150m D+ → EFD ~8.5 km\nFC < 148 bpm, allure très facile\nRécupérer du back-to-back S17 — ne pas forcer",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-12",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w18-wed-str",
+              "sport": "strength",
+              "type": "endurance",
+              "name": "Renforcement musculaire",
+              "durationMinutes": 45,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg RDL : 8 reps/jambe\n  Calf raises excentrique : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-13",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w18-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "durationMinutes": 30,
+              "distanceMeters": 5000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "30 min footing Z1 — très léger\nEFD cible : ~5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-14",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w18-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet avant sortie de reco",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-15",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w18-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie montagne — reconnaissance",
+              "description": "Sortie longue standalone. Si logistique possible : terrain Crans-Montana / Val d'Anniviers pour reconnaissance Wild 25.",
+              "durationMinutes": 180,
+              "distanceMeters": 16000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 6,
+              "humanReadable": "3h trail Z2 — 16 km plat + 1000m D+ → EFD 26 km\nIdéal : terrain type Wild 25 (Crans-Montana / Wildstrubel)\nFC 148–162 bpm, gestion autonomie nutrition\nConfirmer stratégie ravitaillements, tester équipement final\nDébut affûtage la semaine prochaine",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-16",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w18-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos — l'affûtage démarre lundi",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 4.9,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 4.17,
+            "km": 38
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.75
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 19,
+      "startDate": "2026-08-17",
+      "endDate": "2026-08-23",
+      "phase": "Affûtage",
+      "focus": "Volume -45% — maintien terrain trail, légère qualité",
+      "targetHours": 3.8,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-08-17",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w19-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-18",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w19-tue-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Aérobie Z2 trail léger",
+              "durationMinutes": 45,
+              "distanceMeters": 8000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 4,
+              "humanReadable": "45 min trail léger Z2 — 8 km + 150m D+ → EFD ~9.5 km\nFC 148–162 bpm, allure confortable\nAffûtage : moins de volume, même sensation de légèreté",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-19",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w19-wed-str",
+              "sport": "strength",
+              "type": "recovery",
+              "name": "Renforcement léger affûtage",
+              "durationMinutes": 40,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (2 rounds — léger) :\n  Squats : 10 reps\n  Fentes marchées : 8 reps/jambe\n  Calf raises : 12 reps\n\nCircuit B — Gainage (2 rounds) :\n  Planche : 45s\n  Planche latérale : 25s/côté\n  Dead bug : 8 reps/côté\n\nÉtirements ciblés (10 min) : mollets, quadriceps, fléchisseurs hanche",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-20",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w19-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Récupération active",
+              "durationMinutes": 30,
+              "distanceMeters": 5000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 3,
+              "humanReadable": "30 min footing Z1 — route plate\nEFD cible : ~5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-21",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w19-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-22",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w19-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Trail affûtage",
+              "description": "Long trail réduit — maintenir les sensations trail sans fatigue",
+              "durationMinutes": 105,
+              "distanceMeters": 11000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 5,
+              "humanReadable": "1h45 trail Z2 — 11 km + 400m D+ → EFD 15 km\nFC 148–162 bpm, allure relâchée\nDernière longue trail avant la course\nTest final équipement et nutrition si pas encore confirmé",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-23",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w19-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 3.8,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 3,
+            "km": 29.5
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.67
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 20,
+      "startDate": "2026-08-24",
+      "endDate": "2026-08-30",
+      "phase": "Affûtage",
+      "focus": "Volume encore réduit — dernière touche de qualité trail",
+      "targetHours": 2.9,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-08-24",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w20-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga doux",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-25",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w20-tue-run",
+              "sport": "run",
+              "type": "hills",
+              "name": "Simulation course Wild 25",
+              "description": "Simulation allure Wild 25 : 3 portions à allure course (Z2 haute / Z3 basse) sur terrain trail avec descentes incluses.",
+              "durationMinutes": 60,
+              "distanceMeters": 9000,
+              "primaryZone": "Zone 2-3",
+              "targetHR": {
+                "low": 148,
+                "high": 172
+              },
+              "rpe": 5,
+              "humanReadable": "60 min trail — 9 km + 400m D+ → EFD ~13 km\n\nÉchauffement : 15 min Z1-Z2 progressif\nPrincipal (30 min) : 3 × (8-10 min allure course + 5 min récup Z2)\n  → Allure course : Z2 haute / Z3 basse, FC 162–172 bpm\n  → Inclure descentes à allure soutenue sur au moins 2 portions\n  → Terrain trail avec relief, ne pas faire ça sur route\nRetour au calme : 15 min Z1\n\nObjectif : sentir l'allure Wild 25 sans se fatiguer — calibrer les sensations avant J-18",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement Z1-Z2",
+                    "duration": {
+                      "value": 15,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 155
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "interval_set",
+                    "name": "Simulation allure course",
+                    "repeats": 3,
+                    "steps": [
+                      {
+                        "type": "work",
+                        "name": "Allure course (montée + descente)",
+                        "duration": {
+                          "value": 9,
+                          "unit": "minutes"
+                        },
+                        "intensity": {
+                          "unit": "hr_zone",
+                          "value": 3,
+                          "valueLow": 162,
+                          "valueHigh": 172
+                        },
+                        "notes": "Allure Wild 25 — Z2 haute / Z3 basse. Inclure descentes techniques. FC 162-172 bpm."
+                      },
+                      {
+                        "type": "recovery",
+                        "name": "Récupération Z2",
+                        "duration": {
+                          "value": 5,
+                          "unit": "minutes"
+                        },
+                        "intensity": {
+                          "unit": "hr_zone",
+                          "value": 2,
+                          "valueLow": 148,
+                          "valueHigh": 162
+                        },
+                        "notes": "Récupération active sur terrain trail"
+                      }
+                    ]
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme Z1",
+                    "duration": {
+                      "value": 15,
+                      "unit": "minutes"
+                    },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 145
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-26",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w20-wed-str",
+              "sport": "strength",
+              "type": "recovery",
+              "name": "Renforcement maintenance",
+              "durationMinutes": 35,
+              "humanReadable": "Échauffement (5 min)\n\nCircuit maintenance (2 rounds, charges légères) :\n  Squats : 10 reps\n  Fentes : 8 reps/jambe\n  Calf raises : 12 reps\n  Planche : 45s\n  Planche latérale : 25s/côté\n  Dead bug : 8 reps/côté\n\nÉtirements ciblés (10 min)",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-27",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w20-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou marche légère",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-28",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w20-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-29",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w20-sat-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Trail court Z2",
+              "durationMinutes": 80,
+              "distanceMeters": 9000,
+              "primaryZone": "Zone 2",
+              "targetHR": {
+                "low": 148,
+                "high": 162
+              },
+              "rpe": 4,
+              "humanReadable": "1h20 trail Z2 — 9 km + 250m D+ → EFD ~11.5 km\nAllure détendue, maintenir les sensations trail\nConfirmer que l'équipement race est prêt",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-08-30",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w20-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Dernière semaine d'affûtage qui commence lundi",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 2.9,
+        "bySport": {
+          "run": {
+            "sessions": 2,
+            "hours": 2.33,
+            "km": 24
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.58
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 21,
+      "startDate": "2026-08-31",
+      "endDate": "2026-09-06",
+      "phase": "Affûtage",
+      "focus": "Semaine pré-race — footings légers uniquement, logistique Crans-Montana",
+      "targetHours": 1.4,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2026-08-31",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w21-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga doux",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-01",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w21-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Footing léger Z1-Z2",
+              "durationMinutes": 35,
+              "distanceMeters": 6000,
+              "primaryZone": "Zone 1-2",
+              "targetHR": {
+                "low": 120,
+                "high": 155
+              },
+              "rpe": 3,
+              "humanReadable": "35 min footing léger — route plate\nFC < 155 bpm, allure très confortable\nEFD cible : ~6 km\nPas d'effort, juste bouger",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-02",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w21-wed-str",
+              "sport": "strength",
+              "type": "recovery",
+              "name": "Gainage léger",
+              "description": "Gainage uniquement — pas de circuit complet cette semaine",
+              "durationMinutes": 20,
+              "humanReadable": "15 min gainage (2 rounds) :\n  Planche : 45s\n  Planche latérale : 25s/côté\n  Dead bug : 8 reps/côté\n\n5 min étirements ciblés\n\nTrès léger — juste maintenir le tonus",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-03",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w21-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou marche",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-04",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w21-fri-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Footing léger Z1",
+              "durationMinutes": 20,
+              "distanceMeters": 4000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 2,
+              "humanReadable": "20 min footing très léger — route plate\nFC < 148 bpm, quelques foulées légèrement plus vives (3×10s)\nEFD cible : ~4 km\nPréparer le matériel de course ce week-end",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-05",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w21-sat",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos complet",
+              "description": "Repos — voyage Crans-Montana si besoin, préparation matériel",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-06",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w21-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos complet",
+              "description": "Repos — hydratation, récupération, repas pré-race léger ce soir",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 1.4,
+        "bySport": {
+          "run": {
+            "sessions": 2,
+            "hours": 0.92,
+            "km": 10
+          },
+          "strength": {
+            "sessions": 1,
+            "hours": 0.33
+          }
+        }
+      }
+    },
+    {
+      "weekNumber": 22,
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-13",
+      "phase": "Race week",
+      "focus": "Activation minimale + Wild 25 dimanche",
+      "targetHours": 5.5,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-09-07",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w22-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou marche très légère",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-08",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w22-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Activation légère",
+              "durationMinutes": 25,
+              "distanceMeters": 5000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 2,
+              "humanReadable": "25 min footing Z1 — route plate\n3-4 accélérations légères de 10s pour activer\nEFD cible : ~5 km\nRester frais, ne rien forcer",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-09",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w22-wed",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet — pas de renforcement cette semaine",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-10",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w22-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Activation légère",
+              "durationMinutes": 20,
+              "distanceMeters": 4000,
+              "primaryZone": "Zone 1",
+              "targetHR": {
+                "low": 100,
+                "high": 148
+              },
+              "rpe": 2,
+              "humanReadable": "20 min footing Z1 — très léger\n3 accélérations de 10s à allure course\nDernier footing avant le départ\nEFD cible : ~4 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-11",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w22-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos complet",
+              "description": "Repos — check logistique finale, matériel posé",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-12",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w22-sat",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos complet",
+              "description": "Repos — arrivée Crans-Montana si besoin, repas pré-race pâtes le soir, coucher tôt",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-13",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w22-sun-race",
+              "sport": "race",
+              "type": "race",
+              "name": "Wild 25 — Wildstrubel 2026",
+              "description": "COURSE ! 26 km / 1200m D+ / EFD 38 km — Crans-Montana, Valais suisse",
+              "durationMinutes": 210,
+              "distanceMeters": 26000,
+              "primaryZone": "Zone 2-3",
+              "targetHR": {
+                "low": 148,
+                "high": 175
+              },
+              "rpe": 8,
+              "humanReadable": "Wild 25 — Wildstrubel 2026\n26 km / 1200m D+ / EFD 38 km — Crans-Montana\n\nStratégie pacing :\n- Partir prudemment sur les 2 premières montées (Z2, ne pas exploser)\n- Marcher les montées raides dès que FC > 170 bpm\n- Gérer les descentes techniques (quadriceps)\n- Objectif : 3h00–4h30 selon forme du jour\n\nNutrition :\n- Bircher léger J matin (J-3h avant départ)\n- Gel Energix à 45 min, Antioxydant à 90 min, Coup de fouet à 120+ min\n- Banane aux ravitaillements\n- Red Tonic caféine dans le dernier km\n- Eau : 500–700 ml/h\n\nCues mentaux :\n- Partir lentement, finir fort\n- Marcher = stratégie, pas faiblesse\n- Profiter du panorama Wildstrubel !",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.5,
+        "bySport": {
+          "run": {
+            "sessions": 3,
+            "hours": 4.25,
+            "km": 47
+          }
+        }
+      }
+    }
+  ],
+  "raceStrategy": {
+    "event": {
+      "name": "Wild 25 — Wildstrubel 2026",
+      "date": "2026-09-13",
+      "type": "trail_alpine"
+    },
+    "pacing": {
+      "run": {
+        "targetPace": "Zone 2 base, Z3 tolérée en montée courte — priorité gestion FC",
+        "targetHR": "148-175",
+        "notes": "Partir prudemment sur les 2 premières ascensions. Marcher systématiquement quand FC > 170 bpm en montée. Gérer les descentes techniques (quadriceps en fin de course). Objectif plaisir : 3h00-4h30."
+      }
+    },
+    "nutrition": {
+      "preRace": "J-2 : pâtes saumon (dîner récupération). J-1 soir : pâtes simples, peu de fibres. J matin (3h avant départ) : Bircher muesli léger (~300 kcal) + café + jus d'orange.",
+      "during": {
+        "carbsPerHour": 70,
+        "fluidPerHour": "500-700 ml selon température",
+        "products": [
+          "Overstims Energix (0-60 min)",
+          "Overstims Antioxydant (60-120 min)",
+          "Overstims Coup de fouet (120+ min)",
+          "Banane aux ravitaillements",
+          "Overstims Red Tonic caféine (dernier km)"
+        ]
+      },
+      "notes": "Commencer à manger dès 45 min même sans faim. Prévoir 3-4 gels selon durée estimée. Entraîné sur au moins 3 sorties longues avec ce fueling."
+    },
+    "taper": {
+      "startDate": "2026-08-17",
+      "volumeReduction": 45,
+      "notes": "Réduction progressive sur 4 semaines (S17-S20). Maintenir la proportion terrain trail. Dernier long trail S17, dernière qualité S18, footings légers S19-S20."
+    },
+    "raceDay": {
+      "wakeUpTime": "Selon horaire départ course officiel",
+      "preRaceMeal": "Bircher muesli léger 300 kcal + café + jus d'orange — 2h30-3h avant départ",
+      "warmUp": "15-20 min marche-footing très léger Z1, quelques montées courtes pour activer les jambes",
+      "mentalCues": [
+        "Partir lentement — les premiers kilomètres seront tentants",
+        "Marcher les montées raides = stratégie gagnante",
+        "Gérer les descentes — quadriceps précieux en fin de course",
+        "Profiter du panorama Wildstrubel — c'est pour ça qu'on est là !",
+        "Sierre-Zinal était plus dur que ça — tu es prêt"
+      ]
+    }
+  }
+}

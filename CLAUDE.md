@@ -6,6 +6,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Réponds toujours en français dans ce projet.
 
+## Règle de modification du plan d'entraînement
+
+Source unique de vérité : `data/wild25-2026.json` (versionné dans ce dépôt).
+HTML de consultation : `data/wild25-2026.html` (versionné aussi).
+
+À chaque modification du plan, l'agent DOIT dans cet ordre :
+
+1. Éditer `data/wild25-2026.json` (jamais `~/.claude-coach/`)
+2. Régénérer le HTML : `node dist/cli.js render data/wild25-2026.json --output=data/wild25-2026.html`
+3. Vérifier le HTML par grep/parse avant d'annoncer la modif faite
+4. `git add data/ && git commit` avec un message décrivant le changement de plan
+
+Ne jamais annoncer "fait" sans avoir exécuté les étapes 2 et 3.
+
 ## Decisions log
 
 ### 2026-04-26 — Import archive Garmin (one-shot)
