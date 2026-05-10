@@ -30929,7 +30929,7 @@ ${a.join(`
               u = Dl(n.duration?.value ?? 0, n.duration?.unit ?? "minutes"),
               m = {
                 messageIndex: t,
-                workoutStepName: n.name || "",
+                wktStepName: n.name || "",
                 intensity: Il(n.type),
                 durationType: l,
                 durationValue: u,
@@ -30946,7 +30946,7 @@ ${a.join(`
                   break;
                 case "percent_lthr":
                 case "hr_zone":
-                  ((m.targetType = "heart_rate"),
+                  ((m.targetType = "heartRate"),
                     (m.targetValue = 0),
                     n.intensity.valueLow !== void 0 && n.intensity.valueHigh !== void 0
                       ? ((m.customTargetValueLow = n.intensity.valueLow),
@@ -30976,8 +30976,8 @@ ${a.join(`
             for (const m of n.steps) l.push(a(m, !0));
             const u = {
               messageIndex: o,
-              workoutStepName: n.name || "Intervals",
-              durationType: "repeat_until_steps_cmplt",
+              wktStepName: n.name || "Intervals",
+              durationType: "repeatUntilStepsCmplt",
               durationValue: n.repeats,
               targetType: "open",
               intensity: "interval",
@@ -30995,7 +30995,7 @@ ${a.join(`
           a = Math.min(15, Math.max(5, Math.round(t * 0.1)));
         s.push({
           messageIndex: 0,
-          workoutStepName: "Warm Up",
+          wktStepName: "Warm Up",
           intensity: "warmup",
           durationType: "time",
           durationValue: a * 60 * 1e3,
@@ -31012,7 +31012,7 @@ ${a.join(`
               : (e.type === "intervals" || e.type === "vo2max") && (o = "interval"),
           s.push({
             messageIndex: 1,
-            workoutStepName: "Main Set",
+            wktStepName: "Main Set",
             intensity: o,
             durationType: "time",
             durationValue: n * 60 * 1e3,
@@ -31021,7 +31021,7 @@ ${a.join(`
           }),
           s.push({
             messageIndex: 2,
-            workoutStepName: "Cool Down",
+            wktStepName: "Cool Down",
             intensity: "cooldown",
             durationType: "time",
             durationValue: i * 60 * 1e3,
@@ -31042,7 +31042,7 @@ ${a.join(`
         });
         const { steps: a, totalSteps: i } = e.structure ? Bl(e.structure) : Ml(e);
         t.onMesg(Ds.MesgNum.WORKOUT, {
-          workoutName: e.name,
+          wktName: e.name,
           sport: Pl(e.sport),
           subSport: Rl(e.sport),
           numValidSteps: i,

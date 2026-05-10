@@ -155,7 +155,7 @@ function generateStepsFromStructure(structure: StructuredWorkout): {
 
     const fitStep: any = {
       messageIndex: stepIndex,
-      workoutStepName: step.name || "",
+      wktStepName: step.name || "",
       intensity: getStepIntensity(step.type),
       durationType: durationType,
       durationValue: durationValue,
@@ -174,7 +174,7 @@ function generateStepsFromStructure(structure: StructuredWorkout): {
           break;
         case "percent_lthr":
         case "hr_zone":
-          fitStep.targetType = "heart_rate";
+          fitStep.targetType = "heartRate";
           fitStep.targetValue = 0;
           // HR zone values need to be actual BPM if available
           if (step.intensity.valueLow !== undefined && step.intensity.valueHigh !== undefined) {
@@ -222,8 +222,8 @@ function generateStepsFromStructure(structure: StructuredWorkout): {
     // Create the repeat step
     const repeatStep: any = {
       messageIndex: repeatStepIndex,
-      workoutStepName: intervalSet.name || "Intervals",
-      durationType: "repeat_until_steps_cmplt",
+      wktStepName: intervalSet.name || "Intervals",
+      durationType: "repeatUntilStepsCmplt",
       durationValue: intervalSet.repeats,
       targetType: "open",
       intensity: "interval",
@@ -271,7 +271,7 @@ function generateSimpleSteps(workout: Workout): { steps: any[]; totalSteps: numb
   const warmupMinutes = Math.min(15, Math.max(5, Math.round(totalMinutes * 0.1)));
   steps.push({
     messageIndex: 0,
-    workoutStepName: "Warm Up",
+    wktStepName: "Warm Up",
     intensity: "warmup",
     durationType: "time",
     durationValue: warmupMinutes * 60 * 1000,
@@ -289,7 +289,7 @@ function generateSimpleSteps(workout: Workout): { steps: any[]; totalSteps: numb
 
   steps.push({
     messageIndex: 1,
-    workoutStepName: "Main Set",
+    wktStepName: "Main Set",
     intensity: mainIntensity,
     durationType: "time",
     durationValue: mainMinutes * 60 * 1000,
@@ -300,7 +300,7 @@ function generateSimpleSteps(workout: Workout): { steps: any[]; totalSteps: numb
   // Cooldown (10% of total, 5-10 min)
   steps.push({
     messageIndex: 2,
-    workoutStepName: "Cool Down",
+    wktStepName: "Cool Down",
     intensity: "cooldown",
     durationType: "time",
     durationValue: cooldownMinutes * 60 * 1000,
@@ -336,7 +336,7 @@ export async function generateFit(workout: Workout, _settings: Settings): Promis
 
   // Workout message
   encoder.onMesg(Profile.MesgNum.WORKOUT, {
-    workoutName: workout.name,
+    wktName: workout.name,
     sport: getFitSport(workout.sport),
     subSport: getFitSubSport(workout.sport),
     numValidSteps: totalSteps,
