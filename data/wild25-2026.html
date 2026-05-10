@@ -30860,15 +30860,13 @@ ${a.join(`
       function Rl(e) {
         switch (e) {
           case "swim":
-            return "lap_swimming";
+            return "lapSwimming";
           case "bike":
             return "road";
           case "run":
-            return "road";
+            return "street";
           case "strength":
-            return "strength_training";
-          case "brick":
-            return "triathlon";
+            return "strengthTraining";
           default:
             return "generic";
         }
@@ -30954,12 +30952,12 @@ ${a.join(`
                       : (m.targetValue = g));
                   break;
                 case "rpe":
-                  m.targetType = "open";
+                  ((m.targetType = "open"), (m.targetValue = 0));
                   break;
                 default:
-                  m.targetType = "open";
+                  ((m.targetType = "open"), (m.targetValue = 0));
               }
-            } else m.targetType = "open";
+            } else ((m.targetType = "open"), (m.targetValue = 0));
             return (
               n.cadence &&
                 ((m.customTargetCadenceLow = n.cadence.low ?? 80),
@@ -30980,6 +30978,7 @@ ${a.join(`
               durationType: "repeatUntilStepsCmplt",
               durationValue: n.repeats,
               targetType: "open",
+              targetValue: 0,
               intensity: "interval",
             };
             (s.splice(o, 0, u), t++);
@@ -31000,24 +30999,30 @@ ${a.join(`
           durationType: "time",
           durationValue: a * 60 * 1e3,
           targetType: "open",
+          targetValue: 0,
         });
         const i = Math.min(10, Math.max(5, Math.round(t * 0.1))),
           n = t - a - i;
         let o = "active";
+        e.type === "recovery"
+          ? (o = "recovery")
+          : e.type === "rest"
+            ? (o = "rest")
+            : (e.type === "intervals" || e.type === "vo2max") && (o = "interval");
+        const l = e.targetHR?.low != null && e.targetHR?.high != null;
         return (
-          e.type === "recovery"
-            ? (o = "recovery")
-            : e.type === "rest"
-              ? (o = "rest")
-              : (e.type === "intervals" || e.type === "vo2max") && (o = "interval"),
           s.push({
             messageIndex: 1,
             wktStepName: "Main Set",
             intensity: o,
             durationType: "time",
             durationValue: n * 60 * 1e3,
-            targetType: "open",
-            notes: e.description || "",
+            targetType: l ? "heartRate" : "open",
+            targetValue: 0,
+            ...(l && {
+              customTargetValueLow: e.targetHR.low,
+              customTargetValueHigh: e.targetHR.high,
+            }),
           }),
           s.push({
             messageIndex: 2,
@@ -31026,6 +31031,7 @@ ${a.join(`
             durationType: "time",
             durationValue: i * 60 * 1e3,
             targetType: "open",
+            targetValue: 0,
           }),
           { steps: s, totalSteps: 3 }
         );
@@ -31035,8 +31041,8 @@ ${a.join(`
         const t = new El();
         t.onMesg(Ds.MesgNum.FILE_ID, {
           type: "workout",
-          manufacturer: "development",
-          product: 1,
+          manufacturer: "garmin",
+          product: 65534,
           serialNumber: Math.floor(Math.random() * 1e6),
           timeCreated: new Date(),
         });

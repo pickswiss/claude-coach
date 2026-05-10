@@ -61,15 +61,13 @@ function getFitSport(sport: Sport): string {
 function getFitSubSport(sport: Sport): string {
   switch (sport) {
     case "swim":
-      return "lap_swimming";
+      return "lapSwimming";
     case "bike":
       return "road";
     case "run":
-      return "road";
+      return "street";
     case "strength":
-      return "strength_training";
-    case "brick":
-      return "triathlon";
+      return "strengthTraining";
     default:
       return "generic";
   }
@@ -186,14 +184,16 @@ function generateStepsFromStructure(structure: StructuredWorkout): {
           }
           break;
         case "rpe":
-          // No direct RPE support in FIT, use open target
           fitStep.targetType = "open";
+          fitStep.targetValue = 0;
           break;
         default:
           fitStep.targetType = "open";
+          fitStep.targetValue = 0;
       }
     } else {
       fitStep.targetType = "open";
+      fitStep.targetValue = 0;
     }
 
     // Add cadence target if present
@@ -226,6 +226,7 @@ function generateStepsFromStructure(structure: StructuredWorkout): {
       durationType: "repeatUntilStepsCmplt",
       durationValue: intervalSet.repeats,
       targetType: "open",
+      targetValue: 0,
       intensity: "interval",
     };
 
@@ -276,6 +277,7 @@ function generateSimpleSteps(workout: Workout): { steps: any[]; totalSteps: numb
     durationType: "time",
     durationValue: warmupMinutes * 60 * 1000,
     targetType: "open",
+    targetValue: 0,
   });
 
   // Main (80% of total)
@@ -287,14 +289,19 @@ function generateSimpleSteps(workout: Workout): { steps: any[]; totalSteps: numb
   else if (workout.type === "rest") mainIntensity = "rest";
   else if (workout.type === "intervals" || workout.type === "vo2max") mainIntensity = "interval";
 
+  const hasHrTarget = workout.targetHR?.low != null && workout.targetHR?.high != null;
   steps.push({
     messageIndex: 1,
     wktStepName: "Main Set",
     intensity: mainIntensity,
     durationType: "time",
     durationValue: mainMinutes * 60 * 1000,
-    targetType: "open",
-    notes: workout.description || "",
+    targetType: hasHrTarget ? "heartRate" : "open",
+    targetValue: 0,
+    ...(hasHrTarget && {
+      customTargetValueLow: workout.targetHR!.low,
+      customTargetValueHigh: workout.targetHR!.high,
+    }),
   });
 
   // Cooldown (10% of total, 5-10 min)
@@ -305,6 +312,7 @@ function generateSimpleSteps(workout: Workout): { steps: any[]; totalSteps: numb
     durationType: "time",
     durationValue: cooldownMinutes * 60 * 1000,
     targetType: "open",
+    targetValue: 0,
   });
 
   return { steps, totalSteps: 3 };
@@ -323,8 +331,8 @@ export async function generateFit(workout: Workout, _settings: Settings): Promis
   // File ID message (required)
   encoder.onMesg(Profile.MesgNum.FILE_ID, {
     type: "workout",
-    manufacturer: "development",
-    product: 1,
+    manufacturer: "garmin",
+    product: 65534,
     serialNumber: Math.floor(Math.random() * 1000000),
     timeCreated: new Date(),
   });
