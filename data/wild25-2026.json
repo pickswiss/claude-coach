@@ -8,7 +8,7 @@
     "planStartDate": "2026-04-13",
     "planEndDate": "2026-09-13",
     "createdAt": "2026-04-28T00:00:00Z",
-    "updatedAt": "2026-04-29T00:00:00Z",
+    "updatedAt": "2026-05-10T00:00:00Z",
     "totalWeeks": 22,
     "generatedBy": "Claude Coach"
   },
@@ -694,7 +694,8 @@
               },
               "rpe": 3,
               "humanReadable": "35 min route — FC 120–155 bpm\nCommencer à sentir le plaisir de courir à nouveau\nEFD cible : ~6 km",
-              "completed": false
+              "completed": false,
+              "note": "Non fait — hanche irritée, décalé"
             }
           ]
         },
@@ -719,12 +720,22 @@
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w4-thu",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Repos",
-              "description": "Repos complet",
-              "completed": false
+              "id": "w4-thu-run-actual",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Footing récupération",
+              "description": "Séance réelle Strava — décalée du mardi au jeudi",
+              "durationMinutes": 40,
+              "distanceMeters": 6275,
+              "completed": true,
+              "stravaActivity": {
+                "name": "Afternoon Run",
+                "date": "2026-05-07",
+                "distance_m": 6274.5,
+                "moving_time_s": 2398,
+                "pace_s_per_km": 382
+              },
+              "humanReadable": "40 min footing — 6.27 km @ 6'22\"/km\nSéance réelle (décalée du mardi) — prudence hanche"
             }
           ]
         },
@@ -761,7 +772,8 @@
               },
               "rpe": 4,
               "humanReadable": "50 min trail Z2 — 8 km + 150m D+ → EFD ~9.5 km\nFC 148–162 bpm, allure naturelle\nPremière sortie trail de la phase Base — terrain vallonné",
-              "completed": false
+              "completed": false,
+              "note": "Non fait — hanche irritée samedi"
             }
           ]
         },
@@ -792,6 +804,16 @@
             "sessions": 1,
             "hours": 0.75
           }
+        },
+        "actual": {
+          "run": {
+            "sessions": 1,
+            "km": 6.3,
+            "hours": 0.67
+          },
+          "strength": {
+            "sessions": 0
+          }
         }
       }
     },
@@ -800,7 +822,7 @@
       "startDate": "2026-05-11",
       "endDate": "2026-05-17",
       "phase": "Base — Retour terrain trail",
-      "focus": "Trail mid-semaine, D+ progressif samedi (~11 EFD)",
+      "focus": "Hanche mieux — 2 runs + renfo, jeudi repos",
       "targetHours": 2.9,
       "isRecoveryWeek": false,
       "days": [
@@ -860,20 +882,11 @@
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w5-thu-run",
-              "sport": "run",
-              "type": "recovery",
-              "name": "Trail léger Z1-Z2 — D+ mid-semaine",
-              "description": "Trail doux mid-semaine — confirmer la routine D+ hors weekend",
-              "durationMinutes": 35,
-              "distanceMeters": 5500,
-              "primaryZone": "Zone 1-2",
-              "targetHR": {
-                "low": 100,
-                "high": 155
-              },
-              "rpe": 3,
-              "humanReadable": "35 min trail Z1-Z2 — 5.5 km + 150m D+ → EFD ~7 km\nFC < 155 bpm, très facile\nD+ mid-semaine : habituer les quadriceps progressivement",
+              "id": "w5-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou pilates/yoga doux — écouter la hanche après mardi",
               "completed": false
             }
           ]
@@ -931,12 +944,12 @@
         }
       ],
       "summary": {
-        "totalHours": 3,
+        "totalHours": 2.25,
         "bySport": {
           "run": {
-            "sessions": 3,
-            "hours": 2.25,
-            "km": 23
+            "sessions": 2,
+            "hours": 1.67,
+            "km": 17
           },
           "strength": {
             "sessions": 1,
