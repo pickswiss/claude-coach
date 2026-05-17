@@ -8,7 +8,7 @@
     "planStartDate": "2026-04-13",
     "planEndDate": "2026-09-13",
     "createdAt": "2026-04-28T00:00:00Z",
-    "updatedAt": "2026-05-10T00:00:00Z",
+    "updatedAt": "2026-05-17T00:00:00Z",
     "totalWeeks": 22,
     "generatedBy": "Claude Coach"
   },
@@ -963,8 +963,8 @@
       "startDate": "2026-05-18",
       "endDate": "2026-05-24",
       "phase": "Base — Retour terrain trail",
-      "focus": "Premier long trail avec D+, retour aux appuis et descentes",
-      "targetHours": 4.1,
+      "focus": "Premier long trail avec D+, retour aux appuis et descentes — lancement renfo matinal mardi/jeudi",
+      "targetHours": 3.3,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -986,19 +986,12 @@
           "dayOfWeek": "Tuesday",
           "workouts": [
             {
-              "id": "w6-tue-run",
-              "sport": "run",
-              "type": "recovery",
-              "name": "Récupération active",
-              "durationMinutes": 30,
-              "distanceMeters": 5000,
-              "primaryZone": "Zone 1",
-              "targetHR": {
-                "low": 100,
-                "high": 148
-              },
-              "rpe": 3,
-              "humanReadable": "30 min footing Z1 — route plate\nFC < 148 bpm — garder les jambes fraîches pour le long trail samedi\nEFD cible : ~5 km",
+              "id": "w6-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal — Habitude #1",
+              "durationMinutes": 18,
+              "humanReadable": "Renfo matinal — 15-18 min (3 tours, 1 min repos entre exercices)\n\n1. Hip thrust poids de corps : 15 reps\n2. Fente bulgare (chaise/canapé) : 8 reps/jambe\n3. Abduction latérale allongée : 15 reps/côté\n4. Traction (ou rangée sous table) : max (min 3)\n5. Gainage latéral : 30s/côté\n\nObjectif S6 : installer l'habitude — priorité à la régularité, pas à l'intensité.",
               "completed": false
             }
           ]
@@ -1008,12 +1001,11 @@
           "dayOfWeek": "Wednesday",
           "workouts": [
             {
-              "id": "w6-wed-str",
-              "sport": "strength",
-              "type": "endurance",
-              "name": "Renforcement musculaire",
-              "durationMinutes": 45,
-              "humanReadable": "Échauffement (5 min)\n\nCircuit A — Bas du corps (3 rounds) :\n  Squats sautés : 10 reps\n  Fentes marchées : 10 reps/jambe\n  Single-leg RDL : 8 reps/jambe\n  Calf raises excentrique : 15 reps\n\nCircuit B — Haut + gainage (3 rounds) :\n  Tractions : max ou 5–8\n  Pompes : 12 reps\n  Planche latérale : 30s/côté\n  Dead bug : 10 reps/côté\n\nÉtirements (5 min)",
+              "id": "w6-wed",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos ou yoga/stretching",
               "completed": false
             }
           ]
@@ -1023,11 +1015,20 @@
           "dayOfWeek": "Thursday",
           "workouts": [
             {
+              "id": "w6-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal — Habitude #2",
+              "durationMinutes": 18,
+              "humanReadable": "Renfo matinal — 15-18 min (3 tours, 1 min repos entre exercices)\n\n1. Hip thrust poids de corps : 15 reps\n2. Fente bulgare (chaise/canapé) : 8 reps/jambe\n3. Abduction latérale allongée : 15 reps/côté\n4. Traction (ou rangée sous table) : max (min 3)\n5. Gainage latéral : 30s/côté\n\nObjectif S6 : installer l'habitude — priorité à la régularité, pas à l'intensité.",
+              "completed": false
+            },
+            {
               "id": "w6-thu-run",
               "sport": "run",
               "type": "endurance",
               "name": "Trail facile Z2 — D+ mid-semaine",
-              "description": "Trail mid-semaine avec D+ modéré — renforcement des jambes trail, D+ pas uniquement le samedi",
+              "description": "Trail mid-semaine avec D+ modéré — appuis trail, pas uniquement le dimanche",
               "durationMinutes": 45,
               "distanceMeters": 7000,
               "primaryZone": "Zone 2",
@@ -1036,7 +1037,7 @@
                 "high": 162
               },
               "rpe": 4,
-              "humanReadable": "45 min trail Z2 — 7 km + 200m D+ → EFD ~9 km\nFC 148–162 bpm, marche en montée si FC > 162\nD+ en milieu de semaine : quadriceps, chevilles, appuis variés",
+              "humanReadable": "45 min trail Z2 — 7 km + 200m D+ → EFD ~9 km\nFC 148–162 bpm, marche en montée si FC > 162\nSoir après le renfo matinal — laisser au moins 8h entre les deux",
               "completed": false
             }
           ]
@@ -1060,7 +1061,21 @@
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w6-sat-run",
+              "id": "w6-sat",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos actif ou sortie marche courte",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-05-24",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w6-sun-run",
               "sport": "run",
               "type": "long",
               "name": "Sortie longue trail Z2",
@@ -1073,21 +1088,7 @@
                 "high": 162
               },
               "rpe": 5,
-              "humanReadable": "2h trail Z2 — 15 km plat + 400m D+ → EFD 19 km\nFC 148–162 bpm. Marche en montée raide autorisée (FC > 162 bpm).\nRetrouver les appuis trail, tester les descentes à faible vitesse.\nNutrition : eau + 1 gel si > 75 min",
-              "completed": false
-            }
-          ]
-        },
-        {
-          "date": "2026-05-24",
-          "dayOfWeek": "Sunday",
-          "workouts": [
-            {
-              "id": "w6-sun",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Repos",
-              "description": "Repos actif, étirements mollets et quadriceps",
+              "humanReadable": "2h trail Z2 — 15 km + 400m D+ → EFD 19 km\nFC 148–162 bpm. Marche en montée raide autorisée (FC > 162 bpm).\nRetrouver les appuis trail, tester les descentes à faible vitesse.\nNutrition : eau + 1 gel si > 75 min",
               "completed": false
             }
           ]
