@@ -1,0 +1,4871 @@
+{
+  "version": "1.0",
+  "meta": {
+    "id": "vienna-marathon-julien-2027",
+    "athlete": "Julien Picard",
+    "event": "Marathon de Vienne 2027",
+    "eventDate": "2027-04-18",
+    "intermediateRace": {
+      "name": "Semi du Rhône",
+      "date": "2027-02-28",
+      "distance_km": 21.1,
+      "targetTime": "1h38–1h42",
+      "location": "Sion–Riddes, Valais"
+    },
+    "planStartDate": "2026-09-14",
+    "planEndDate": "2027-04-18",
+    "createdAt": "2026-09-09T00:00:00Z",
+    "updatedAt": "2026-09-09T00:00:00Z",
+    "totalWeeks": 31,
+    "generatedBy": "Claude Coach"
+  },
+  "preferences": {
+    "swim": "meters",
+    "bike": "kilometers",
+    "run": "kilometers",
+    "firstDayOfWeek": "monday"
+  },
+  "assessment": {
+    "foundation": {
+      "raceHistory": [
+        "Sierre-Zinal 2022, 2023, 2025 (~52 km EFD, 2200m D+)",
+        "Semi-marathon d'Aletsch 2025 (31 km EFD, 1097m D+)",
+        "Marathon de Paris 2026 (3h49, sub-4h atteint)",
+        "Wild 25 Wildstrubel 2026 (26 km, 1200m D+)"
+      ],
+      "peakTrainingLoad": 6,
+      "foundationLevel": "advanced",
+      "yearsInSport": 5
+    },
+    "currentForm": {
+      "weeklyVolume": { "total": 3, "run": 3 },
+      "longestSessions": { "run": 18 },
+      "consistency": 3,
+      "timeSincePeakFitness": "5 mois",
+      "reasonForTimeOff": "Été trail post-marathon Paris — 220 km, ~8000m D+, prépa Wild 25"
+    },
+    "strengths": [
+      {
+        "sport": "run",
+        "evidence": "Marathon Paris 3h49 — base solide pour viser sub-3h30 avec 7 mois de prépa propre"
+      },
+      {
+        "sport": "run",
+        "evidence": "3× Sierre-Zinal (52 km EFD) — résistance aérobie et mentale prouvée"
+      },
+      {
+        "sport": "swim",
+        "evidence": "7 ans water-polo — base technique solide, natation cross-training immédiatement disponible"
+      }
+    ],
+    "limiters": [
+      {
+        "sport": "run",
+        "evidence": "Aucune séance de qualité (tempo/intervalles) depuis Paris — à reconstruire progressivement"
+      },
+      {
+        "sport": "run",
+        "evidence": "TFL/hanche latérale récurrente printemps 2026 — renfo 2×/semaine non négociable"
+      }
+    ],
+    "constraints": [
+      "3 séances run maximum par semaine",
+      "Renforcement 2×/semaine (habitude non négociable — priorité absolue)",
+      "Natation 2×/semaine (piscine Sion disponible dès sept)",
+      "Activités complémentaires : pilates, yoga, stretching (non tracées)",
+      "Objectif process : bâtir une base saine — sub-3h30 comme boussole, pas contrainte"
+    ]
+  },
+  "zones": {
+    "run": {
+      "hr": {
+        "lthr": 170,
+        "zones": [
+          {
+            "zone": 1,
+            "name": "Récupération",
+            "percentLow": 0,
+            "percentHigh": 80,
+            "hrLow": 0,
+            "hrHigh": 148
+          },
+          {
+            "zone": 2,
+            "name": "Aérobie",
+            "percentLow": 80,
+            "percentHigh": 87,
+            "hrLow": 148,
+            "hrHigh": 162
+          },
+          {
+            "zone": 3,
+            "name": "Tempo / Seuil bas",
+            "percentLow": 87,
+            "percentHigh": 92,
+            "hrLow": 163,
+            "hrHigh": 170
+          },
+          {
+            "zone": 4,
+            "name": "Seuil haut",
+            "percentLow": 92,
+            "percentHigh": 96,
+            "hrLow": 171,
+            "hrHigh": 178
+          },
+          {
+            "zone": 5,
+            "name": "VO2max",
+            "percentLow": 96,
+            "percentHigh": 100,
+            "hrLow": 179,
+            "hrHigh": 186
+          }
+        ]
+      }
+    },
+    "maxHR": 186,
+    "marathon": {
+      "targetPace_s_per_km": 298,
+      "targetPace_display": "4'58\"/km",
+      "targetTime": "3h29'00\"",
+      "longRunPace_display": "5'45–6'15\"/km",
+      "tempoPace_display": "5'05–5'15\"/km",
+      "easyPace_display": "6'00–6'30\"/km"
+    }
+  },
+  "phases": [
+    {
+      "name": "Récupération post Wild 25",
+      "startWeek": 1,
+      "endWeek": 3,
+      "focus": "Repos total puis reprise très progressive — rien de structuré",
+      "weeklyHoursRange": { "low": 0, "high": 1.5 },
+      "keyWorkouts": ["Repos actif", "Marche", "Yoga", "Première natation légère (S3)"],
+      "physiologicalGoals": [
+        "Récupérer complètement du Wild 25",
+        "Préparer le corps à la routine octobre"
+      ]
+    },
+    {
+      "name": "Base aérobie",
+      "startWeek": 4,
+      "endWeek": 11,
+      "focus": "Installer la routine : 3 runs Z2 + 2 renfo matinal + 2 natation — habitudes d'abord, performance ensuite",
+      "weeklyHoursRange": { "low": 3.0, "high": 5.5 },
+      "keyWorkouts": [
+        "Run Z2 progressif (35→55 min)",
+        "Sortie longue Z2 (60→100 min)",
+        "Natation aérobie 2×/semaine",
+        "Renfo matinal Tue+Thu 5h (20 min)"
+      ],
+      "physiologicalGoals": [
+        "Construire une base aérobie large et durable",
+        "Installer renfo + natation comme habitudes non négociables",
+        "8 semaines de régularité avant d'introduire la qualité"
+      ]
+    },
+    {
+      "name": "Build aérobie",
+      "startWeek": 12,
+      "endWeek": 18,
+      "focus": "Introduction tempo Z3, volume progressif, long runs 18→25 km — Noël/Jour de l'An allégés",
+      "weeklyHoursRange": { "low": 2.5, "high": 7.5 },
+      "keyWorkouts": [
+        "Tempo Z3 mardi (20→40 min de travail)",
+        "Sortie longue Z2 (110→150 min)",
+        "Natation maintenue 2×/sem"
+      ],
+      "physiologicalGoals": [
+        "Développer la puissance aérobie et l'économie de course",
+        "Long run 25 km en fin de phase",
+        "Transition vers la spécificité marathon"
+      ]
+    },
+    {
+      "name": "Spécificité marathon",
+      "startWeek": 19,
+      "endWeek": 23,
+      "focus": "Long runs 27→30 km avec sections allure marathon (4'58/km), pic de volume",
+      "weeklyHoursRange": { "low": 5.0, "high": 9.0 },
+      "keyWorkouts": [
+        "Long run 27→30 km avec sections allure marathon",
+        "Tempo/allure marathon mardi (70–80 min)",
+        "Pré-semi taper S23"
+      ],
+      "physiologicalGoals": [
+        "Pic de volume : 30 km en sortie longue (S22)",
+        "Valider l'allure marathon 4'58/km sur des segments",
+        "Arriver au semi du Rhône S24 prêt pour 1h38–1h42"
+      ]
+    },
+    {
+      "name": "Semi du Rhône — test de forme",
+      "startWeek": 24,
+      "endWeek": 24,
+      "focus": "Mini-taper + semi-marathon test — validation trajectoire sub-3h30",
+      "weeklyHoursRange": { "low": 3.5, "high": 4.5 },
+      "keyWorkouts": ["Semi du Rhône 21.1 km — Sion–Riddes (28 fév 2027)"],
+      "physiologicalGoals": [
+        "Test de forme : 1h38 valide la trajectoire sub-3h30",
+        "Expérience course : nutrition, pacing, mental",
+        "Récupérer rapidement pour le bloc final"
+      ]
+    },
+    {
+      "name": "Bloc final post-semi",
+      "startWeek": 25,
+      "endWeek": 28,
+      "focus": "Récup semi + dernier pic de volume — long run 27 km en S27",
+      "weeklyHoursRange": { "low": 2.5, "high": 7.5 },
+      "keyWorkouts": [
+        "Récupération S25 (footings légers uniquement)",
+        "Long 25 km S26",
+        "Long 27 km S27 — DERNIER LONG RUN",
+        "Début affûtage S28"
+      ],
+      "physiologicalGoals": [
+        "Capitaliser les adaptations post-semi",
+        "Dernier pic de volume avant l'affûtage",
+        "Transition progressive vers la fraîcheur"
+      ]
+    },
+    {
+      "name": "Affûtage",
+      "startWeek": 29,
+      "endWeek": 31,
+      "focus": "Volume -40% → -70%, maintien qualité, logistique Vienne — arriver frais et confiant",
+      "weeklyHoursRange": { "low": 1.0, "high": 4.5 },
+      "keyWorkouts": [
+        "Tempo court + long allégé 15 km (S29)",
+        "Qualité courte + facile 10 km (S30)",
+        "2 activations légères (S31) + Marathon Vienne"
+      ],
+      "physiologicalGoals": [
+        "Éliminer la fatigue sans perdre les adaptations",
+        "Arriver au départ reposé, confiant, prêt",
+        "Marathon de Vienne — sub-3h30"
+      ]
+    }
+  ],
+  "weeks": [
+    {
+      "weekNumber": 1,
+      "startDate": "2026-09-14",
+      "endDate": "2026-09-20",
+      "phase": "Récupération post Wild 25",
+      "focus": "Repos total — J+1 à J+7 post Wild 25",
+      "targetHours": 0,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2026-09-14",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w1-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "J+1 post Wild 25 — récupération totale",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-15",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w1-tue",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Marche légère OK, pas de course",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-16",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w1-wed",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Yoga doux, étirements",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-17",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w1-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Récupération active légère",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-18",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            { "id": "w1-fri", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-09-19",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w1-sat",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Marche, étirements, massage si possible",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-20",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            { "id": "w1-sun", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        }
+      ],
+      "summary": { "totalHours": 0, "bySport": {} }
+    },
+    {
+      "weekNumber": 2,
+      "startDate": "2026-09-21",
+      "endDate": "2026-09-27",
+      "phase": "Récupération post Wild 25",
+      "focus": "Repos actif — marche, yoga, pas de course",
+      "targetHours": 0.5,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2026-09-21",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            { "id": "w2-mon", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-09-22",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w2-tue",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou marche",
+              "description": "Marche 30–45 min si envie — pas de course",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-23",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w2-wed",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Yoga doux",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-24",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            { "id": "w2-thu", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-09-25",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            { "id": "w2-fri", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-09-26",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w2-sat",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou marche longue",
+              "description": "Marche 45–60 min dans la nature si jambes OK",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-27",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            { "id": "w2-sun", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        }
+      ],
+      "summary": { "totalHours": 0.5, "bySport": {} }
+    },
+    {
+      "weekNumber": 3,
+      "startDate": "2026-09-28",
+      "endDate": "2026-10-04",
+      "phase": "Récupération post Wild 25",
+      "focus": "Transition — premiers pas en piscine, 1 footing léger si jambes OK",
+      "targetHours": 1.5,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2026-09-28",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w3-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-29",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w3-tue",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "description": "Repos complet ou marche",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-09-30",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w3-wed-swim",
+              "sport": "swim",
+              "type": "recovery",
+              "name": "Première natation — retour à l'eau",
+              "durationMinutes": 30,
+              "distanceMeters": 1000,
+              "humanReadable": "30 min — ~1000m\nPas d'objectif de vitesse — juste retrouver les sensations\nCrawl facile, respirations larges\nSi fatigue : réduire à 20 min",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-01",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            { "id": "w3-thu", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-10-02",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            { "id": "w3-fri", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-10-03",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w3-sat-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Footing très léger — retour à la course",
+              "durationMinutes": 30,
+              "distanceMeters": 4500,
+              "primaryZone": "Zone 1",
+              "targetHR": { "low": 100, "high": 148 },
+              "rpe": 2,
+              "humanReadable": "30 min Z1 — route plate\nFC < 148 bpm, allure très confortable\nEFD cible : ~4.5 km\nSi jambes lourdes : réduire à 20 min",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-04",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            { "id": "w3-sun", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 1.5,
+        "bySport": {
+          "run": { "sessions": 1, "hours": 0.5, "km": 4.5 },
+          "swim": { "sessions": 1, "hours": 0.5, "meters": 1000 }
+        }
+      }
+    },
+    {
+      "weekNumber": 4,
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-11",
+      "phase": "Base aérobie",
+      "focus": "S1 Base — installer la routine : renfo matinal Tue+Thu + 3 runs Z2 + 2 nats",
+      "targetHours": 3.5,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-10-05",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w4-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-06",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w4-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal — Habitude #1",
+              "durationMinutes": 20,
+              "humanReadable": "20 min — 3 rounds (1 min repos entre exercices) :\n1. Hip thrust : 15 reps\n2. Squat sauté : 10 reps\n3. Fente bulgare : 8 reps/jambe\n4. Calf raise excentrique : 15 reps\n5. Gainage latéral : 30s/côté\n+ Traction : max\n\nObjectif S4 : installer l'habitude — régularité avant intensité",
+              "completed": false
+            },
+            {
+              "id": "w4-tue-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 35,
+              "distanceMeters": 5600,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "35 min Z2 — route plate\nFC 148–162 bpm, allure conversationnelle\nEFD cible : ~5.5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-07",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w4-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation — base aérobie",
+              "durationMinutes": 35,
+              "distanceMeters": 1400,
+              "humanReadable": "35 min — ~1400m\nÉchauffement 200m facile\n4×200m Z2 crawl (repos 20s)\nRetour calme 200m dos ou facile\nTechnique : respiration 3 temps",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-08",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w4-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal — Habitude #2",
+              "durationMinutes": 20,
+              "humanReadable": "20 min — 3 rounds (1 min repos entre exercices) :\n1. Hip thrust : 15 reps\n2. Squat sauté : 10 reps\n3. Fente bulgare : 8 reps/jambe\n4. Calf raise excentrique : 15 reps\n5. Gainage latéral : 30s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w4-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 35,
+              "distanceMeters": 5600,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "35 min Z2 — route plate ou légèrement vallonnée\nFC 148–162 bpm\nEFD cible : ~5.5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-09",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w4-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation — récupération active",
+              "durationMinutes": 35,
+              "distanceMeters": 1400,
+              "humanReadable": "35 min — ~1400m\nAllure facile, technique avant tout\nVarier : crawl + dos\nRécupération après 2 runs de la semaine",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-10",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w4-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2",
+              "durationMinutes": 60,
+              "distanceMeters": 9500,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "60 min Z2 — terrain plat ou légèrement vallonné\nFC 148–162 bpm, allure relâchée\nEFD cible : ~9.5 km\nPremière vraie sortie longue de la prépa — profiter",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-11",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            { "id": "w4-sun", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 3.5,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 2.17, "km": 20.7 },
+          "swim": { "sessions": 2, "hours": 1.17, "meters": 2800 },
+          "strength": { "sessions": 2, "hours": 0.67 }
+        }
+      }
+    },
+    {
+      "weekNumber": 5,
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-18",
+      "phase": "Base aérobie",
+      "focus": "Progression douce — +5 min sur chaque run",
+      "targetHours": 4.0,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-10-12",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w5-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-13",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w5-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 20,
+              "humanReadable": "20 min — 3 rounds :\n1. Hip thrust : 15 reps\n2. Squat sauté : 10 reps\n3. Fente bulgare : 8 reps/jambe\n4. Calf raise excentrique : 15 reps\n5. Gainage latéral : 30s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w5-tue-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 40,
+              "distanceMeters": 6500,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "40 min Z2 — EFD ~6.5 km\nFC 148–162 bpm",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-14",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w5-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 35,
+              "distanceMeters": 1400,
+              "humanReadable": "35 min — ~1400m\nÉchauffement 200m + 5×200m Z2 + retour calme 200m",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-15",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w5-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 20,
+              "humanReadable": "20 min — 3 rounds :\n1. Hip thrust : 15 reps\n2. Squat sauté : 10 reps\n3. Fente bulgare : 8 reps/jambe\n4. Calf raise excentrique : 15 reps\n5. Gainage latéral : 30s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w5-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 40,
+              "distanceMeters": 6500,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "40 min Z2 — EFD ~6.5 km\nFC 148–162 bpm",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-16",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w5-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 35,
+              "distanceMeters": 1400,
+              "humanReadable": "35 min — ~1400m crawl\nAllure confortable, respiration 3 temps",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-17",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w5-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2",
+              "durationMinutes": 70,
+              "distanceMeters": 11000,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "70 min Z2 — EFD ~11 km\nFC 148–162 bpm — terrain varié bienvenu",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-18",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            { "id": "w5-sun", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 4.0,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 2.5, "km": 24 },
+          "swim": { "sessions": 2, "hours": 1.17, "meters": 2800 },
+          "strength": { "sessions": 2, "hours": 0.67 }
+        }
+      }
+    },
+    {
+      "weekNumber": 6,
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-25",
+      "phase": "Base aérobie",
+      "focus": "Volume en hausse — long run 75 min, runs Z2 solides",
+      "targetHours": 4.3,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-10-19",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w6-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-20",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w6-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 20,
+              "humanReadable": "20 min — 3 rounds :\n1. Hip thrust : 15 reps\n2. Squat sauté : 10 reps\n3. Fente bulgare : 8 reps/jambe\n4. Calf raise excentrique : 15 reps\n5. Gainage latéral : 30s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w6-tue-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 40,
+              "distanceMeters": 6500,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "40 min Z2 — EFD ~6.5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-21",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w6-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m\nÉchauffement 200m + 6×200m Z2 (20s récup) + retour 200m",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-22",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w6-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 20,
+              "humanReadable": "20 min — 3 rounds :\n1. Hip thrust : 15 reps\n2. Squat sauté : 10 reps\n3. Fente bulgare : 8 reps/jambe\n4. Calf raise excentrique : 15 reps\n5. Gainage latéral : 30s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w6-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 45,
+              "distanceMeters": 7300,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "45 min Z2 — EFD ~7.3 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-23",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w6-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m crawl Z2\nRécupération après la semaine chargée",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-24",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w6-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2",
+              "durationMinutes": 75,
+              "distanceMeters": 12000,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 5,
+              "humanReadable": "75 min Z2 — EFD ~12 km\nFC 148–162 bpm — terrain mixte bienvenu\nNutrition : eau suffisante, gel si envie au-delà de 60 min",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-25",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            { "id": "w6-sun", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 4.3,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 2.67, "km": 25.8 },
+          "swim": { "sessions": 2, "hours": 1.33, "meters": 3200 },
+          "strength": { "sessions": 2, "hours": 0.67 }
+        }
+      }
+    },
+    {
+      "weekNumber": 7,
+      "startDate": "2026-10-26",
+      "endDate": "2026-11-01",
+      "phase": "Base aérobie",
+      "focus": "Volume consolidé — long run 80 min, runs Z2 à 45 min",
+      "targetHours": 4.6,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-10-26",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w7-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-27",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w7-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 20,
+              "humanReadable": "20 min — 3 rounds :\n1. Hip thrust : 15 reps\n2. Squat sauté : 10 reps\n3. Fente bulgare : 8 reps/jambe\n4. Calf raise excentrique : 15 reps\n5. Gainage latéral : 30s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w7-tue-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 45,
+              "distanceMeters": 7300,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "45 min Z2 — EFD ~7.3 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-28",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w7-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m\n200m échauff + 6×200m Z2 + 200m retour",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-29",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w7-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 20,
+              "humanReadable": "20 min — 3 rounds :\n1. Hip thrust : 15 reps\n2. Squat sauté : 10 reps\n3. Fente bulgare : 8 reps/jambe\n4. Calf raise excentrique : 15 reps\n5. Gainage latéral : 30s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w7-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 45,
+              "distanceMeters": 7300,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "45 min Z2 — EFD ~7.3 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-30",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w7-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m crawl Z2\nSéance technique : appui avant-bras, rotation hanches",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-31",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w7-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2",
+              "durationMinutes": 80,
+              "distanceMeters": 12600,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 5,
+              "humanReadable": "80 min Z2 — EFD ~12.5 km\nFC 148–162 bpm — allure relâchée\nNutrition : 1 gel à 50 min + eau",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-01",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            { "id": "w7-sun", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 4.6,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 2.83, "km": 27.2 },
+          "swim": { "sessions": 2, "hours": 1.33, "meters": 3200 },
+          "strength": { "sessions": 2, "hours": 0.67 }
+        }
+      }
+    },
+    {
+      "weekNumber": 8,
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-08",
+      "phase": "Base aérobie",
+      "focus": "Semaine récupération Base — -30% volume, recharger avant S9",
+      "targetHours": 3.0,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2026-11-02",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            { "id": "w8-mon", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w8-tue-str",
+              "sport": "strength",
+              "type": "recovery",
+              "name": "Renfo léger",
+              "durationMinutes": 15,
+              "humanReadable": "15 min — 2 rounds (semaine récup) :\n1. Hip thrust : 12 reps\n2. Fente bulgare : 6 reps/jambe\n3. Calf raise : 12 reps\n4. Gainage latéral : 20s/côté",
+              "completed": false
+            },
+            {
+              "id": "w8-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Run Z1–Z2 léger",
+              "durationMinutes": 30,
+              "distanceMeters": 4800,
+              "primaryZone": "Zone 1-2",
+              "targetHR": { "low": 130, "high": 155 },
+              "rpe": 3,
+              "humanReadable": "30 min Z1–Z2 — route plate\nFC < 155 bpm — semaine récup\nEFD cible : ~4.8 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w8-wed-swim",
+              "sport": "swim",
+              "type": "recovery",
+              "name": "Natation légère",
+              "durationMinutes": 30,
+              "distanceMeters": 1200,
+              "humanReadable": "30 min — ~1200m\nAllure très facile — récupération active\nDos ou crawl lent",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-05",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w8-thu-str",
+              "sport": "strength",
+              "type": "recovery",
+              "name": "Renfo léger",
+              "durationMinutes": 15,
+              "humanReadable": "15 min — 2 rounds :\n1. Hip thrust : 12 reps\n2. Fente bulgare : 6 reps/jambe\n3. Calf raise : 12 reps\n4. Gainage latéral : 20s/côté",
+              "completed": false
+            },
+            {
+              "id": "w8-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Run Z1–Z2 léger",
+              "durationMinutes": 30,
+              "distanceMeters": 4800,
+              "primaryZone": "Zone 1-2",
+              "targetHR": { "low": 130, "high": 155 },
+              "rpe": 3,
+              "humanReadable": "30 min Z1–Z2 — très facile\nEFD cible : ~4.8 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-06",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            { "id": "w8-fri", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        },
+        {
+          "date": "2026-11-07",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w8-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue allégée Z2",
+              "durationMinutes": 60,
+              "distanceMeters": 9500,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "60 min Z2 — semaine récup\nFC 148–162 bpm, allure très relâchée\nEFD cible : ~9.5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-08",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            { "id": "w8-sun", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 3.0,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 2.0, "km": 19.1 },
+          "swim": { "sessions": 1, "hours": 0.5, "meters": 1200 },
+          "strength": { "sessions": 2, "hours": 0.5 }
+        }
+      }
+    },
+    {
+      "weekNumber": 9,
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-15",
+      "phase": "Base aérobie",
+      "focus": "Reprise volume — long run 90 min, runs à 45–50 min",
+      "targetHours": 5.0,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-11-09",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w9-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-10",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w9-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté (sac à dos) : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max\n\nProgression S9 : ajouter charge ou reps",
+              "completed": false
+            },
+            {
+              "id": "w9-tue-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 45,
+              "distanceMeters": 7300,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "45 min Z2 — EFD ~7.3 km\nFC 148–162 bpm",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-11",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w9-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m\n200m échauff + 8×100m Z2 (15s récup) + 200m retour\nTravail de tempo nage",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-12",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w9-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w9-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 50,
+              "distanceMeters": 8100,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "50 min Z2 — EFD ~8 km\nFC 148–162 bpm",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-13",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w9-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m crawl Z2\nAllure continue — développer l'endurance nage",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-14",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w9-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2 — 90 min",
+              "durationMinutes": 90,
+              "distanceMeters": 14200,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 5,
+              "humanReadable": "90 min Z2 — EFD ~14 km\nFC 148–162 bpm — allure confortable\nNutrition : 1 gel à 45 min + eau régulière\nPremière sortie > 80 min de la prépa — gérer l'allure",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-15",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            { "id": "w9-sun", "sport": "rest", "type": "rest", "name": "Repos", "completed": false }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.0,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 3.08, "km": 29.6 },
+          "swim": { "sessions": 2, "hours": 1.33, "meters": 3200 },
+          "strength": { "sessions": 2, "hours": 0.83 }
+        }
+      }
+    },
+    {
+      "weekNumber": 10,
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-22",
+      "phase": "Base aérobie",
+      "focus": "Pic base — long run 100 min, bloc aérobie solide",
+      "targetHours": 5.4,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-11-16",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w10-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-17",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w10-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w10-tue-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 50,
+              "distanceMeters": 8100,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "50 min Z2 — EFD ~8 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-18",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w10-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m\n200m échauff + 8×100m Z2 + 200m retour",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-19",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w10-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w10-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 50,
+              "distanceMeters": 8100,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "50 min Z2 — EFD ~8 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-20",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w10-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m crawl\nTravail continu Z2",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-21",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w10-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2 — 100 min",
+              "durationMinutes": 100,
+              "distanceMeters": 15800,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 5,
+              "humanReadable": "100 min Z2 — EFD ~15.8 km\nFC 148–162 bpm — allure relâchée sur toute la durée\nNutrition : 1 gel à 45 min, 1 gel à 80 min + eau\nPic de base — dernier long avant la semaine récup",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-22",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w10-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.4,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 3.33, "km": 31.9 },
+          "swim": { "sessions": 2, "hours": 1.33, "meters": 3200 },
+          "strength": { "sessions": 2, "hours": 0.83 }
+        }
+      }
+    },
+    {
+      "weekNumber": 11,
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-29",
+      "phase": "Base aérobie",
+      "focus": "Semaine récup base (-30%) — recharger avant le Build",
+      "targetHours": 3.5,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2026-11-23",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w11-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-24",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w11-tue-str",
+              "sport": "strength",
+              "type": "recovery",
+              "name": "Renfo léger",
+              "durationMinutes": 15,
+              "humanReadable": "15 min — 2 rounds :\n1. Hip thrust : 12 reps\n2. Fente bulgare : 6 reps/jambe\n3. Calf raise : 12 reps\n4. Gainage latéral : 20s/côté",
+              "completed": false
+            },
+            {
+              "id": "w11-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Run Z1–Z2",
+              "durationMinutes": 35,
+              "distanceMeters": 5600,
+              "primaryZone": "Zone 1-2",
+              "targetHR": { "low": 130, "high": 155 },
+              "rpe": 3,
+              "humanReadable": "35 min Z1–Z2 — vraiment facile\nEFD cible : ~5.5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-25",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w11-wed-swim",
+              "sport": "swim",
+              "type": "recovery",
+              "name": "Natation légère",
+              "durationMinutes": 35,
+              "distanceMeters": 1400,
+              "humanReadable": "35 min — ~1400m\nAllure très facile — récup active\nVarier les nages",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-26",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w11-thu-str",
+              "sport": "strength",
+              "type": "recovery",
+              "name": "Renfo léger",
+              "durationMinutes": 15,
+              "humanReadable": "15 min — 2 rounds :\n1. Hip thrust : 12 reps\n2. Fente bulgare : 6 reps/jambe\n3. Calf raise : 12 reps\n4. Gainage latéral : 20s/côté",
+              "completed": false
+            },
+            {
+              "id": "w11-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Run Z1–Z2",
+              "durationMinutes": 35,
+              "distanceMeters": 5600,
+              "primaryZone": "Zone 1-2",
+              "targetHR": { "low": 130, "high": 155 },
+              "rpe": 3,
+              "humanReadable": "35 min Z1–Z2 — récup\nEFD cible : ~5.5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-27",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w11-fri-swim",
+              "sport": "swim",
+              "type": "recovery",
+              "name": "Natation légère",
+              "durationMinutes": 35,
+              "distanceMeters": 1400,
+              "humanReadable": "35 min — ~1400m facile",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-28",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w11-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue allégée Z2",
+              "durationMinutes": 70,
+              "distanceMeters": 11000,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "70 min Z2 — semaine récup\nFC 148–162 bpm, pas de pression\nEFD cible : ~11 km\nDernière sortie longue de la Base — plaisir",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-11-29",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w11-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 3.5,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 2.33, "km": 22.1 },
+          "swim": { "sessions": 2, "hours": 1.17, "meters": 2800 },
+          "strength": { "sessions": 2, "hours": 0.5 }
+        }
+      }
+    },
+    {
+      "weekNumber": 12,
+      "startDate": "2026-11-30",
+      "endDate": "2026-12-06",
+      "phase": "Build aérobie",
+      "focus": "Entrée en Build — premier tempo Z3, long run 110 min",
+      "targetHours": 5.5,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-11-30",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w12-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-01",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w12-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w12-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Premier tempo Z3 — entrée en Build",
+              "durationMinutes": 50,
+              "distanceMeters": 9000,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 170 },
+              "rpe": 6,
+              "humanReadable": "50 min total :\nÉchauffement 15 min Z1→Z2\nTempo 20 min Z3 (FC 163–170 bpm, ~5'10\"/km)\nRetour calme 15 min Z1\n\nPremier effort soutenu de la prépa — découvrir l'allure tempo, pas s'acharner",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement progressif",
+                    "duration": { "value": 15, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 148
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "work",
+                    "name": "Tempo Z3",
+                    "duration": { "value": 20, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 3,
+                      "valueLow": 163,
+                      "valueHigh": 170
+                    },
+                    "notes": "Allure soutenue mais contrôlée — ~5'10\"/km. FC 163–170 bpm."
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme",
+                    "duration": { "value": 15, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 140
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-02",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w12-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m\n200m échauff + 8×100m Z2 + 200m retour\nRécupération après le tempo mardi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-03",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w12-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w12-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2 facile",
+              "durationMinutes": 45,
+              "distanceMeters": 7300,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "45 min Z2 facile — récupérer du tempo mardi\nFC 148–162 bpm, ne pas pousser\nEFD cible : ~7.3 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-04",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w12-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m crawl Z2\nAllure continue",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-05",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w12-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2 — 110 min",
+              "durationMinutes": 110,
+              "distanceMeters": 17400,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 5,
+              "humanReadable": "110 min Z2 — EFD ~17 km\nFC 148–162 bpm — rythme constant\nNutrition : 1 gel à 45 min, 1 gel à 85 min + eau régulière\nPremier long run du Build — gérer l'allure dès le départ",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-06",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w12-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.5,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 3.42, "km": 33.7 },
+          "swim": { "sessions": 2, "hours": 1.33, "meters": 3200 },
+          "strength": { "sessions": 2, "hours": 0.83 }
+        }
+      }
+    },
+    {
+      "weekNumber": 13,
+      "startDate": "2026-12-07",
+      "endDate": "2026-12-13",
+      "phase": "Build aérobie",
+      "focus": "Progression tempo — 25 min Z3, long run 120 min",
+      "targetHours": 5.8,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-12-07",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w13-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-08",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w13-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w13-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Tempo Z3 — 25 min",
+              "durationMinutes": 55,
+              "distanceMeters": 10000,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 170 },
+              "rpe": 6,
+              "humanReadable": "55 min total :\nÉchauffement 15 min Z1→Z2\nTempo 25 min Z3 (FC 163–170 bpm, ~5'08\"/km)\nRetour calme 15 min Z1\n\nSentir la progression par rapport à S12",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement",
+                    "duration": { "value": 15, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 148
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "work",
+                    "name": "Tempo Z3",
+                    "duration": { "value": 25, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 3,
+                      "valueLow": 163,
+                      "valueHigh": 170
+                    },
+                    "notes": "~5'08\"/km — FC 163–170 bpm. Effort soutenu mais contrôlable."
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme",
+                    "duration": { "value": 15, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 140
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-09",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w13-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m\nRécupération active post-tempo\n4×300m Z2 + 200m retour",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-10",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w13-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w13-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 45,
+              "distanceMeters": 7300,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "45 min Z2 — EFD ~7.3 km\nFacile après le tempo mardi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-11",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w13-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m crawl Z2",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-12",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w13-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2 — 120 min",
+              "durationMinutes": 120,
+              "distanceMeters": 19000,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 5,
+              "humanReadable": "120 min Z2 — EFD ~19 km\nFC 148–162 bpm — premier long run > 100 min\nNutrition : 1 gel à 45 min, 1 gel à 90 min + eau\nRythme régulier sur toute la durée — pas de crevaison en fin",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-13",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w13-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.8,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 3.67, "km": 35.7 },
+          "swim": { "sessions": 2, "hours": 1.33, "meters": 3200 },
+          "strength": { "sessions": 2, "hours": 0.83 }
+        }
+      }
+    },
+    {
+      "weekNumber": 14,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-20",
+      "phase": "Build aérobie",
+      "focus": "Semaine chargée avant Noël — tempo 30 min, long run 130 min",
+      "targetHours": 6.2,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-12-14",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w14-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-15",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w14-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w14-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Tempo Z3 — 30 min",
+              "durationMinutes": 60,
+              "distanceMeters": 11000,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 170 },
+              "rpe": 6,
+              "humanReadable": "60 min total :\nÉchauffement 15 min Z1→Z2\nTempo 30 min Z3 (FC 163–170 bpm, ~5'05\"/km)\nRetour calme 15 min Z1\n\nDernier tempo avant Noël — sentir la progression",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement",
+                    "duration": { "value": 15, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 148
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "work",
+                    "name": "Tempo Z3",
+                    "duration": { "value": 30, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 3,
+                      "valueLow": 163,
+                      "valueHigh": 170
+                    },
+                    "notes": "~5'05\"/km — FC 163–170 bpm."
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme",
+                    "duration": { "value": 15, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 140
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-16",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w14-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m\nRécupération post-tempo\n4×300m Z2 + retour",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-17",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w14-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w14-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 50,
+              "distanceMeters": 8100,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "50 min Z2 — EFD ~8 km\nAllure confortable, garder les jambes pour samedi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-18",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w14-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m crawl Z2",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-19",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w14-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2 — 130 min",
+              "durationMinutes": 130,
+              "distanceMeters": 20600,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 5,
+              "humanReadable": "130 min Z2 — EFD ~20.5 km\nFC 148–162 bpm — long run propre\nNutrition : gel à 45/90/115 min + eau\nDernier gros long run avant les fêtes — sortir fort",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-20",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w14-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 6.2,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 4.0, "km": 39.7 },
+          "swim": { "sessions": 2, "hours": 1.33, "meters": 3200 },
+          "strength": { "sessions": 2, "hours": 0.83 }
+        }
+      }
+    },
+    {
+      "weekNumber": 15,
+      "startDate": "2026-12-21",
+      "endDate": "2026-12-27",
+      "phase": "Build aérobie",
+      "focus": "Semaine de Noël — volume réduit, maintenir le fil",
+      "targetHours": 2.5,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2026-12-21",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w15-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-22",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w15-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Footing Z1–Z2",
+              "durationMinutes": 40,
+              "distanceMeters": 6500,
+              "primaryZone": "Zone 1-2",
+              "targetHR": { "low": 130, "high": 155 },
+              "rpe": 3,
+              "humanReadable": "40 min Z1–Z2 — facile\nPas de renfo cette semaine — repos actif\nEFD cible : ~6.5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-23",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w15-wed",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-24",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w15-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos — Réveillon",
+              "description": "Repos complet — profiter",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-25",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w15-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos — Noël",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-26",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w15-sat-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Footing Z2 post-Noël",
+              "durationMinutes": 50,
+              "distanceMeters": 8100,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "50 min Z2 — sortir bouger après les fêtes\nPas de performance — juste courir et aérer la tête\nEFD cible : ~8 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-27",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w15-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 2.5,
+        "bySport": { "run": { "sessions": 2, "hours": 1.5, "km": 14.6 } }
+      }
+    },
+    {
+      "weekNumber": 16,
+      "startDate": "2026-12-28",
+      "endDate": "2027-01-03",
+      "phase": "Build aérobie",
+      "focus": "Reprise progressive après fêtes — long run 90 min, renfo reprend",
+      "targetHours": 3.5,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2026-12-28",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w16-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-29",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w16-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal — reprise",
+              "durationMinutes": 20,
+              "humanReadable": "20 min — 3 rounds (reprise post-fêtes) :\n1. Hip thrust : 15 reps\n2. Squat sauté : 10 reps\n3. Fente bulgare : 8 reps/jambe\n4. Calf raise excentrique : 15 reps\n5. Gainage latéral : 30s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w16-tue-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 45,
+              "distanceMeters": 7300,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "45 min Z2 — EFD ~7.3 km\nReprise après les fêtes — trouver le rythme",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-30",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w16-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation — reprise",
+              "durationMinutes": 35,
+              "distanceMeters": 1400,
+              "humanReadable": "35 min — ~1400m\nReprise douce après les fêtes",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2026-12-31",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w16-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 20,
+              "humanReadable": "20 min — 3 rounds :\n1. Hip thrust : 15 reps\n2. Squat sauté : 10 reps\n3. Fente bulgare : 8 reps/jambe\n4. Calf raise excentrique : 15 reps\n5. Gainage latéral : 30s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w16-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2 — Saint-Sylvestre",
+              "durationMinutes": 45,
+              "distanceMeters": 7300,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "45 min Z2 — EFD ~7.3 km\nSortir avant la soirée — bonne habitude de fin d'année",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-01",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w16-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos — Jour de l'An",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-02",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w16-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2 — 90 min",
+              "durationMinutes": 90,
+              "distanceMeters": 14200,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 5,
+              "humanReadable": "90 min Z2 — EFD ~14 km\nPremier long run de 2027 — bien démarrer l'année\nNutrition : 1 gel à 50 min + eau",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-03",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w16-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 3.5,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 3.0, "km": 28.8 },
+          "swim": { "sessions": 1, "hours": 0.58, "meters": 1400 },
+          "strength": { "sessions": 2, "hours": 0.67 }
+        }
+      }
+    },
+    {
+      "weekNumber": 17,
+      "startDate": "2027-01-04",
+      "endDate": "2027-01-10",
+      "phase": "Build aérobie",
+      "focus": "Reprise Build post-fêtes — tempo 35 min Z3, long 140 min",
+      "targetHours": 6.5,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2027-01-04",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w17-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-05",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w17-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w17-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Tempo Z3 — 35 min",
+              "durationMinutes": 65,
+              "distanceMeters": 11800,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 170 },
+              "rpe": 6,
+              "humanReadable": "65 min total :\nÉchauffement 15 min Z1→Z2\nTempo 35 min Z3 (FC 163–170 bpm, ~5'05\"/km)\nRetour calme 15 min Z1\n\nReprise du Build — 5 min de plus que S14",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement",
+                    "duration": { "value": 15, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 148
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "work",
+                    "name": "Tempo Z3",
+                    "duration": { "value": 35, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 3,
+                      "valueLow": 163,
+                      "valueHigh": 170
+                    },
+                    "notes": "~5'05\"/km. FC 163–170 bpm."
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme",
+                    "duration": { "value": 15, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 140
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-06",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w17-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m\n4×300m Z2 + 200m retour — récup post-tempo",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-07",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w17-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w17-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 50,
+              "distanceMeters": 8100,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "50 min Z2 — EFD ~8 km\nFacile — garder les jambes pour samedi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-08",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w17-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m crawl Z2",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-09",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w17-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2 — 140 min",
+              "durationMinutes": 140,
+              "distanceMeters": 22100,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 5,
+              "humanReadable": "140 min Z2 — EFD ~22 km\nFC 148–162 bpm — rythme régulier\nNutrition : gel à 45/90/120 min + eau\nPremier long > 120 min — gérer l'allure sur la durée",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-10",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w17-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 6.5,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 4.25, "km": 42 },
+          "swim": { "sessions": 2, "hours": 1.33, "meters": 3200 },
+          "strength": { "sessions": 2, "hours": 0.83 }
+        }
+      }
+    },
+    {
+      "weekNumber": 18,
+      "startDate": "2027-01-11",
+      "endDate": "2027-01-17",
+      "phase": "Build aérobie",
+      "focus": "Pic Build — tempo 40 min Z3, long 150 min (25 km) — pic aérobie avant spécificité",
+      "targetHours": 7.0,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2027-01-11",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w18-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-12",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w18-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w18-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Tempo Z3 — 40 min — pic Build",
+              "durationMinutes": 70,
+              "distanceMeters": 12700,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 170 },
+              "rpe": 7,
+              "humanReadable": "70 min total :\nÉchauffement 15 min Z1→Z2\nTempo 40 min Z3 (FC 163–170 bpm, ~5'03\"/km)\nRetour calme 15 min Z1\n\nPic du Build aérobie — le plus long tempo avant de passer à l'allure marathon",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement",
+                    "duration": { "value": 15, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 148
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "work",
+                    "name": "Tempo Z3",
+                    "duration": { "value": 40, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 3,
+                      "valueLow": 163,
+                      "valueHigh": 170
+                    },
+                    "notes": "~5'03\"/km — FC 163–170 bpm. Effort soutenu et régulier."
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme",
+                    "duration": { "value": 15, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 140
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-13",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w18-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 45,
+              "distanceMeters": 1800,
+              "humanReadable": "45 min — ~1800m\n200m échauff + 5×300m Z2 + 300m retour\nRécupération active post-tempo",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-14",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w18-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w18-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 50,
+              "distanceMeters": 8100,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "50 min Z2 — EFD ~8 km\nFacile — garder les jambes pour samedi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-15",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w18-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 45,
+              "distanceMeters": 1800,
+              "humanReadable": "45 min — ~1800m crawl Z2\nAllure soutenue",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-16",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w18-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2 — 150 min — 25 km",
+              "durationMinutes": 150,
+              "distanceMeters": 23700,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 6,
+              "humanReadable": "150 min Z2 — EFD ~24 km\nFC 148–162 bpm — rythme constant\nNutrition : gel à 45/90/125 min + eau\nPic du Build — dernier long avant la phase marathon-spécifique",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-17",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w18-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 7.0,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 4.5, "km": 44.5 },
+          "swim": { "sessions": 2, "hours": 1.5, "meters": 3600 },
+          "strength": { "sessions": 2, "hours": 0.83 }
+        }
+      }
+    },
+    {
+      "weekNumber": 19,
+      "startDate": "2027-01-18",
+      "endDate": "2027-01-24",
+      "phase": "Spécificité marathon",
+      "focus": "Entrée spécificité — premiers segments allure marathon (4'58/km), long 27 km",
+      "targetHours": 7.5,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2027-01-18",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w19-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-19",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w19-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w19-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Allure marathon — 3×10 min à 4'58/km",
+              "durationMinutes": 70,
+              "distanceMeters": 13000,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 172 },
+              "rpe": 7,
+              "humanReadable": "70 min total :\nÉchauffement 15 min Z1→Z2\nPrincipal : 3×10 min à allure marathon (4'58/km, FC ~162–172 bpm)\n  Récupération 3 min Z2 entre chaque répétition\nRetour calme 12 min Z1\n\nPremière séance à allure Vienne — découvrir la sensation 4'58/km",
+              "structure": {
+                "warmup": [
+                  {
+                    "type": "warmup",
+                    "name": "Échauffement",
+                    "duration": { "value": 15, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 120,
+                      "valueHigh": 148
+                    }
+                  }
+                ],
+                "main": [
+                  {
+                    "type": "interval_set",
+                    "name": "Allure marathon",
+                    "repeats": 3,
+                    "steps": [
+                      {
+                        "type": "work",
+                        "name": "Allure marathon",
+                        "duration": { "value": 10, "unit": "minutes" },
+                        "intensity": { "unit": "pace", "valueLow": 288, "valueHigh": 308 },
+                        "notes": "4'58/km ± 10s — FC ~162–172 bpm. Effort contrôlé, pas de sprint."
+                      },
+                      {
+                        "type": "recovery",
+                        "name": "Récupération Z2",
+                        "duration": { "value": 3, "unit": "minutes" },
+                        "intensity": {
+                          "unit": "hr_zone",
+                          "value": 2,
+                          "valueLow": 148,
+                          "valueHigh": 162
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "cooldown": [
+                  {
+                    "type": "cooldown",
+                    "name": "Retour au calme",
+                    "duration": { "value": 12, "unit": "minutes" },
+                    "intensity": {
+                      "unit": "hr_zone",
+                      "value": 1,
+                      "valueLow": 110,
+                      "valueHigh": 140
+                    }
+                  }
+                ]
+              },
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-20",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w19-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 45,
+              "distanceMeters": 1800,
+              "humanReadable": "45 min — ~1800m\nRécupération active post-allure marathon\n5×300m Z2 + retour",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-21",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w19-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w19-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 55,
+              "distanceMeters": 8900,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "55 min Z2 — EFD ~8.9 km\nVraiment facile — récupérer des intervalles mardi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-22",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w19-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 45,
+              "distanceMeters": 1800,
+              "humanReadable": "45 min — ~1800m crawl Z2",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-23",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w19-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Long run 160 min — 27 km avec sections allure marathon",
+              "durationMinutes": 160,
+              "distanceMeters": 26500,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 165 },
+              "rpe": 6,
+              "humanReadable": "160 min — EFD ~27 km\nStructure :\n- 90 min Z2 (5'50–6'10\"/km)\n- 30 min allure marathon (4'58/km, FC ~162–168 bpm)\n- 40 min Z2 retour\n\nNutrition : gel à 40/80/120 min + eau\nPremier long avec sections allure — sentir la différence Z2 vs 4'58/km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-24",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w19-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 7.5,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 4.75, "km": 48.4 },
+          "swim": { "sessions": 2, "hours": 1.5, "meters": 3600 },
+          "strength": { "sessions": 2, "hours": 0.83 }
+        }
+      }
+    },
+    {
+      "weekNumber": 20,
+      "startDate": "2027-01-25",
+      "endDate": "2027-01-31",
+      "phase": "Spécificité marathon",
+      "focus": "Semaine légère spécificité — consolider les sensations, long 25 km",
+      "targetHours": 7.0,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2027-01-25",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w20-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-26",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w20-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w20-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Allure marathon — 4×8 min à 4'58/km",
+              "durationMinutes": 70,
+              "distanceMeters": 13000,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 172 },
+              "rpe": 7,
+              "humanReadable": "70 min total :\nÉchauffement 15 min Z1→Z2\nPrincipal : 4×8 min à allure marathon (4'58/km)\n  Récupération 2 min Z2 entre chaque\nRetour calme 14 min Z1\n\nVolume identique à S19, intensité similaire — consolider",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-27",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w20-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m\nRécupération active — allure facile",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-28",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w20-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w20-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 50,
+              "distanceMeters": 8100,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "50 min Z2 — EFD ~8 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-29",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w20-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m crawl Z2",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-30",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w20-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2 — 150 min / 25 km",
+              "durationMinutes": 150,
+              "distanceMeters": 23700,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 5,
+              "humanReadable": "150 min Z2 — EFD ~24 km\nFC 148–162 bpm — allure relâchée\nNutrition : gel à 45/90/125 min + eau\nLong run propre — pas de sections allure marathon cette semaine",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-01-31",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w20-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 7.0,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 4.5, "km": 44.8 },
+          "swim": { "sessions": 2, "hours": 1.33, "meters": 3200 },
+          "strength": { "sessions": 2, "hours": 0.83 }
+        }
+      }
+    },
+    {
+      "weekNumber": 21,
+      "startDate": "2027-02-01",
+      "endDate": "2027-02-07",
+      "phase": "Spécificité marathon",
+      "focus": "Semaine chargée — long 28 km avec sections allure marathon",
+      "targetHours": 8.0,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2027-02-01",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w21-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-02",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w21-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w21-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Tempo long — 40 min Z3 + 5 min allure marathon",
+              "durationMinutes": 75,
+              "distanceMeters": 13800,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 172 },
+              "rpe": 7,
+              "humanReadable": "75 min total :\nÉchauffement 15 min Z1→Z2\nTempo 40 min Z3 (163–170 bpm)\n5 min allure marathon (4'58/km) en finisher\nRetour calme 15 min Z1\n\nSéance exigeante — ne pas négliger le retour au calme",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-03",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w21-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 45,
+              "distanceMeters": 1800,
+              "humanReadable": "45 min — ~1800m\nRécupération active — allure continue Z2",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-04",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w21-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w21-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 55,
+              "distanceMeters": 8900,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "55 min Z2 — EFD ~8.9 km\nFacile — garder les jambes pour samedi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-05",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w21-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 45,
+              "distanceMeters": 1800,
+              "humanReadable": "45 min — ~1800m crawl Z2",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-06",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w21-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Long run 170 min — 28 km avec sections allure marathon",
+              "durationMinutes": 170,
+              "distanceMeters": 27500,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 168 },
+              "rpe": 7,
+              "humanReadable": "170 min — EFD ~28 km\nStructure :\n- 100 min Z2 (5'50–6'10\"/km)\n- 40 min allure marathon (4'58/km)\n- 30 min Z2 retour\n\nNutrition : gel à 40/80/120/150 min + eau\nSéance clé — reproduire la concentration des 40 derniers km de Vienne",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-07",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w21-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 8.0,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 4.92, "km": 50.2 },
+          "swim": { "sessions": 2, "hours": 1.5, "meters": 3600 },
+          "strength": { "sessions": 2, "hours": 0.83 }
+        }
+      }
+    },
+    {
+      "weekNumber": 22,
+      "startDate": "2027-02-08",
+      "endDate": "2027-02-14",
+      "phase": "Spécificité marathon",
+      "focus": "SEMAINE PIC — long 30 km, allure marathon 45 min en séance",
+      "targetHours": 8.5,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2027-02-08",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w22-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-09",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w22-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w22-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Allure marathon — 5×8 min à 4'58/km",
+              "durationMinutes": 80,
+              "distanceMeters": 14500,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 172 },
+              "rpe": 7,
+              "humanReadable": "80 min total :\nÉchauffement 15 min Z1→Z2\nPrincipal : 5×8 min à allure marathon (4'58/km)\n  Récupération 2 min Z2 entre chaque\nRetour calme 15 min Z1\n\nSéance pic — 40 min de travail à allure marathon avant le long run samedi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-10",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w22-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 45,
+              "distanceMeters": 1800,
+              "humanReadable": "45 min — ~1800m\nRécupération active Z2 — préparer samedi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-11",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w22-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal — dernier renfo intense",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max\n\nDernier renfo à pleine charge avant le début de l'affûtage",
+              "completed": false
+            },
+            {
+              "id": "w22-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 55,
+              "distanceMeters": 8900,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "55 min Z2 — EFD ~8.9 km\nFacile — conserver l'énergie pour le long run pic samedi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-12",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w22-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 45,
+              "distanceMeters": 1800,
+              "humanReadable": "45 min — ~1800m crawl Z2\nDernière natation longue avant le semi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-13",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w22-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "LONG RUN PIC — 30 km avec sections allure marathon",
+              "durationMinutes": 180,
+              "distanceMeters": 29500,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 168 },
+              "rpe": 8,
+              "humanReadable": "180 min — EFD ~30 km — LONG RUN PIC\nStructure :\n- 100 min Z2 (5'50–6'10\"/km)\n- 50 min allure marathon (4'58/km)\n- 30 min Z2 retour calme\n\nNutrition : gel à 40/80/120/155 min + eau tous les 20 min\nLa séance la plus exigeante du plan — rester patient sur les 100 premières minutes\nSi allure marathon difficile à tenir : réduire à 4×10 min sans honte",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-14",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w22-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos — Saint-Valentin",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 8.5,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 5.25, "km": 52.9 },
+          "swim": { "sessions": 2, "hours": 1.5, "meters": 3600 },
+          "strength": { "sessions": 2, "hours": 0.83 }
+        }
+      }
+    },
+    {
+      "weekNumber": 23,
+      "startDate": "2027-02-15",
+      "endDate": "2027-02-21",
+      "phase": "Spécificité marathon",
+      "focus": "Pré-semi taper — volume -40%, allures faciles, préserver les jambes",
+      "targetHours": 5.0,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2027-02-15",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w23-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-16",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w23-tue-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2 facile — pré-semi",
+              "durationMinutes": 50,
+              "distanceMeters": 8100,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "50 min Z2 — EFD ~8 km\nPas de renfo cette semaine — jambes au repos\nFC 148–162 bpm, allure relâchée",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-17",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w23-wed-swim",
+              "sport": "swim",
+              "type": "recovery",
+              "name": "Natation légère",
+              "durationMinutes": 35,
+              "distanceMeters": 1400,
+              "humanReadable": "35 min — ~1400m facile\nRécupération — pas de séries intenses\nVarier les nages",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-18",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w23-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Run Z1–Z2 facile",
+              "durationMinutes": 40,
+              "distanceMeters": 6500,
+              "primaryZone": "Zone 1-2",
+              "targetHR": { "low": 130, "high": 155 },
+              "rpe": 3,
+              "humanReadable": "40 min Z1–Z2 — très facile\nFC < 155 bpm — ne rien forcer\nEFD cible : ~6.5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-19",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w23-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-20",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w23-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Long run allégé Z2 — 120 min",
+              "durationMinutes": 120,
+              "distanceMeters": 19000,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "120 min Z2 — EFD ~19 km\nFC 148–162 bpm — allure très confortable\nNutrition : 1 gel à 60 min + eau\nDernier long avant le semi — conserver l'énergie",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-21",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w23-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.0,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 3.5, "km": 33.6 },
+          "swim": { "sessions": 1, "hours": 0.58, "meters": 1400 }
+        }
+      }
+    },
+    {
+      "weekNumber": 24,
+      "startDate": "2027-02-22",
+      "endDate": "2027-02-28",
+      "phase": "Semi du Rhône — test de forme",
+      "focus": "Mini-taper + Semi du Rhône dimanche — objectif 1h38–1h42",
+      "targetHours": 4.0,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2027-02-22",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w24-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou marche légère",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-23",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w24-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Activation légère",
+              "durationMinutes": 30,
+              "distanceMeters": 5000,
+              "primaryZone": "Zone 1",
+              "targetHR": { "low": 100, "high": 148 },
+              "rpe": 2,
+              "humanReadable": "30 min Z1 — route plate\n3–4 accélérations de 10s à allure semi\nFC < 148 bpm\nRester frais, ne rien forcer",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-24",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w24-wed-swim",
+              "sport": "swim",
+              "type": "recovery",
+              "name": "Natation légère",
+              "durationMinutes": 25,
+              "distanceMeters": 1000,
+              "humanReadable": "25 min — ~1000m très facile\nActivation sans effort — jambes légères",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-25",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w24-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Activation légère",
+              "durationMinutes": 25,
+              "distanceMeters": 4500,
+              "primaryZone": "Zone 1",
+              "targetHR": { "low": 100, "high": 148 },
+              "rpe": 2,
+              "humanReadable": "25 min Z1 — très léger\n3 accélérations de 10s à allure semi\nDernier footing avant le semi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-26",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w24-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos complet",
+              "description": "Repos — préparer le matériel, hydratation, repas pâtes le soir",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-27",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w24-sat",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos — veille semi",
+              "description": "Repos — retrait dossard si possible, repas pâtes simples, coucher tôt",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-02-28",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w24-sun-race",
+              "sport": "race",
+              "type": "race",
+              "name": "Semi du Rhône — Sion–Riddes",
+              "durationMinutes": 100,
+              "distanceMeters": 21095,
+              "primaryZone": "Zone 3",
+              "targetHR": { "low": 163, "high": 178 },
+              "rpe": 8,
+              "humanReadable": "Semi du Rhône — 21.1 km — Sion–Riddes\nObjectif : 1h38–1h42 (4'38–4'51\"/km)\n\nStratégie :\n- Partir à 4'50\"/km les 5 premiers km (terrain inconnu, foule)\n- Km 5–15 : 4'38–4'42\"/km selon sensations\n- Km 15–21 : tout ce qu'il reste\n\nNutrition :\n- Bircher léger 2h30 avant\n- 1 gel Energix à 35 min\n- Eau aux ravitaillements\n\nRappel : c'est un TEST — courir selon les sensations, pas selon la montre à tout prix",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 4.0,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 2.58, "km": 30.6 },
+          "swim": { "sessions": 1, "hours": 0.42, "meters": 1000 }
+        }
+      }
+    },
+    {
+      "weekNumber": 25,
+      "startDate": "2027-03-01",
+      "endDate": "2027-03-07",
+      "phase": "Bloc final post-semi",
+      "focus": "Récupération post-semi — footings légers uniquement",
+      "targetHours": 2.5,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2027-03-01",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w25-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-02",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w25-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Footing récup Z1",
+              "durationMinutes": 30,
+              "distanceMeters": 4800,
+              "primaryZone": "Zone 1",
+              "targetHR": { "low": 100, "high": 148 },
+              "rpe": 2,
+              "humanReadable": "30 min Z1 — très léger\nFC < 148 bpm — récupération post-semi\nEFD cible : ~4.8 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-03",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w25-wed",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-04",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w25-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Footing récup Z1–Z2",
+              "durationMinutes": 35,
+              "distanceMeters": 5600,
+              "primaryZone": "Zone 1-2",
+              "targetHR": { "low": 100, "high": 155 },
+              "rpe": 3,
+              "humanReadable": "35 min Z1–Z2\nFC < 155 bpm — pas de pression\nEFD cible : ~5.5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-05",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w25-fri-swim",
+              "sport": "swim",
+              "type": "recovery",
+              "name": "Natation légère",
+              "durationMinutes": 30,
+              "distanceMeters": 1200,
+              "humanReadable": "30 min — ~1200m très facile\nRécupération active — aucune intensité",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-06",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w25-sat-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Footing Z2 — retour progressif",
+              "durationMinutes": 50,
+              "distanceMeters": 8000,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "50 min Z2 — EFD ~8 km\nFC 148–162 bpm — sentir que les jambes récupèrent\nPas de performance — juste bouger",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-07",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w25-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 2.5,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 1.92, "km": 18.4 },
+          "swim": { "sessions": 1, "hours": 0.5, "meters": 1200 }
+        }
+      }
+    },
+    {
+      "weekNumber": 26,
+      "startDate": "2027-03-08",
+      "endDate": "2027-03-14",
+      "phase": "Bloc final post-semi",
+      "focus": "Reprise bloc final — tempo 30 min Z3, long 25 km",
+      "targetHours": 6.5,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2027-03-08",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w26-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-09",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w26-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal — reprise",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w26-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Tempo Z3 — 30 min — reprise qualité",
+              "durationMinutes": 60,
+              "distanceMeters": 11000,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 170 },
+              "rpe": 6,
+              "humanReadable": "60 min total :\nÉchauffement 15 min Z1→Z2\nTempo 30 min Z3 (FC 163–170 bpm, ~5'05\"/km)\nRetour calme 15 min Z1\n\nReprise de la qualité après récup semi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-10",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w26-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m Z2\nRécupération active post-tempo",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-11",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w26-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max",
+              "completed": false
+            },
+            {
+              "id": "w26-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 50,
+              "distanceMeters": 8100,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "50 min Z2 — EFD ~8 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-12",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w26-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m crawl Z2",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-13",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w26-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Sortie longue Z2 — 150 min / 25 km",
+              "durationMinutes": 150,
+              "distanceMeters": 23700,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 6,
+              "humanReadable": "150 min Z2 — EFD ~24 km\nFC 148–162 bpm\nNutrition : gel à 45/90/125 min + eau\nRetour en confiance après le semi — les jambes sont là",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-14",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w26-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 6.5,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 4.33, "km": 42.8 },
+          "swim": { "sessions": 2, "hours": 1.33, "meters": 3200 },
+          "strength": { "sessions": 2, "hours": 0.83 }
+        }
+      }
+    },
+    {
+      "weekNumber": 27,
+      "startDate": "2027-03-15",
+      "endDate": "2027-03-21",
+      "phase": "Bloc final post-semi",
+      "focus": "DERNIER PIC — tempo 35 min Z3, long 27 km — DERNIÈRE SORTIE LONGUE",
+      "targetHours": 7.0,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2027-03-15",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w27-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-16",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w27-tue-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal — dernier renfo complet",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — 3 rounds :\n1. Hip thrust lesté : 15 reps\n2. Squat sauté : 12 reps\n3. Fente bulgare : 10 reps/jambe\n4. Calf raise excentrique : 18 reps\n5. Gainage latéral : 35s/côté\n+ Traction : max\n\nDernier renfo complet avant l'affûtage",
+              "completed": false
+            },
+            {
+              "id": "w27-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Tempo Z3 — 35 min + allure marathon 10 min",
+              "durationMinutes": 70,
+              "distanceMeters": 13000,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 172 },
+              "rpe": 7,
+              "humanReadable": "70 min total :\nÉchauffement 15 min Z1→Z2\nTempo 35 min Z3 (163–170 bpm)\nAllure marathon 10 min (4'58/km) — finisher\nRetour calme 10 min Z1\n\nDernière séance de qualité avant l'affûtage",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-17",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w27-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m Z2\nRécupération post-tempo",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-18",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w27-thu-str",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Renfo matinal",
+              "durationMinutes": 20,
+              "humanReadable": "20 min — 2 rounds (début réduction) :\n1. Hip thrust : 12 reps\n2. Squat sauté : 8 reps\n3. Fente bulgare : 8 reps/jambe\n4. Calf raise : 12 reps\n5. Gainage latéral : 25s/côté",
+              "completed": false
+            },
+            {
+              "id": "w27-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 55,
+              "distanceMeters": 8900,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "55 min Z2 — EFD ~8.9 km\nFacile — garder les jambes pour samedi",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-19",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w27-fri-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation",
+              "durationMinutes": 40,
+              "distanceMeters": 1600,
+              "humanReadable": "40 min — ~1600m crawl Z2\nDernière natation longue de la prépa",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-20",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w27-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "DERNIÈRE SORTIE LONGUE — 160 min / 27 km",
+              "durationMinutes": 160,
+              "distanceMeters": 26500,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 165 },
+              "rpe": 6,
+              "humanReadable": "160 min — EFD ~27 km — DERNIER LONG RUN\nStructure :\n- 110 min Z2 (5'50–6'10\"/km)\n- 30 min allure marathon (4'58/km)\n- 20 min Z2 retour\n\nNutrition : gel à 45/90/130 min + eau\nCette sortie est la dernière accumulation — après, c'est l'affûtage\nFinir en force mais sans excès",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-21",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w27-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 7.0,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 4.75, "km": 48.4 },
+          "swim": { "sessions": 2, "hours": 1.33, "meters": 3200 },
+          "strength": { "sessions": 2, "hours": 0.75 }
+        }
+      }
+    },
+    {
+      "weekNumber": 28,
+      "startDate": "2027-03-22",
+      "endDate": "2027-03-28",
+      "phase": "Affûtage",
+      "focus": "Début affûtage — volume -35%, maintien qualité courte",
+      "targetHours": 5.0,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2027-03-22",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w28-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-23",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w28-tue-str",
+              "sport": "strength",
+              "type": "recovery",
+              "name": "Renfo léger affûtage",
+              "durationMinutes": 15,
+              "humanReadable": "15 min — 2 rounds :\n1. Hip thrust : 12 reps\n2. Fente bulgare : 6 reps/jambe\n3. Calf raise : 12 reps\n4. Gainage latéral : 20s/côté",
+              "completed": false
+            },
+            {
+              "id": "w28-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Tempo court — 20 min Z3 + 5 min allure marathon",
+              "durationMinutes": 50,
+              "distanceMeters": 9100,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 172 },
+              "rpe": 6,
+              "humanReadable": "50 min total :\nÉchauffement 15 min Z1→Z2\nTempo 20 min Z3 (163–170 bpm)\n5 min allure marathon (4'58/km)\nRetour calme 10 min Z1\n\nAffûtage : moins de volume, maintenir la qualité",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-24",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w28-wed-swim",
+              "sport": "swim",
+              "type": "recovery",
+              "name": "Natation légère",
+              "durationMinutes": 35,
+              "distanceMeters": 1400,
+              "humanReadable": "35 min — ~1400m\nAllure facile — récupération active",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-25",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w28-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2 affûtage",
+              "durationMinutes": 45,
+              "distanceMeters": 7300,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "45 min Z2 — EFD ~7.3 km\nFacile — les jambes commencent à se reposer",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-26",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w28-fri-swim",
+              "sport": "swim",
+              "type": "recovery",
+              "name": "Natation légère",
+              "durationMinutes": 30,
+              "distanceMeters": 1200,
+              "humanReadable": "30 min — ~1200m facile\nDernière natation de la prépa",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-27",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w28-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Long run affûtage — 120 min",
+              "durationMinutes": 120,
+              "distanceMeters": 19000,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 5,
+              "humanReadable": "120 min Z2 — EFD ~19 km\nFC 148–162 bpm — allure relâchée\nNutrition : 1 gel à 60 min + eau\nLe volume baisse, les jambes doivent sentir la fraîcheur",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-28",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w28-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 5.0,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 3.58, "km": 35.4 },
+          "swim": { "sessions": 2, "hours": 1.08, "meters": 2600 },
+          "strength": { "sessions": 1, "hours": 0.25 }
+        }
+      }
+    },
+    {
+      "weekNumber": 29,
+      "startDate": "2027-03-29",
+      "endDate": "2027-04-04",
+      "phase": "Affûtage",
+      "focus": "Affûtage J-20 — volume -50%, qualité courte maintenue",
+      "targetHours": 4.0,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2027-03-29",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w29-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-30",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w29-tue-run",
+              "sport": "run",
+              "type": "tempo",
+              "name": "Tempo très court + allure marathon",
+              "durationMinutes": 45,
+              "distanceMeters": 8200,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 148, "high": 172 },
+              "rpe": 6,
+              "humanReadable": "45 min total :\nÉchauffement 12 min Z1→Z2\nTempo 15 min Z3 (163–170 bpm)\nAllure marathon 8 min (4'58/km)\nRetour calme 10 min Z1\n\nLes jambes doivent se sentir légères — si fatigue : réduire",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-03-31",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w29-wed-swim",
+              "sport": "swim",
+              "type": "recovery",
+              "name": "Natation légère",
+              "durationMinutes": 30,
+              "distanceMeters": 1200,
+              "humanReadable": "30 min — ~1200m très facile\nRécupération active — pas d'intensité",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-01",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w29-thu-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 40,
+              "distanceMeters": 6500,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 3,
+              "humanReadable": "40 min Z2 — EFD ~6.5 km\nFacile — profiter de la légèreté",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-02",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w29-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-03",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w29-sat-run",
+              "sport": "run",
+              "type": "long",
+              "name": "Long run allégé — 90 min",
+              "durationMinutes": 90,
+              "distanceMeters": 14200,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "90 min Z2 — EFD ~14 km\nFC 148–162 bpm — allure relâchée\nNutrition : 1 gel à 50 min + eau\nSentir les jambes fraîches — c'est le signe que l'affûtage fonctionne",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-04",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w29-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 4.0,
+        "bySport": {
+          "run": { "sessions": 3, "hours": 2.92, "km": 28.9 },
+          "swim": { "sessions": 1, "hours": 0.5, "meters": 1200 }
+        }
+      }
+    },
+    {
+      "weekNumber": 30,
+      "startDate": "2027-04-05",
+      "endDate": "2027-04-11",
+      "phase": "Affûtage",
+      "focus": "Affûtage J-13 — volume minimum, sentir les jambes fraîches",
+      "targetHours": 2.5,
+      "isRecoveryWeek": true,
+      "days": [
+        {
+          "date": "2027-04-05",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w30-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou yoga doux",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-06",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w30-tue-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Run Z2 avec quelques allures",
+              "durationMinutes": 40,
+              "distanceMeters": 7000,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 4,
+              "humanReadable": "40 min Z2 + 3×60s à allure marathon (4'58/km) au milieu\nFC 148–162 bpm\nLes segments allure servent à garder le système neuromusculaire éveillé",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-07",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w30-wed",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-08",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w30-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Footing Z1–Z2 léger",
+              "durationMinutes": 30,
+              "distanceMeters": 4800,
+              "primaryZone": "Zone 1-2",
+              "targetHR": { "low": 120, "high": 155 },
+              "rpe": 2,
+              "humanReadable": "30 min Z1–Z2 — très facile\nFC < 155 bpm\nQuelques foulées légères (3×10s) pour activer",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-09",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w30-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-10",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w30-sat-run",
+              "sport": "run",
+              "type": "endurance",
+              "name": "Sortie facile Z2",
+              "durationMinutes": 60,
+              "distanceMeters": 9500,
+              "primaryZone": "Zone 2",
+              "targetHR": { "low": 148, "high": 162 },
+              "rpe": 3,
+              "humanReadable": "60 min Z2 — EFD ~9.5 km\nFC 148–162 bpm — allure très relâchée\nNutrition : tester le gel à 35 min (confirmer le protocole race day)\nDernier dimanche avant Vienne — profiter du calme",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-11",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w30-sun",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 2.5,
+        "bySport": { "run": { "sessions": 3, "hours": 2.17, "km": 21.3 } }
+      }
+    },
+    {
+      "weekNumber": 31,
+      "startDate": "2027-04-12",
+      "endDate": "2027-04-18",
+      "phase": "Race week",
+      "focus": "2 activations légères + logistique Vienne — Marathon dimanche",
+      "targetHours": 4.5,
+      "isRecoveryWeek": false,
+      "days": [
+        {
+          "date": "2027-04-12",
+          "dayOfWeek": "Monday",
+          "workouts": [
+            {
+              "id": "w31-mon",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos ou marche légère",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-13",
+          "dayOfWeek": "Tuesday",
+          "workouts": [
+            {
+              "id": "w31-tue-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Activation légère",
+              "durationMinutes": 25,
+              "distanceMeters": 4500,
+              "primaryZone": "Zone 1",
+              "targetHR": { "low": 100, "high": 148 },
+              "rpe": 2,
+              "humanReadable": "25 min Z1 — route plate\n3–4 accélérations de 10s à allure marathon\nFC < 148 bpm — juste activer\nRester frais, ne rien forcer",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-14",
+          "dayOfWeek": "Wednesday",
+          "workouts": [
+            {
+              "id": "w31-wed",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-15",
+          "dayOfWeek": "Thursday",
+          "workouts": [
+            {
+              "id": "w31-thu-run",
+              "sport": "run",
+              "type": "recovery",
+              "name": "Activation très légère",
+              "durationMinutes": 20,
+              "distanceMeters": 3500,
+              "primaryZone": "Zone 1",
+              "targetHR": { "low": 100, "high": 148 },
+              "rpe": 2,
+              "humanReadable": "20 min Z1 — très léger\n3 accélérations de 10s à allure marathon\nDernier footing avant le départ\nEFD cible : ~3.5 km",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-16",
+          "dayOfWeek": "Friday",
+          "workouts": [
+            {
+              "id": "w31-fri",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos complet",
+              "description": "Repos — logistique Vienne, check matériel, repas pâtes simples",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-17",
+          "dayOfWeek": "Saturday",
+          "workouts": [
+            {
+              "id": "w31-sat",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos — veille marathon",
+              "description": "Repos — arrivée Vienne si besoin, expo-retrait dossard, pâtes simples soir, coucher tôt",
+              "completed": false
+            }
+          ]
+        },
+        {
+          "date": "2027-04-18",
+          "dayOfWeek": "Sunday",
+          "workouts": [
+            {
+              "id": "w31-sun-race",
+              "sport": "race",
+              "type": "race",
+              "name": "Marathon de Vienne 2027",
+              "durationMinutes": 209,
+              "distanceMeters": 42195,
+              "primaryZone": "Zone 2-3",
+              "targetHR": { "low": 155, "high": 175 },
+              "rpe": 9,
+              "humanReadable": "Marathon de Vienne — 42.195 km\nObjectif : sub-3h30 (4'58\"/km)\n\nStratégie :\n- Km 0–10 : 5'05\"/km — départ conservateur, foule\n- Km 10–30 : 4'58\"/km — rythme de croisière\n- Km 30–42 : tout ce qu'il reste — c'est là que la prépa paye\n\nNutrition :\n- Bircher léger 3h avant départ\n- Gel à 35 / 70 / 105 / 140 min\n- Red Tonic caféine après km 30\n- Eau à chaque ravito\n\nCues mentaux :\n- Les premiers km seront tentants — résiste\n- Le semi était 1h40 — tu pars pour 3h29\n- Km 30 : c'est là que le plan commence à payer\n- Profiter de Vienne — 7 mois de base propre pour ce moment",
+              "completed": false
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalHours": 4.5,
+        "bySport": { "run": { "sessions": 3, "hours": 4.08, "km": 50.2 } }
+      }
+    }
+  ],
+  "raceStrategy": {
+    "event": {
+      "name": "Marathon de Vienne 2027",
+      "date": "2027-04-18",
+      "type": "route",
+      "location": "Vienne, Autriche"
+    },
+    "intermediateRace": {
+      "name": "Semi du Rhône",
+      "date": "2027-02-28",
+      "targetTime": "1h38–1h42",
+      "targetPace": "4'38–4'51\"/km",
+      "role": "Test de forme — valide la trajectoire sub-3h30 si 1h38 atteint"
+    },
+    "pacing": {
+      "run": {
+        "targetTime": "3h25–3h30",
+        "targetPace": "4'58–5'00\"/km",
+        "strategy": "Départ conservateur — premiers 10 km à 5'05\"/km. Milieu à 5'00\"/km. Négative split idéal.",
+        "notes": "Ne pas partir avec la foule — premières bornes tentantes. Garder les jambes pour km 30–42."
+      }
+    },
+    "nutrition": {
+      "preRace": "J-2 : pâtes saumon. J-1 soir : pâtes simples, peu de fibres. J matin (3h avant départ) : Bircher muesli léger + café + jus d'orange.",
+      "during": {
+        "carbsPerHour": 70,
+        "fluidPerHour": "400–500 ml",
+        "products": [
+          "Overstims Energix (0–35 min)",
+          "Overstims Antioxydant (35–70 min)",
+          "Overstims Coup de fouet (70–105 min)",
+          "Overstims Energix (105–140 min)",
+          "Overstims Red Tonic caféine (140 min → arrivée)",
+          "Eau aux ravitaillements"
+        ]
+      }
+    },
+    "taper": {
+      "startWeek": 29,
+      "volumeReduction": 45,
+      "notes": "Réduction progressive sur 3 semaines. Maintenir la qualité (tempo court S29, sortie à allure S30). Arrêt renfo S30. Dernière natation S29."
+    },
+    "raceDay": {
+      "wakeUpTime": "Selon horaire officiel départ",
+      "preRaceMeal": "Bircher muesli léger + café + jus d'orange — 3h avant départ",
+      "warmUp": "15–20 min marche + quelques accélérations légères 10s",
+      "mentalCues": [
+        "Départ lent — les premiers km sont une banque, pas une dette",
+        "5'05\"/km les 10 premiers km même si ça semble trop lent",
+        "Km 30–35 : c'est là que la prépa paye",
+        "Sub-3h30 est une boussole — profiter du parcours de Vienne",
+        "Paris c'était 3h49 avec une hanche et un rhume — tu arrives en meilleure forme"
+      ]
+    }
+  }
+}
