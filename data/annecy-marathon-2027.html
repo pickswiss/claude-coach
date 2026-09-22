@@ -42003,7 +42003,7 @@ ${a.join(`
           "planStartDate": "2026-09-14",
           "planEndDate": "2027-04-18",
           "totalWeeks": 31,
-          "revision": "v2.3 — bloc salle avancé au 02.11.2026",
+          "revision": "v2.4 — fenêtre de déficit raccourcie pour ne pas chevaucher la force lourde",
           "changelog": [
             "Zones FC reconstruites en % de réserve (max 189 validé / repos 43). L'ancienne Z2 (148–162) était 14 bpm trop haute.",
             "Allure marathon : modèle dérivé (bande 5'00–5'12) au lieu d'une cible figée à 4'58.",
@@ -42014,7 +42014,8 @@ ${a.join(`
             "Natation dégressive : 2× en oct-nov, 1× dès décembre.",
             "4e séance course conditionnelle dès S18, en remplacement de la natation du samedi.",
             "Décharge réelle ajoutée en S20. Corrections de phases, d'affûtage et de chronos.",
-            "Nutrition : cible glucidique progressive + fenêtre de déficit oct-nov."
+            "Nutrition : cible glucidique progressive + fenêtre de déficit oct-nov.",
+            "v2.4 : le déficit s'arrête au 15 novembre, pas au 29 — il chevauchait le bloc de force avancé au 2 novembre."
           ]
         },
         "preferences": {
@@ -42273,12 +42274,30 @@ ${a.join(`
             "note": "Estimations à 85 kg / 184 cm / 33 ans. À recaler avec Foodvisor sur les 3 premières semaines."
           },
           "deficitWindow": {
-            "weeks": [4, 11],
-            "dailyDeficit_kcal": 400,
-            "expectedLoss_kg": "2 à 3",
+            "phases": [
+              {
+                "weeks": [4, 7],
+                "dates": "5 oct → 1 nov",
+                "dailyDeficit_kcal": 400,
+                "note": "Déficit plein. Aucune salle, volume de course bas — la seule vraie fenêtre."
+              },
+              {
+                "weeks": [8, 9],
+                "dates": "2 → 15 nov",
+                "dailyDeficit_kcal": 200,
+                "note": "Transition. Prise en main en salle, charges modérées : un déficit réduit reste tolérable."
+              },
+              {
+                "weeks": [10, 31],
+                "dates": "dès le 16 nov",
+                "dailyDeficit_kcal": 0,
+                "note": "Maintenance stricte. La force lourde commence — on mange pour s'entraîner."
+              }
+            ],
+            "expectedLoss_kg": "1,5 à 2",
             "tracking": "Foodvisor en continu sur toute la fenêtre",
             "floor_kg": 80,
-            "hardRule": "AUCUN déficit à partir de S12. Un déficit pendant le bloc de force ou la phase spécifique coûte de la force, de la récupération et augmente le risque de blessure.",
+            "hardRule": "AUCUN déficit à partir de S10 (16 novembre). Avancer le bloc de salle au 2 novembre a raccourci la fenêtre : un déficit pendant la force lourde coûte de la force, de la récupération, et augmente le risque de blessure. La règle prime sur l'objectif de poids.",
             "warning": "Tu as déjà perdu 5 kg. Tu es à l'endroit où le sous-carburant commence à coûter — récupération dégradée, blessures, progression bloquée. Déficit modéré et protéines hautes, ou rien."
           },
           "protein_g_per_kg": 2.0,
@@ -42312,6 +42331,7 @@ ${a.join(`
             }
           ],
           "weeklyAverage_kcal": 2630,
+          "maintenanceCaveat": "Les 3 050 kcal supposent une activité quotidienne modérée. Avec 11 000 pas/jour de moyenne mesurés sur un mois, la maintenance réelle est probablement 150 à 250 kcal plus haute. Relever la moyenne hebdomadaire de pas dans Garmin Connect chaque samedi et recaler après les 3 semaines Foodvisor.",
           "fuelingProgression": [
             {
               "weeks": [4, 11],

@@ -17,7 +17,7 @@
     "planStartDate": "2026-09-14",
     "planEndDate": "2027-04-18",
     "totalWeeks": 31,
-    "revision": "v2.3 — bloc salle avancé au 02.11.2026",
+    "revision": "v2.4 — fenêtre de déficit raccourcie pour ne pas chevaucher la force lourde",
     "changelog": [
       "Zones FC reconstruites en % de réserve (max 189 validé / repos 43). L'ancienne Z2 (148–162) était 14 bpm trop haute.",
       "Allure marathon : modèle dérivé (bande 5'00–5'12) au lieu d'une cible figée à 4'58.",
@@ -28,7 +28,8 @@
       "Natation dégressive : 2× en oct-nov, 1× dès décembre.",
       "4e séance course conditionnelle dès S18, en remplacement de la natation du samedi.",
       "Décharge réelle ajoutée en S20. Corrections de phases, d'affûtage et de chronos.",
-      "Nutrition : cible glucidique progressive + fenêtre de déficit oct-nov."
+      "Nutrition : cible glucidique progressive + fenêtre de déficit oct-nov.",
+      "v2.4 : le déficit s'arrête au 15 novembre, pas au 29 — il chevauchait le bloc de force avancé au 2 novembre."
     ]
   },
   "preferences": {
@@ -200,30 +201,48 @@
       "week": 11,
       "date": "2026-11-29",
       "test": "30 min contre-la-montre",
-      "measures": ["LTHR = FC moyenne des 20 dernières minutes", "Allure seuil"],
+      "measures": [
+        "LTHR = FC moyenne des 20 dernières minutes",
+        "Allure seuil"
+      ],
       "rule": "Allure marathon estimée ≈ allure 30 min + 25–30 s/km. Recaler les zones sur le LTHR mesuré.",
-      "updates": ["zones.lthr", "zones.marathon.band"]
+      "updates": [
+        "zones.lthr",
+        "zones.marathon.band"
+      ]
     },
     {
       "week": 18,
       "date": "2027-01-17",
       "test": "Tempo 40 min chronométré",
-      "measures": ["Allure tenue à FC 148–160"],
+      "measures": [
+        "Allure tenue à FC 148–160"
+      ],
       "rule": "Resserrer la bande d'allure marathon de ±15 s/km.",
-      "updates": ["zones.marathon.band"]
+      "updates": [
+        "zones.marathon.band"
+      ]
     },
     {
       "week": 24,
       "date": "2027-02-28",
       "test": "Semi du Rhône",
-      "measures": ["Allure semi", "Dérive cardiaque sur 21 km"],
+      "measures": [
+        "Allure semi",
+        "Dérive cardiaque sur 21 km"
+      ],
       "rule": "ALLURE MARATHON = ALLURE SEMI + 20–25 s/km. C'est ce calcul qui fixe la cible d'Annecy. Aucun chrono n'est décidé avant.",
-      "updates": ["zones.marathon.confirmedPace_s_per_km"]
+      "updates": [
+        "zones.marathon.confirmedPace_s_per_km"
+      ]
     }
   ],
   "strengthBlocks": [
     {
-      "weeks": [4, 7],
+      "weeks": [
+        4,
+        7
+      ],
       "schedule": {
         "monday": "maison — prévention hanche (20 min)",
         "thursday": "maison — prévention hanche (20 min)"
@@ -231,7 +250,10 @@
       "focus": "Installer l'habitude et protéger le TFL avant que le volume monte."
     },
     {
-      "weeks": [8, 22],
+      "weeks": [
+        8,
+        22
+      ],
       "schedule": {
         "monday": "maison — prévention hanche (20 min)",
         "thursday": "SALLE — force maximale (45–60 min)"
@@ -241,7 +263,10 @@
       "constraint": "Jamais de jambes lourdes à moins de 48 h de la sortie longue. Le jeudi respecte cette règle (sortie longue le dimanche). Le test de seuil du mardi 24 novembre tombe 5 jours après la salle du 19 — pas de conflit."
     },
     {
-      "weeks": [23, 30],
+      "weeks": [
+        23,
+        30
+      ],
       "schedule": {
         "monday": "maison — maintien (15 min)",
         "thursday": "maison — maintien (15 min) jusqu'à S27, puis rien"
@@ -265,17 +290,31 @@
   },
   "swimming": {
     "phase1": {
-      "weeks": [4, 11],
+      "weeks": [
+        4,
+        11
+      ],
       "sessions": 2,
-      "days": ["wednesday", "saturday"]
+      "days": [
+        "wednesday",
+        "saturday"
+      ]
     },
     "phase2": {
-      "weeks": [12, 23],
+      "weeks": [
+        12,
+        23
+      ],
       "sessions": 1,
-      "days": ["saturday"]
+      "days": [
+        "saturday"
+      ]
     },
     "phase3": {
-      "weeks": [24, 31],
+      "weeks": [
+        24,
+        31
+      ],
       "sessions": "optionnel"
     },
     "rationale": "Le bénéfice aérobie compte quand le volume de course est bas. Quand les sorties longues atteignent 2h30–3h, la natation coûte plus de temps qu'elle ne rapporte."
@@ -287,19 +326,49 @@
       "note": "Estimations à 85 kg / 184 cm / 33 ans. À recaler avec Foodvisor sur les 3 premières semaines."
     },
     "deficitWindow": {
-      "weeks": [4, 11],
-      "dailyDeficit_kcal": 400,
-      "expectedLoss_kg": "2 à 3",
+      "phases": [
+        {
+          "weeks": [
+            4,
+            7
+          ],
+          "dates": "5 oct → 1 nov",
+          "dailyDeficit_kcal": 400,
+          "note": "Déficit plein. Aucune salle, volume de course bas — la seule vraie fenêtre."
+        },
+        {
+          "weeks": [
+            8,
+            9
+          ],
+          "dates": "2 → 15 nov",
+          "dailyDeficit_kcal": 200,
+          "note": "Transition. Prise en main en salle, charges modérées : un déficit réduit reste tolérable."
+        },
+        {
+          "weeks": [
+            10,
+            31
+          ],
+          "dates": "dès le 16 nov",
+          "dailyDeficit_kcal": 0,
+          "note": "Maintenance stricte. La force lourde commence — on mange pour s'entraîner."
+        }
+      ],
+      "expectedLoss_kg": "1,5 à 2",
       "tracking": "Foodvisor en continu sur toute la fenêtre",
       "floor_kg": 80,
-      "hardRule": "AUCUN déficit à partir de S12. Un déficit pendant le bloc de force ou la phase spécifique coûte de la force, de la récupération et augmente le risque de blessure.",
+      "hardRule": "AUCUN déficit à partir de S10 (16 novembre). Avancer le bloc de salle au 2 novembre a raccourci la fenêtre : un déficit pendant la force lourde coûte de la force, de la récupération, et augmente le risque de blessure. La règle prime sur l'objectif de poids.",
       "warning": "Tu as déjà perdu 5 kg. Tu es à l'endroit où le sous-carburant commence à coûter — récupération dégradée, blessures, progression bloquée. Déficit modéré et protéines hautes, ou rien."
     },
     "protein_g_per_kg": 2.0,
     "dayTemplates": [
       {
         "type": "Jour dur",
-        "days": ["mardi (qualité)", "dimanche (sortie longue)"],
+        "days": [
+          "mardi (qualité)",
+          "dimanche (sortie longue)"
+        ],
         "kcal": 2950,
         "carbs_g": "430–500",
         "protein_g": 170,
@@ -308,7 +377,11 @@
       },
       {
         "type": "Jour facile",
-        "days": ["mercredi", "jeudi", "samedi"],
+        "days": [
+          "mercredi",
+          "jeudi",
+          "samedi"
+        ],
         "kcal": 2600,
         "carbs_g": "260–340",
         "protein_g": 170,
@@ -317,7 +390,10 @@
       },
       {
         "type": "Jour bas",
-        "days": ["lundi (renfo seul)", "vendredi (repos)"],
+        "days": [
+          "lundi (renfo seul)",
+          "vendredi (repos)"
+        ],
         "kcal": 2350,
         "carbs_g": "170–220",
         "protein_g": 180,
@@ -326,24 +402,37 @@
       }
     ],
     "weeklyAverage_kcal": 2630,
+    "maintenanceCaveat": "Les 3 050 kcal supposent une activité quotidienne modérée. Avec 11 000 pas/jour de moyenne mesurés sur un mois, la maintenance réelle est probablement 150 à 250 kcal plus haute. Relever la moyenne hebdomadaire de pas dans Garmin Connect chaque samedi et recaler après les 3 semaines Foodvisor.",
     "fuelingProgression": [
       {
-        "weeks": [4, 11],
+        "weeks": [
+          4,
+          11
+        ],
         "carbsPerHour": 30,
         "note": "Sorties < 100 min : eau + 1 gel au-delà de 60 min."
       },
       {
-        "weeks": [12, 18],
+        "weeks": [
+          12,
+          18
+        ],
         "carbsPerHour": 40,
         "note": "1 gel toutes les 40 min."
       },
       {
-        "weeks": [19, 20],
+        "weeks": [
+          19,
+          20
+        ],
         "carbsPerHour": 50,
         "note": "1 gel toutes les 30 min."
       },
       {
-        "weeks": [21, 23],
+        "weeks": [
+          21,
+          23
+        ],
         "carbsPerHour": 65,
         "note": "1 gel toutes les 25 min + boisson glucidique. C'EST LE PROTOCOLE DE COURSE — il se teste ici, pas le jour J."
       }
@@ -384,7 +473,12 @@
         "low": 0.0,
         "high": 1.1
       },
-      "keyWorkouts": ["Repos actif", "Marche", "Yoga", "Première natation légère (S3)"],
+      "keyWorkouts": [
+        "Repos actif",
+        "Marche",
+        "Yoga",
+        "Première natation légère (S3)"
+      ],
       "physiologicalGoals": [
         "Récupérer complètement du Wild 25",
         "Préparer le corps à la routine d'octobre"
@@ -463,7 +557,9 @@
         "low": 3.1,
         "high": 3.1
       },
-      "keyWorkouts": ["Semi du Rhône 21,1 km — Sion–Riddes, 28 février 2027"],
+      "keyWorkouts": [
+        "Semi du Rhône 21,1 km — Sion–Riddes, 28 février 2027"
+      ],
       "physiologicalGoals": [
         "Mesurer la forme réelle",
         "Allure marathon = allure semi + 20–25 s/km",
@@ -517,8 +613,14 @@
         "low": 4.3,
         "high": 4.3
       },
-      "keyWorkouts": ["Activation mardi", "Activation jeudi", "Marathon d'Annecy dimanche"],
-      "physiologicalGoals": ["Arriver frais sur la ligne"]
+      "keyWorkouts": [
+        "Activation mardi",
+        "Activation jeudi",
+        "Marathon d'Annecy dimanche"
+      ],
+      "physiologicalGoals": [
+        "Arriver frais sur la ligne"
+      ]
     }
   ],
   "weeks": [
