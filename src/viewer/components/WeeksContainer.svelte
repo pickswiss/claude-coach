@@ -9,7 +9,17 @@
   import type { PlanChanges } from "../stores/changes.js";
   import { getEffectiveWorkout, isWorkoutDeleted } from "../stores/changes.js";
   import WeekCard from "./WeekCard.svelte";
-  import { getOrderedDays, getTodayISO, parseDate, formatDateISO } from "../lib/utils.js";
+  import {
+    getOrderedDays,
+    getTodayISO,
+    parseDate,
+    formatDateISO,
+    getWeekMonthKey,
+    getMonthStarts,
+    formatMonthFr,
+    formatMonthShortFr,
+    findWeekForDate,
+  } from "../lib/utils.js";
 
   interface Props {
     plan: TrainingPlan;
@@ -34,6 +44,52 @@
   }: Props = $props();
 
   const today = getTodayISO();
+
+  const weeks = $derived(plan.weeks ?? []);
+  const monthStarts = $derived(getMonthStarts(weeks));
+  const separatorBefore = $derived(new Map(monthStarts.map((m) => [m.weekNumber, m.monthKey])));
+
+  let containerEl = $state<HTMLDivElement>();
+  let barHeight = $state(0);
+  // Week currently at the top of the viewport, just below the sticky bar
+  let topWeekNumber = $state<number | null>(null);
+
+  const topWeek = $derived(weeks.find((w) => w.weekNumber === topWeekNumber) ?? weeks[0]);
+  const topMonthKey = $derived(topWeek ? getWeekMonthKey(topWeek) : "");
+
+  // Track which weeks intersect the viewport below the sticky bar; the lowest
+  // week number among them is the one at the top.
+  $effect(() => {
+    const offset = Math.ceil(barHeight);
+    if (!containerEl) return;
+
+    const visible = new Set<number>();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          const weekNumber = Number((entry.target as HTMLElement).dataset.week);
+          if (entry.isIntersecting) visible.add(weekNumber);
+          else visible.delete(weekNumber);
+        }
+        if (visible.size > 0) topWeekNumber = Math.min(...visible);
+      },
+      { rootMargin: `-${offset}px 0px 0px 0px` }
+    );
+    containerEl.querySelectorAll("[data-week]").forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  });
+
+  function scrollToWeek(weekNumber: number) {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    containerEl
+      ?.querySelector(`[data-week="${weekNumber}"]`)
+      ?.scrollIntoView({ behavior: reduceMotion ? "instant" : "smooth", block: "start" });
+  }
+
+  function scrollToToday() {
+    const week = findWeekForDate(weeks, today);
+    if (week) scrollToWeek(week.weekNumber);
+  }
 
   // Build a map of all original workout dates
   function getOriginalDateMap(): Record<string, string> {
@@ -184,18 +240,48 @@
     <button
       class="phase-segment {phaseName}"
       style="flex: {weeks}"
-      onclick={() => {
-        const weekCard = document.querySelector(`[data-week="${phase.startWeek}"]`);
-        weekCard?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }}
+      onclick={() => scrollToWeek(phase.startWeek)}
     >
       <span class="phase-label">{phase.name}</span>
     </button>
   {/each}
 </div>
 
-<div class="weeks-container">
-  {#each plan.weeks ?? [] as week, index (week.weekNumber)}
+<div class="timeline-bar" bind:offsetHeight={barHeight}>
+  {#if topWeek}
+    <p class="current-position">
+      <strong>{formatMonthFr(topMonthKey)}</strong>
+      <span class="sep">·</span>
+      S{topWeek.weekNumber}
+      <span class="sep">·</span>
+      {topWeek.phase}
+    </p>
+  {/if}
+  <div class="month-nav-row">
+    <nav class="month-nav" aria-label="Mois du plan">
+      {#each monthStarts as { monthKey, weekNumber }, i (monthKey)}
+        {#if i > 0}<span class="sep" aria-hidden="true">·</span>{/if}
+        <button
+          class="month-link"
+          class:active={monthKey === topMonthKey}
+          aria-current={monthKey === topMonthKey ? "true" : undefined}
+          title={formatMonthFr(monthKey)}
+          onclick={() => scrollToWeek(weekNumber)}
+        >
+          {formatMonthShortFr(monthKey)}
+        </button>
+      {/each}
+    </nav>
+    <button class="today-button" onclick={scrollToToday}>Aujourd'hui</button>
+  </div>
+</div>
+
+<div class="weeks-container" bind:this={containerEl} style="--sticky-offset: {barHeight}px">
+  {#each weeks as week, index (week.weekNumber)}
+    {@const monthKey = separatorBefore.get(week.weekNumber)}
+    {#if monthKey}
+      <h2 class="month-separator">{formatMonthFr(monthKey)}</h2>
+    {/if}
     <div data-week={week.weekNumber}>
       <WeekCard
         {week}
@@ -278,9 +364,114 @@
     background: linear-gradient(135deg, #10b981, #059669);
   }
 
+  /* Sticks to the viewport: no ancestor (.main-content, .app, body) may create a
+     scroll container, hence overflow-x: clip rather than hidden on body. */
+  .timeline-bar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin: 0 -1rem 1.5rem;
+    padding: 0.6rem 1rem;
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .current-position {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+  }
+
+  .current-position strong {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+
+  .sep {
+    color: var(--text-muted);
+    margin: 0 0.25rem;
+  }
+
+  .month-nav-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .month-nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .month-link {
+    flex-shrink: 0;
+    padding: 0.15rem 0.4rem;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    transition: all var(--transition-fast);
+  }
+
+  .month-link:hover {
+    color: var(--text-primary);
+    background: var(--bg-tertiary);
+  }
+
+  .month-link.active {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .today-button {
+    flex-shrink: 0;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--border-medium);
+    border-radius: 6px;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 0.8rem;
+    transition: all var(--transition-fast);
+  }
+
+  .today-button:hover {
+    background: var(--bg-tertiary);
+  }
+
   .weeks-container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .weeks-container > [data-week] {
+    scroll-margin-top: calc(var(--sticky-offset, 0px) + 0.75rem);
+  }
+
+  .month-separator {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0.5rem 0 -0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+  }
+
+  .month-separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--border-medium);
   }
 </style>

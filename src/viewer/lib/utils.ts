@@ -1,5 +1,5 @@
 import type { Settings, HrZone } from "../stores/settings.js";
-import type { Sport } from "../../schema/training-plan.js";
+import type { Sport, TrainingWeek } from "../../schema/training-plan.js";
 
 const METERS_PER_YARD = 0.9144;
 const KM_PER_MILE = 1.60934;
@@ -118,6 +118,85 @@ export function parseDate(dateStr: string): Date {
   const month = parts[1] ?? 1;
   const day = parts[2] ?? 1;
   return new Date(year, month - 1, day);
+}
+
+const MONTHS_FR = [
+  "janvier",
+  "février",
+  "mars",
+  "avril",
+  "mai",
+  "juin",
+  "juillet",
+  "août",
+  "septembre",
+  "octobre",
+  "novembre",
+  "décembre",
+];
+const MONTHS_FR_SHORT = [
+  "jan",
+  "fév",
+  "mars",
+  "avr",
+  "mai",
+  "juin",
+  "juil",
+  "août",
+  "sept",
+  "oct",
+  "nov",
+  "déc",
+];
+
+// First day of a week as ISO date (startDate, falling back to the first plan day)
+export function getWeekStart(week: TrainingWeek): string {
+  return week.startDate || week.days?.[0]?.date || "";
+}
+
+// Last day of a week as ISO date (endDate, falling back to the last plan day)
+export function getWeekEnd(week: TrainingWeek): string {
+  return week.endDate || week.days?.[week.days.length - 1]?.date || getWeekStart(week);
+}
+
+// Month a week belongs to, as "YYYY-MM": the month of its first day
+export function getWeekMonthKey(week: TrainingWeek): string {
+  return getWeekStart(week).slice(0, 7);
+}
+
+// "2026-11" -> "Novembre 2026"
+export function formatMonthFr(monthKey: string): string {
+  const [year, month] = monthKey.split("-").map(Number);
+  const name = MONTHS_FR[(month ?? 1) - 1] ?? "";
+  return `${name.charAt(0).toUpperCase()}${name.slice(1)} ${year}`;
+}
+
+// "2026-11" -> "nov"
+export function formatMonthShortFr(monthKey: string): string {
+  const month = Number(monthKey.split("-")[1]);
+  return MONTHS_FR_SHORT[month - 1] ?? "";
+}
+
+// First week of each month, in plan order
+export function getMonthStarts(weeks: TrainingWeek[]): { monthKey: string; weekNumber: number }[] {
+  const starts: { monthKey: string; weekNumber: number }[] = [];
+  let previous = "";
+  for (const week of weeks) {
+    const monthKey = getWeekMonthKey(week);
+    if (monthKey && monthKey !== previous) {
+      starts.push({ monthKey, weekNumber: week.weekNumber });
+      previous = monthKey;
+    }
+  }
+  return starts;
+}
+
+// Week containing the given ISO date, clamped to the first/last week of the plan
+export function findWeekForDate(weeks: TrainingWeek[], dateISO: string): TrainingWeek | undefined {
+  if (weeks.length === 0) return undefined;
+  const match = weeks.find((w) => getWeekStart(w) <= dateISO && dateISO <= getWeekEnd(w));
+  if (match) return match;
+  return dateISO < getWeekStart(weeks[0]!) ? weeks[0] : weeks[weeks.length - 1];
 }
 
 export function getSportColor(sport: Sport): string {
