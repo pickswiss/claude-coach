@@ -2,3 +2,4 @@ dist/
 node_modules/
 *.db
 data/*.json
+data/*.html
