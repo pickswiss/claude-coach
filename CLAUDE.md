@@ -8,17 +8,29 @@ Réponds toujours en français dans ce projet.
 
 ## Règle de modification du plan d'entraînement
 
-Source unique de vérité : `data/wild25-2026.json` (versionné dans ce dépôt).
-HTML de consultation : `data/wild25-2026.html` (versionné aussi).
+Plan actif : `data/annecy-marathon-2027.json` (source unique de vérité, versionné).
+HTML de consultation : `data/annecy-marathon-2027.html` (versionné aussi).
+Archive : `data/wild25-2026.{json,html}` (course terminée, ne plus modifier).
 
 À chaque modification du plan, l'agent DOIT dans cet ordre :
 
-1. Éditer `data/wild25-2026.json` (jamais `~/.claude-coach/`)
-2. Régénérer le HTML : `node dist/cli.js render data/wild25-2026.json --output=data/wild25-2026.html`
-3. Vérifier le HTML par grep/parse avant d'annoncer la modif faite
+1. Éditer le JSON du plan actif (jamais `~/.claude-coach/`)
+2. Régénérer le HTML : `node dist/cli.js render data/annecy-marathon-2027.json --output=data/annecy-marathon-2027.html`
+3. Vérifier le HTML généré (voir ci-dessous) avant d'annoncer la modif faite
 4. `git add data/ && git commit` avec un message décrivant le changement de plan
 
-Ne jamais annoncer "fait" sans avoir exécuté les étapes 2 et 3.
+Ne jamais annoncer "fait" sans avoir exécuté les étapes 2 et 3. Si une vérification échoue : ne rien commiter, expliquer ce qui cloche.
+
+### Vérifications du HTML (étape 3)
+
+Toujours parser le JSON embarqué (`<script type="application/json" id="plan-data">`) plutôt que grepper le texte brut :
+
+- **JSON embarqué identique au JSON source** (comparaison après parse).
+- **`meta.revision`** correspond à la version annoncée. Elle est bumpée dans le même geste que tout changement de contenu : un plan dont la révision ne correspond pas à son contenu est indétectable en aval — toutes les autres vérifications passent, et c'est la seule identité que le fichier porte sur lui-même.
+- **Nom de fichier par version** : chaque version livrée porte un nom de fichier distinct, jamais réutilisé (ex. `plan-annecy-2027-v2.5.json`). Dans le dépôt, le chemin `data/annecy-marathon-2027.json` reste stable ; c'est l'historique git qui distingue les versions.
+- **Viewer à jour** : le HTML contient `IntersectionObserver` et « Aujourd'hui » (repères temporels, commit f0ad9de). Ne pas se fier à « décembre » : le mot peut venir du contenu du plan. Si absent → `npm run build:viewer` puis re-rendre. `templates/plan-viewer.html` est gitignoré : il n'est jamais dans un commit, seul le build local compte.
+- **Taille** : ~850 Ko pour un rendu CLI brut. `data/*.html` est exclu de Prettier (`.prettierignore`), donc le fichier commité n'est plus reformaté (l'ancien ~1,7 Mo venait du reformatage). Une taille très inférieure = rendu tronqué.
+- **Contrôles spécifiques** à la modification demandée (durées, dates, champs nutrition…), en énumérant toutes les séances concernées, pas seulement la première.
 
 ## Decisions log
 
