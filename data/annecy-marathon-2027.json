@@ -17,7 +17,7 @@
     "planStartDate": "2026-09-14",
     "planEndDate": "2027-04-18",
     "totalWeeks": 31,
-    "revision": "v2.4 — fenêtre de déficit raccourcie pour ne pas chevaucher la force lourde",
+    "revision": "v2.5 — circuit maison enrichi (bas de jambe, excentrique ischios, tempo 3 s)",
     "changelog": [
       "Zones FC reconstruites en % de réserve (max 189 validé / repos 43). L'ancienne Z2 (148–162) était 14 bpm trop haute.",
       "Allure marathon : modèle dérivé (bande 5'00–5'12) au lieu d'une cible figée à 4'58.",
@@ -29,7 +29,8 @@
       "4e séance course conditionnelle dès S18, en remplacement de la natation du samedi.",
       "Décharge réelle ajoutée en S20. Corrections de phases, d'affûtage et de chronos.",
       "Nutrition : cible glucidique progressive + fenêtre de déficit oct-nov.",
-      "v2.4 : le déficit s'arrête au 15 novembre, pas au 29 — il chevauchait le bloc de force avancé au 2 novembre."
+      "v2.4 : le déficit s'arrête au 15 novembre, pas au 29 — il chevauchait le bloc de force avancé au 2 novembre.",
+      "v2.5 : circuit maison passé de 6 à 8 exercices (25 min) — ajout du soléaire, de l'excentrique Achille et d'un leg curl ischios, tempo excentrique 3 s explicite partout. Source : fiche de renforcement traileur (V. Guerdin, sept. 2026), adaptée au contexte route — protocole d'échauffement et travail des stabilisateurs de cheville écartés, non pertinents sur marathon plat."
     ]
   },
   "preferences": {
@@ -247,7 +248,8 @@
         "monday": "maison — prévention hanche (20 min)",
         "thursday": "maison — prévention hanche (20 min)"
       },
-      "focus": "Installer l'habitude et protéger le TFL avant que le volume monte."
+      "focus": "Installer l'habitude et protéger le TFL avant que le volume monte.",
+      "content": "Bloc A hanche (abduction lestée, Copenhagen, marche latérale élastique, hip thrust unilatéral) + Bloc B chaîne postérieure et bas de jambe (leg curl serviette, calf raise excentrique unipodal, soléaire genou fléchi, gainage latéral). Descente 3 s partout."
     },
     {
       "weeks": [
@@ -490,7 +492,7 @@
       "endWeek": 11,
       "focus": "Installer la routine et construire la durabilité : 3 runs sous 148 bpm, 2 renfo, 2 natations. Fenêtre de déficit alimentaire.",
       "weeklyHoursRange": {
-        "low": 3.8,
+        "low": 3.9,
         "high": 5.8
       },
       "keyWorkouts": [
@@ -513,7 +515,7 @@
       "focus": "Introduction du tempo Z3 et du seuil Z4, longs 110→150 min. Bloc de force lourde en salle. Noël allégé.",
       "weeklyHoursRange": {
         "low": 1.7,
-        "high": 6.2
+        "high": 6.3
       },
       "keyWorkouts": [
         "Tempo Z3 148–160 (20→40 min)",
@@ -534,7 +536,7 @@
       "focus": "Les blocs d'allure marathon FINISSENT les sorties longues. Pic de volume à 56 km.",
       "weeklyHoursRange": {
         "low": 4.3,
-        "high": 6.9
+        "high": 7.0
       },
       "keyWorkouts": [
         "Long 160→180 min finissant sur 30→50 min d'allure",
@@ -949,7 +951,7 @@
       "endDate": "2026-10-11",
       "phase": "Base aérobie",
       "focus": "Installer la routine — 3 runs, 2 renfo, 2 natations",
-      "targetHours": 4.0,
+      "targetHours": 4.2,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -960,9 +962,9 @@
               "id": "w4-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -1031,9 +1033,9 @@
               "id": "w4-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -1100,7 +1102,7 @@
       "endDate": "2026-10-18",
       "phase": "Base aérobie",
       "focus": "Progression douce — lignes droites le jeudi",
-      "targetHours": 4.3,
+      "targetHours": 4.5,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -1111,9 +1113,9 @@
               "id": "w5-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -1182,9 +1184,9 @@
               "id": "w5-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -1251,7 +1253,7 @@
       "endDate": "2026-10-25",
       "phase": "Base aérobie",
       "focus": "Volume en hausse — long 75 min",
-      "targetHours": 4.5,
+      "targetHours": 4.7,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -1262,9 +1264,9 @@
               "id": "w6-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -1333,9 +1335,9 @@
               "id": "w6-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -1402,7 +1404,7 @@
       "endDate": "2026-11-01",
       "phase": "Base aérobie",
       "focus": "Volume consolidé — long 80 min",
-      "targetHours": 4.7,
+      "targetHours": 4.8,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -1413,9 +1415,9 @@
               "id": "w7-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -1484,9 +1486,9 @@
               "id": "w7-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -1553,7 +1555,7 @@
       "endDate": "2026-11-08",
       "phase": "Base aérobie",
       "focus": "DÉCHARGE — -30 %, recharger",
-      "targetHours": 3.8,
+      "targetHours": 3.9,
       "isRecoveryWeek": true,
       "days": [
         {
@@ -1564,9 +1566,9 @@
               "id": "w8-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -1701,7 +1703,7 @@
       "endDate": "2026-11-15",
       "phase": "Base aérobie",
       "focus": "Reprise — long 90 min",
-      "targetHours": 5.3,
+      "targetHours": 5.4,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -1712,9 +1714,9 @@
               "id": "w9-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -1863,9 +1865,9 @@
               "id": "w10-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -1936,7 +1938,7 @@
               "type": "strength",
               "name": "Salle — force maximale",
               "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps :\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. PAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
               "completed": false
             }
           ]
@@ -2003,7 +2005,7 @@
       "endDate": "2026-11-29",
       "phase": "Base aérobie",
       "focus": "DÉCHARGE + TEST 30 min — mesure du seuil",
-      "targetHours": 4.3,
+      "targetHours": 4.4,
       "isRecoveryWeek": true,
       "days": [
         {
@@ -2014,9 +2016,9 @@
               "id": "w11-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -2086,7 +2088,7 @@
               "type": "strength",
               "name": "Salle — force maximale",
               "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps :\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. PAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
               "completed": false
             }
           ]
@@ -2150,7 +2152,7 @@
       "endDate": "2026-12-06",
       "phase": "Build aérobie",
       "focus": "Entrée en Build — premier tempo Z3",
-      "targetHours": 5.2,
+      "targetHours": 5.3,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -2161,9 +2163,9 @@
               "id": "w12-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -2230,7 +2232,7 @@
               "type": "strength",
               "name": "Salle — force maximale",
               "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps :\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. PAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
               "completed": false
             }
           ]
@@ -2297,7 +2299,7 @@
       "endDate": "2026-12-13",
       "phase": "Build aérobie",
       "focus": "Première séance au seuil (Z4)",
-      "targetHours": 5.5,
+      "targetHours": 5.6,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -2308,9 +2310,9 @@
               "id": "w13-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -2377,7 +2379,7 @@
               "type": "strength",
               "name": "Salle — force maximale",
               "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps :\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. PAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
               "completed": false
             }
           ]
@@ -2455,9 +2457,9 @@
               "id": "w14-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -2524,7 +2526,7 @@
               "type": "strength",
               "name": "Salle — force maximale",
               "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps :\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. PAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
               "completed": false
             }
           ]
@@ -2715,7 +2717,7 @@
       "endDate": "2027-01-03",
       "phase": "Build aérobie",
       "focus": "Reprise progressive — renfo et salle reprennent",
-      "targetHours": 4.8,
+      "targetHours": 4.9,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -2726,9 +2728,9 @@
               "id": "w16-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -2796,7 +2798,7 @@
               "type": "strength",
               "name": "Salle — force maximale",
               "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps :\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. PAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
               "completed": false
             }
           ]
@@ -2874,9 +2876,9 @@
               "id": "w17-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -2943,7 +2945,7 @@
               "type": "strength",
               "name": "Salle — force maximale",
               "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps :\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. PAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
               "completed": false
             }
           ]
@@ -3010,7 +3012,7 @@
       "endDate": "2027-01-17",
       "phase": "Build aérobie",
       "focus": "Pic Build — tempo 40 min chronométré (checkpoint) + 4e séance déverrouillée",
-      "targetHours": 6.2,
+      "targetHours": 6.3,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -3021,9 +3023,9 @@
               "id": "w18-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -3090,7 +3092,7 @@
               "type": "strength",
               "name": "Salle — force maximale",
               "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps :\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. PAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
               "completed": false
             }
           ]
@@ -3164,7 +3166,7 @@
       "endDate": "2027-01-24",
       "phase": "Spécificité marathon",
       "focus": "Premiers blocs d'allure — et long qui FINIT à l'allure",
-      "targetHours": 6.4,
+      "targetHours": 6.5,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -3175,9 +3177,9 @@
               "id": "w19-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -3244,7 +3246,7 @@
               "type": "strength",
               "name": "Salle — force maximale",
               "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps :\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. PAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
               "completed": false
             }
           ]
@@ -3318,7 +3320,7 @@
       "endDate": "2027-01-31",
       "phase": "Spécificité marathon",
       "focus": "DÉCHARGE — absorber le bloc précédent",
-      "targetHours": 5.2,
+      "targetHours": 5.3,
       "isRecoveryWeek": true,
       "days": [
         {
@@ -3329,9 +3331,9 @@
               "id": "w20-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -3399,7 +3401,7 @@
               "type": "strength",
               "name": "Salle — force maximale",
               "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps :\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. PAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
               "completed": false
             }
           ]
@@ -3466,7 +3468,7 @@
       "endDate": "2027-02-07",
       "phase": "Spécificité marathon",
       "focus": "Seuil Z4 + long qui finit sur 45 min d'allure",
-      "targetHours": 6.7,
+      "targetHours": 6.8,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -3477,9 +3479,9 @@
               "id": "w21-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -3546,7 +3548,7 @@
               "type": "strength",
               "name": "Salle — force maximale",
               "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps :\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. PAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
               "completed": false
             }
           ]
@@ -3620,7 +3622,7 @@
       "endDate": "2027-02-14",
       "phase": "Spécificité marathon",
       "focus": "SEMAINE PIC — 2×20 min d'allure, long 3h finissant sur 50 min",
-      "targetHours": 6.9,
+      "targetHours": 7.0,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -3631,9 +3633,9 @@
               "id": "w22-mon-str",
               "sport": "strength",
               "type": "strength",
-              "name": "Renfo maison — prévention hanche",
-              "durationMinutes": 20,
-              "humanReadable": "20 min — 3 rounds (prévention hanche — séance anti-TFL) :\n1. Abduction hanche couché lesté : 15 reps/côté\n2. Copenhagen adduction : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n5. Calf raise excentrique : 15 reps\n6. Gainage latéral : 30s/côté\n+ Traction : max\n\nSéance non négociable. Elle ne s'arrête jamais avant S30.",
+              "name": "Renfo maison — prévention",
+              "durationMinutes": 25,
+              "humanReadable": "25 min — séance prévention. DESCENTE 3 SECONDES sur chaque mouvement :\nc'est la phase excentrique qui protège le tendon, pas la montée.\n\nBLOC A — hanche (3 tours, enchaînés)\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen : 20–30s/côté\n3. Marche latérale élastique : 12 pas/sens\n4. Hip thrust unilatéral : 12/jambe\n\nBLOC B — chaîne postérieure et bas de jambe (2 tours)\n5. Leg curl à la serviette : 8 reps\n6. Calf raise excentrique unipodal : 12/jambe\n7. Élévation mollet genou fléchi (soléaire) : 15\n8. Gainage latéral : 30s/côté\n\nFinir : traction, max.\n\nLe bloc A vise le TFL, ton limiteur n°1. Le bloc B vise le soléaire et le tendon d'Achille, les deux sites de surmenage les plus fréquents sur marathon route. Séance non négociable, elle ne s'arrête jamais avant S30.",
               "completed": false
             }
           ]
@@ -3700,7 +3702,7 @@
               "type": "strength",
               "name": "Salle — force maximale",
               "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps :\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. PAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
               "completed": false
             }
           ]
@@ -3787,7 +3789,7 @@
               "type": "strength",
               "name": "Renfo maison — maintien",
               "durationMinutes": 15,
-              "humanReadable": "15 min — 2 rounds :\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust : 15\n4. Calf raise excentrique : 15\n5. Gainage latéral : 30s/côté",
+              "humanReadable": "15 min — 2 tours, descente 3 secondes sur chaque mouvement :\n1. Abduction hanche couché lesté : 12/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust unilatéral : 10/jambe\n4. Calf raise excentrique unipodal : 10/jambe\n5. Élévation mollet genou fléchi (soléaire) : 12\n6. Gainage latéral : 30s/côté\n\nCharges conservées, volume divisé par deux. On ne s'arrête pas avant S30.",
               "completed": false
             }
           ]
@@ -3925,7 +3927,7 @@
               "type": "strength",
               "name": "Renfo maison — maintien",
               "durationMinutes": 15,
-              "humanReadable": "15 min — 2 rounds :\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust : 15\n4. Calf raise excentrique : 15\n5. Gainage latéral : 30s/côté",
+              "humanReadable": "15 min — 2 tours, descente 3 secondes sur chaque mouvement :\n1. Abduction hanche couché lesté : 12/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust unilatéral : 10/jambe\n4. Calf raise excentrique unipodal : 10/jambe\n5. Élévation mollet genou fléchi (soléaire) : 12\n6. Gainage latéral : 30s/côté\n\nCharges conservées, volume divisé par deux. On ne s'arrête pas avant S30.",
               "completed": false
             }
           ]
@@ -4059,7 +4061,7 @@
               "type": "strength",
               "name": "Renfo maison — maintien",
               "durationMinutes": 15,
-              "humanReadable": "15 min — 2 rounds :\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust : 15\n4. Calf raise excentrique : 15\n5. Gainage latéral : 30s/côté",
+              "humanReadable": "15 min — 2 tours, descente 3 secondes sur chaque mouvement :\n1. Abduction hanche couché lesté : 12/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust unilatéral : 10/jambe\n4. Calf raise excentrique unipodal : 10/jambe\n5. Élévation mollet genou fléchi (soléaire) : 12\n6. Gainage latéral : 30s/côté\n\nCharges conservées, volume divisé par deux. On ne s'arrête pas avant S30.",
               "completed": false
             }
           ]
@@ -4198,7 +4200,7 @@
               "type": "strength",
               "name": "Renfo maison — maintien",
               "durationMinutes": 15,
-              "humanReadable": "15 min — 2 rounds :\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust : 15\n4. Calf raise excentrique : 15\n5. Gainage latéral : 30s/côté",
+              "humanReadable": "15 min — 2 tours, descente 3 secondes sur chaque mouvement :\n1. Abduction hanche couché lesté : 12/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust unilatéral : 10/jambe\n4. Calf raise excentrique unipodal : 10/jambe\n5. Élévation mollet genou fléchi (soléaire) : 12\n6. Gainage latéral : 30s/côté\n\nCharges conservées, volume divisé par deux. On ne s'arrête pas avant S30.",
               "completed": false
             }
           ]
@@ -4265,7 +4267,7 @@
               "type": "strength",
               "name": "Renfo maison — maintien",
               "durationMinutes": 15,
-              "humanReadable": "15 min — 2 rounds :\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust : 15\n4. Calf raise excentrique : 15\n5. Gainage latéral : 30s/côté",
+              "humanReadable": "15 min — 2 tours, descente 3 secondes sur chaque mouvement :\n1. Abduction hanche couché lesté : 12/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust unilatéral : 10/jambe\n4. Calf raise excentrique unipodal : 10/jambe\n5. Élévation mollet genou fléchi (soléaire) : 12\n6. Gainage latéral : 30s/côté\n\nCharges conservées, volume divisé par deux. On ne s'arrête pas avant S30.",
               "completed": false
             }
           ]
@@ -4345,7 +4347,7 @@
               "type": "strength",
               "name": "Renfo maison — maintien",
               "durationMinutes": 15,
-              "humanReadable": "15 min — 2 rounds :\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust : 15\n4. Calf raise excentrique : 15\n5. Gainage latéral : 30s/côté",
+              "humanReadable": "15 min — 2 tours, descente 3 secondes sur chaque mouvement :\n1. Abduction hanche couché lesté : 12/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust unilatéral : 10/jambe\n4. Calf raise excentrique unipodal : 10/jambe\n5. Élévation mollet genou fléchi (soléaire) : 12\n6. Gainage latéral : 30s/côté\n\nCharges conservées, volume divisé par deux. On ne s'arrête pas avant S30.",
               "completed": false
             }
           ]
@@ -4412,7 +4414,7 @@
               "type": "strength",
               "name": "Renfo maison — maintien",
               "durationMinutes": 15,
-              "humanReadable": "15 min — 2 rounds :\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust : 15\n4. Calf raise excentrique : 15\n5. Gainage latéral : 30s/côté",
+              "humanReadable": "15 min — 2 tours, descente 3 secondes sur chaque mouvement :\n1. Abduction hanche couché lesté : 12/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust unilatéral : 10/jambe\n4. Calf raise excentrique unipodal : 10/jambe\n5. Élévation mollet genou fléchi (soléaire) : 12\n6. Gainage latéral : 30s/côté\n\nCharges conservées, volume divisé par deux. On ne s'arrête pas avant S30.",
               "completed": false
             }
           ]
@@ -4499,7 +4501,7 @@
               "type": "strength",
               "name": "Renfo maison — maintien",
               "durationMinutes": 15,
-              "humanReadable": "15 min — 2 rounds :\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust : 15\n4. Calf raise excentrique : 15\n5. Gainage latéral : 30s/côté",
+              "humanReadable": "15 min — 2 tours, descente 3 secondes sur chaque mouvement :\n1. Abduction hanche couché lesté : 12/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust unilatéral : 10/jambe\n4. Calf raise excentrique unipodal : 10/jambe\n5. Élévation mollet genou fléchi (soléaire) : 12\n6. Gainage latéral : 30s/côté\n\nCharges conservées, volume divisé par deux. On ne s'arrête pas avant S30.",
               "completed": false
             }
           ]
@@ -4637,7 +4639,7 @@
               "type": "strength",
               "name": "Renfo maison — maintien",
               "durationMinutes": 15,
-              "humanReadable": "15 min — 2 rounds :\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust : 15\n4. Calf raise excentrique : 15\n5. Gainage latéral : 30s/côté",
+              "humanReadable": "15 min — 2 tours, descente 3 secondes sur chaque mouvement :\n1. Abduction hanche couché lesté : 12/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust unilatéral : 10/jambe\n4. Calf raise excentrique unipodal : 10/jambe\n5. Élévation mollet genou fléchi (soléaire) : 12\n6. Gainage latéral : 30s/côté\n\nCharges conservées, volume divisé par deux. On ne s'arrête pas avant S30.",
               "completed": false
             }
           ]
@@ -4775,7 +4777,7 @@
               "type": "strength",
               "name": "Renfo maison — maintien",
               "durationMinutes": 15,
-              "humanReadable": "15 min — 2 rounds :\n1. Abduction hanche couché lesté : 15/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust : 15\n4. Calf raise excentrique : 15\n5. Gainage latéral : 30s/côté",
+              "humanReadable": "15 min — 2 tours, descente 3 secondes sur chaque mouvement :\n1. Abduction hanche couché lesté : 12/côté\n2. Copenhagen (genou fléchi) : 20s/côté\n3. Hip thrust unilatéral : 10/jambe\n4. Calf raise excentrique unipodal : 10/jambe\n5. Élévation mollet genou fléchi (soléaire) : 12\n6. Gainage latéral : 30s/côté\n\nCharges conservées, volume divisé par deux. On ne s'arrête pas avant S30.",
               "completed": false
             }
           ]
