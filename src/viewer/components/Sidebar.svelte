@@ -135,6 +135,11 @@
     <h1 class="event-name">{plan.meta?.event ?? "Training Plan"}</h1>
     <div class="event-date">{formatEventDate(plan.meta?.eventDate ?? "")}</div>
     <div class="athlete-name">{plan.meta?.athlete ?? "Athlete"}</div>
+    {#if plan.meta?.revision}
+      <div class="plan-revision" title={plan.meta.revision}>
+        Plan {plan.meta.revision.split(" — ")[0]}
+      </div>
+    {/if}
   </div>
 
   <div class="progress-section">
@@ -360,6 +365,14 @@
     font-size: 0.9rem;
     color: var(--text-muted);
     margin-top: 0.5rem;
+  }
+
+  .plan-revision {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.35rem;
+    letter-spacing: 0.03em;
   }
 
   /* Progress Ring */

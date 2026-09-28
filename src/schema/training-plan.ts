@@ -358,6 +358,7 @@ export interface TrainingPlan {
     updatedAt: string;
     totalWeeks: number;
     generatedBy: string; // "Claude Coach"
+    revision?: string; // "v2.11 — description du changement"
   };
   preferences: UnitPreferences;
   assessment: AthleteAssessment;
