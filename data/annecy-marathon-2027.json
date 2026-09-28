@@ -17,7 +17,7 @@
     "planStartDate": "2026-09-14",
     "planEndDate": "2027-04-18",
     "totalWeeks": 31,
-    "revision": "v2.10 — longue S14 à 125 min",
+    "revision": "v2.11 — longues S21 155 / S22 170 min, seuil court 3×8 min en S17",
     "changelog": [
       "Zones FC reconstruites en % de réserve (max 189 validé / repos 43). L'ancienne Z2 (148–162) était 14 bpm trop haute.",
       "Allure marathon : modèle dérivé (bande 5'00–5'12) au lieu d'une cible figée à 4'58.",
@@ -35,7 +35,8 @@
       "v2.7 : longue S21 ramenée à 160 min (115 min d'endurance + 45 min d'allure) pour adoucir la marche S19 → S21. Première 4e séance (S21) seulement si S19 et S20 se sont passées sans signal à la hanche. Renfo du jeudi : identifiant propre (S4–S7, S26, S27), il partageait celui du lundi. Objectif de la phase Build aligné sur la longue réelle (S18).",
       "v2.8 : deux courses « fun, effort maximal ». S10, sam. 21.11 : Course Sainte-Catherine à Saillon (5,53 km, 140 m D+), remplace le footing de 50 min du jeudi ; longue du dimanche plafonnée à 80–90 min ; natation du samedi supprimée ; test de S11 à J+3. S13, sam. 12.12 : Course de Noël de Sion (2,8–3 km), remplace le footing de 45 min du jeudi ; longue du dimanche à 110 min au lieu de 120 ; natation déplacée du samedi au mercredi.",
       "v2.9 : salle force max déplacée du jeudi au mardi en S10 et S13 (course le samedi). S13 : la séance de seuil devient un footing Z2 de 45 min, la Course de Noël tient lieu d'intensité ; premier seuil Z4 en S21. Plafond Z2 harmonisé à 148 bpm partout (72 % de réserve : 43 + 0,72 × 146 = 148,1) : footings 131–148, longues 135–148, plafond des longues 148 (étaient 145, 147 et 150).",
-      "v2.10 : longue S14 ramenée de 130 à 125 min pour adoucir la marche S13 → S14 (S13 allégée par la Course de Noël)."
+      "v2.10 : longue S14 ramenée de 130 à 125 min pour adoucir la marche S13 → S14 (S13 allégée par la Course de Noël).",
+      "v2.11 : longue S21 à 155 min (110 min d'endurance + 45 min d'allure) et S22 à 170 min (120 + 50) au lieu de 160 et 180. S17 : le tempo 35 min du mardi devient un seuil court 3×8 min Z4, récup 2 min, dans les mêmes 60 min et la même distance ; S21 devient le deuxième seuil."
     ]
   },
   "preferences": {
@@ -520,13 +521,14 @@
       "name": "Build aérobie",
       "startWeek": 12,
       "endWeek": 18,
-      "focus": "Introduction du tempo Z3, longs 110→145 min. Bloc de force lourde en salle. Noël allégé.",
+      "focus": "Introduction du tempo Z3 puis d'un seuil Z4 court (S17), longs 110→145 min. Bloc de force lourde en salle. Noël allégé.",
       "weeklyHoursRange": {
         "low": 1.7,
         "high": 6.3
       },
       "keyWorkouts": [
         "Tempo Z3 148–160 (20→40 min)",
+        "Seuil Z4 160–170 : 3×8 min (S17)",
         "Sortie longue 110→145 min",
         "Salle force max le jeudi (mardi en S13)",
         "Course de Noël, Sion (S13, sam. 12.12) — fun, effort max"
@@ -541,20 +543,20 @@
       "name": "Spécificité marathon",
       "startWeek": 19,
       "endWeek": 23,
-      "focus": "Les blocs d'allure marathon FINISSENT les sorties longues. Pic de volume à 56 km.",
+      "focus": "Les blocs d'allure marathon FINISSENT les sorties longues. Pic de volume à 55 km.",
       "weeklyHoursRange": {
         "low": 4.3,
-        "high": 7.0
+        "high": 6.8
       },
       "keyWorkouts": [
-        "Long 155→180 min finissant sur 30→50 min d'allure",
+        "Long 155→170 min finissant sur 30→50 min d'allure",
         "Allure marathon et seuil en alternance le mardi",
         "Décharge réelle en S20",
         "Pré-semi S23"
       ],
       "physiologicalGoals": [
         "Attaquer la dérive cardiaque observée à Paris",
-        "Pic de volume : 30 km en S22",
+        "Long le plus long : ~28,7 km en S22",
         "Arriver au semi prêt"
       ]
     },
@@ -2855,7 +2857,7 @@
       "startDate": "2027-01-04",
       "endDate": "2027-01-10",
       "phase": "Build aérobie",
-      "focus": "Tempo 35 min — remontée progressive après les fêtes",
+      "focus": "Seuil court 3×8 min — remontée progressive après les fêtes",
       "targetHours": 5.9,
       "isRecoveryWeek": false,
       "days": [
@@ -2881,17 +2883,17 @@
             {
               "id": "w17-tue-run",
               "sport": "run",
-              "type": "tempo",
-              "name": "Tempo Z3 — 35 min",
+              "type": "threshold",
+              "name": "Seuil Z4 — 3×8 min",
               "durationMinutes": 60,
               "distanceMeters": 10200,
-              "primaryZone": "Zone 3",
+              "primaryZone": "Zone 4",
               "targetHR": {
                 "low": 131,
-                "high": 160
+                "high": 170
               },
-              "rpe": 6,
-              "humanReadable": "60 min :\nÉchauffement 12 min\nTempo 35 min — FC 148–160 bpm (~5'20/km)\nRetour au calme 13 min\n\nEffort soutenu mais conversationnel par phrases courtes.",
+              "rpe": 7,
+              "humanReadable": "60 min :\nÉchauffement 15 min\n3×8 min au SEUIL — FC 160–170 bpm, récup 2 min en trottinant\nRetour au calme 17 min\n\nPremier seuil du plan, volontairement court (24 min au seuil). Dur mais contrôlé — tu dois pouvoir faire la dernière répétition.",
               "completed": false
             }
           ]
@@ -3445,7 +3447,7 @@
       "endDate": "2027-02-07",
       "phase": "Spécificité marathon",
       "focus": "Seuil Z4 + long qui finit sur 45 min d'allure + 4e séance déverrouillée",
-      "targetHours": 6.6,
+      "targetHours": 6.5,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -3480,7 +3482,7 @@
                 "high": 170
               },
               "rpe": 8,
-              "humanReadable": "75 min :\nÉchauffement 15 min\n5×6 min au SEUIL — FC 160–170 bpm, récup 2 min en trottinant\nRetour au calme 22 min\n\nPremière intensité réelle du plan. Dur mais contrôlé — tu dois pouvoir faire la dernière répétition.",
+              "humanReadable": "75 min :\nÉchauffement 15 min\n5×6 min au SEUIL — FC 160–170 bpm, récup 2 min en trottinant\nRetour au calme 22 min\n\nDeuxième seuil du plan après S17 (3×8 min) : on passe de 24 à 30 min au seuil. Dur mais contrôlé — tu dois pouvoir faire la dernière répétition.",
               "completed": false
             }
           ]
@@ -3574,9 +3576,9 @@
               "id": "w21-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 160 min",
-              "durationMinutes": 160,
-              "distanceMeters": 26800,
+              "name": "Sortie longue — 155 min",
+              "durationMinutes": 155,
+              "distanceMeters": 26100,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -3586,7 +3588,7 @@
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "160 min — ~26.8 km — LA SÉANCE CLÉ\n\nStructure :\n- 115 min en endurance, FC 135–148 bpm (~6'23/km)\n- 45 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
+              "humanReadable": "155 min — ~26.1 km — LA SÉANCE CLÉ\n\nStructure :\n- 110 min en endurance, FC 135–148 bpm (~6'23/km)\n- 45 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
               "completed": false
             }
           ]
@@ -3598,8 +3600,8 @@
       "startDate": "2027-02-08",
       "endDate": "2027-02-14",
       "phase": "Spécificité marathon",
-      "focus": "SEMAINE PIC — 2×20 min d'allure, long 3h finissant sur 50 min",
-      "targetHours": 7.0,
+      "focus": "SEMAINE PIC — 2×20 min d'allure, long 2h50 finissant sur 50 min",
+      "targetHours": 6.8,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -3728,9 +3730,9 @@
               "id": "w22-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 180 min",
-              "durationMinutes": 180,
-              "distanceMeters": 30200,
+              "name": "Sortie longue — 170 min",
+              "durationMinutes": 170,
+              "distanceMeters": 28700,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -3740,7 +3742,7 @@
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "180 min — ~30.2 km — LA SÉANCE CLÉ\n\nStructure :\n- 130 min en endurance, FC 135–148 bpm (~6'22/km)\n- 50 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
+              "humanReadable": "170 min — ~28.7 km — LA SÉANCE CLÉ\n\nStructure :\n- 120 min en endurance, FC 135–148 bpm (~6'22/km)\n- 50 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
               "completed": false
             }
           ]
