@@ -36,15 +36,23 @@ Toujours parser le JSON embarqué (`<script type="application/json" id="plan-dat
 
 - **intervals.icu = source principale** (via serveur MCP `intervals-icu`, hhopke/intervals-icu-mcp, scope user). Synchronisé avec Garmin Connect (activités + wellness : sommeil, HRV, FC repos) et calcule CTL/ATL/TSB de manière cohérente.
   - Identifiants : variables `INTERVALS_ICU_API_KEY` et `INTERVALS_ICU_ATHLETE_ID` dans la config MCP user (`claude mcp add intervals-icu -s user -e … -- uvx intervals-icu-mcp`), à saisir dans un terminal à part. Le serveur ne relit ses variables qu'au redémarrage de Claude Code. Il n'existe pas de commande `icu-mcp-auth`.
-  - Statut au 2026-09-28 : authentification OK, liaison Garmin active. **Import de l'historique Garmin en cours de vérification — source non validée.** Première comparaison 01.07→28.09 : 14 activités de chaque côté, toutes appariées (distance identique, FC ±2 bpm, temps total identique ; 2 écarts de temps en mouvement dus à l'auto-pause). Mais 14 activités sur la période est incohérent avec la prépa Wild 25 (≈ 3 runs/semaine + natation) : import intervals.icu peut-être incomplet et/ou trous dans la base Strava locale. À faire quand l'import est stabilisé : refaire la comparaison et chercher les trous de la base Strava (comptage par semaine, natation incluse).
+  - Statut au 2026-09-28 : **source validée** (voir decisions log). Import historique Garmin complet : comparaison 01.07→28.09 conforme à Strava (14/14 activités, distance identique, FC ±2 bpm, temps total identique ; seuls écarts : temps en mouvement dû à l'auto-pause et D+). Le volume bas de l'été est réel : Garmin Connect ne contient rien de plus (vérifié par Julien), base Strava locale sans trou (fenêtre 730 j, scope `activity:read_all`). Pendant la phase 1, en attendant le redémarrage de Claude Code après changement de clé, la lecture peut se faire en GET direct sur l'API (clé lue depuis la config MCP, jamais affichée).
   - **Écart de D+ intervals.icu vs Strava** : intervals.icu (Garmin, altimètre barométrique) donne un D+ souvent plus élevé que Strava (recalcul sur modèle de terrain, lissé) : jusqu'à +25 % (16.08 : 941 → 1181 m ; Wild 25 : 1213 → 1309 m, officiel 1200). L'EFD (distance + D+ × 10) sera donc plus élevée côté intervals.icu : ne pas comparer directement des EFD d'avant et d'après la migration sans en tenir compte.
   - Migration : phase 1 = bilans lus directement via le MCP pendant la validation. Snapshot final : option B privilégiée (commande CLI qui remplit la base locale, clé hors dépôt dans `~/.claude-coach/`) pour la base locale, le viewer, les tests et l'historique. Décision à trancher après 2 à 4 semaines d'usage.
   - Lecture seule par défaut : aucune écriture dans intervals.icu (events, activités, workouts, wellness) sans validation explicite de Julien.
   - Clé API : jamais affichée, loggée ni écrite dans un fichier du dépôt.
 - **Pipeline Garmin direct : abandonné.** MCP Garmin bloqué par le SSO (voir decisions log), import d'archive one-shot figé au 2026-04-26. La table `training_load` (unités Garmin, source du TSB +125) ne doit plus être utilisée pour le coaching.
-- **Strava : en sursis.** Reste en place (`sync`, table `activities`, `rolling4w`) tant qu'intervals.icu n'est pas validé par comparaison. Ne pas le retirer avant validation ; corriger ses bugs reste autorisé.
+- **Strava : en sursis.** intervals.icu est validé depuis le 2026-09-28, mais Strava reste en place (`sync`, table `activities`, `rolling4w`) jusqu'à la décision sur le snapshot final (option B, après 2 à 4 semaines de phase 1) et la phase de retrait. Ne pas le retirer sans validation explicite de Julien ; corriger ses bugs reste autorisé.
 
 ## Decisions log
+
+### 2026-09-28 — intervals.icu validé comme source principale
+
+- Comparaison intervals.icu vs base Strava locale sur 01.07→28.09 : 14/14 activités appariées, distances et temps totaux identiques, FC moyenne et max à ±2 bpm.
+- Écarts connus : temps en mouvement (auto-pause, 2 activités) ; D+ plus élevé côté intervals.icu (baromètre Garmin), jusqu'à +25 %, d'où une EFD plus élevée.
+- Volume bas (14 activités) confirmé réel : rien de plus dans Garmin Connect, pas de trou dans la base Strava.
+- CTL/ATL/TSB intervals.icu cohérents (TSB +6 au 2026-09-28 en fin de récup), en remplacement du TSB Garmin `training_load` (+125).
+- Suite : phase 1 (bilans via MCP) pendant 2 à 4 semaines, puis décision snapshot (option B privilégiée), puis retrait Strava/Garmin sur validation explicite.
 
 ### 2026-04-26 — Import archive Garmin (one-shot)
 
