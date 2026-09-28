@@ -83,7 +83,7 @@ ${a.join(`
     "planStartDate": "2026-09-14",
     "planEndDate": "2027-04-18",
     "totalWeeks": 31,
-    "revision": "v2.9 — salle au mardi S10/S13, seuil S13 → footing Z2, plafond Z2 harmonisé à 148",
+    "revision": "v2.10 — longue S14 à 125 min",
     "changelog": [
       "Zones FC reconstruites en % de réserve (max 189 validé / repos 43). L'ancienne Z2 (148–162) était 14 bpm trop haute.",
       "Allure marathon : modèle dérivé (bande 5'00–5'12) au lieu d'une cible figée à 4'58.",
@@ -100,7 +100,8 @@ ${a.join(`
       "v2.6 : semaines d'entrée décalées d'une marche après 3 semaines sans course (intervals.icu : 4,9 km/sem hors Wild 25 sur les 6 semaines précédentes, CTL 11) — S4 à 30/30/45 min et 1 natation, S5–S7 = anciennes S4–S6, décharge S8 à -25 %, long S9 85 min, retour au plan en S10. Longues S17–S19 lissées à 135/145/155 min. 4e séance déverrouillée en S21 (après la décharge S20) au lieu de S18. Seuil FC de référence 171 (intervals.icu), à reconfirmer au test de S11.",
       "v2.7 : longue S21 ramenée à 160 min (115 min d'endurance + 45 min d'allure) pour adoucir la marche S19 → S21. Première 4e séance (S21) seulement si S19 et S20 se sont passées sans signal à la hanche. Renfo du jeudi : identifiant propre (S4–S7, S26, S27), il partageait celui du lundi. Objectif de la phase Build aligné sur la longue réelle (S18).",
       "v2.8 : deux courses « fun, effort maximal ». S10, sam. 21.11 : Course Sainte-Catherine à Saillon (5,53 km, 140 m D+), remplace le footing de 50 min du jeudi ; longue du dimanche plafonnée à 80–90 min ; natation du samedi supprimée ; test de S11 à J+3. S13, sam. 12.12 : Course de Noël de Sion (2,8–3 km), remplace le footing de 45 min du jeudi ; longue du dimanche à 110 min au lieu de 120 ; natation déplacée du samedi au mercredi.",
-      "v2.9 : salle force max déplacée du jeudi au mardi en S10 et S13 (course le samedi). S13 : la séance de seuil devient un footing Z2 de 45 min, la Course de Noël tient lieu d'intensité ; premier seuil Z4 en S21. Plafond Z2 harmonisé à 148 bpm partout (72 % de réserve : 43 + 0,72 × 146 = 148,1) : footings 131–148, longues 135–148, plafond des longues 148 (étaient 145, 147 et 150)."
+      "v2.9 : salle force max déplacée du jeudi au mardi en S10 et S13 (course le samedi). S13 : la séance de seuil devient un footing Z2 de 45 min, la Course de Noël tient lieu d'intensité ; premier seuil Z4 en S21. Plafond Z2 harmonisé à 148 bpm partout (72 % de réserve : 43 + 0,72 × 146 = 148,1) : footings 131–148, longues 135–148, plafond des longues 148 (étaient 145, 147 et 150).",
+      "v2.10 : longue S14 ramenée de 130 à 125 min pour adoucir la marche S13 → S14 (S13 allégée par la Course de Noël)."
     ]
   },
   "preferences": {
@@ -2624,9 +2625,9 @@ ${a.join(`
               "id": "w14-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 130 min",
-              "durationMinutes": 130,
-              "distanceMeters": 19900,
+              "name": "Sortie longue — 125 min",
+              "durationMinutes": 125,
+              "distanceMeters": 19100,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -2636,7 +2637,7 @@ ${a.join(`
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "130 min en endurance — FC 135–148 bpm\nAllure indicative ~6'32/km, ~19.9 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "125 min en endurance — FC 135–148 bpm\nAllure indicative ~6'32/km, ~19.1 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
