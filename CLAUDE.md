@@ -32,6 +32,17 @@ Toujours parser le JSON embarqué (`<script type="application/json" id="plan-dat
 - **Taille** : ~850 Ko pour un rendu CLI brut. `data/*.html` est exclu de Prettier (`.prettierignore`), donc le fichier commité n'est plus reformaté (l'ancien ~1,7 Mo venait du reformatage). Une taille très inférieure = rendu tronqué.
 - **Contrôles spécifiques** à la modification demandée (durées, dates, champs nutrition…), en énumérant toutes les séances concernées, pas seulement la première.
 
+## Sources de données
+
+- **intervals.icu = source principale** (via serveur MCP `intervals-icu`, hhopke/intervals-icu-mcp, scope user). Synchronisé avec Garmin Connect (activités + wellness : sommeil, HRV, FC repos) et calcule CTL/ATL/TSB de manière cohérente.
+  - Identifiants : variables `INTERVALS_ICU_API_KEY` et `INTERVALS_ICU_ATHLETE_ID` dans la config MCP user (`claude mcp add intervals-icu -s user -e … -- uvx intervals-icu-mcp`), à saisir dans un terminal à part. Le serveur ne relit ses variables qu'au redémarrage de Claude Code. Il n'existe pas de commande `icu-mcp-auth`.
+  - Statut au 2026-09-28 : authentification OK (clé régénérée), liaison Garmin active, mais **compte vide** (0 activité, 0 wellness) : import de l'historique Garmin (« Download old data ») à faire. Comparaison avec Strava à faire ensuite. Source non encore validée.
+  - Migration : phase 1 = bilans lus directement via le MCP pendant la validation. Snapshot final : option B privilégiée (commande CLI qui remplit la base locale, clé hors dépôt dans `~/.claude-coach/`) pour la base locale, le viewer, les tests et l'historique. Décision à trancher après 2 à 4 semaines d'usage.
+  - Lecture seule par défaut : aucune écriture dans intervals.icu (events, activités, workouts, wellness) sans validation explicite de Julien.
+  - Clé API : jamais affichée, loggée ni écrite dans un fichier du dépôt.
+- **Pipeline Garmin direct : abandonné.** MCP Garmin bloqué par le SSO (voir decisions log), import d'archive one-shot figé au 2026-04-26. La table `training_load` (unités Garmin, source du TSB +125) ne doit plus être utilisée pour le coaching.
+- **Strava : en sursis.** Reste en place (`sync`, table `activities`, `rolling4w`) tant qu'intervals.icu n'est pas validé par comparaison. Ne pas le retirer avant validation ; corriger ses bugs reste autorisé.
+
 ## Decisions log
 
 ### 2026-04-26 — Import archive Garmin (one-shot)
