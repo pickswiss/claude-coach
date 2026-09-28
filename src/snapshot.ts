@@ -163,7 +163,7 @@ export function generateSnapshot(): AthleteSnapshot {
       ROUND(SUM(moving_time) / 3600.0, 1) AS hours
     FROM activities
     WHERE sport_type IN ('Run', 'TrailRun', 'Trail Run', 'VirtualRun')
-      AND start_date >= date('now', '-4 weeks')
+      AND start_date >= date('now', '-28 days')
     GROUP BY week
     ORDER BY week DESC
   `);
@@ -211,7 +211,7 @@ export function generateSnapshot(): AthleteSnapshot {
       ROUND(moving_time / 60.0, 0) AS minutes
     FROM activities
     WHERE sport_type IN ('Run', 'TrailRun', 'Trail Run')
-      AND start_date >= date('now', '-4 weeks')
+      AND start_date >= date('now', '-28 days')
     ORDER BY start_date DESC
     LIMIT 5
   `);
