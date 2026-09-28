@@ -17,7 +17,7 @@
     "planStartDate": "2026-09-14",
     "planEndDate": "2027-04-18",
     "totalWeeks": 31,
-    "revision": "v2.8 — courses fun : Sainte-Catherine Saillon (S10), Course de Noël Sion (S13)",
+    "revision": "v2.9 — salle au mardi S10/S13, seuil S13 → footing Z2, plafond Z2 harmonisé à 148",
     "changelog": [
       "Zones FC reconstruites en % de réserve (max 189 validé / repos 43). L'ancienne Z2 (148–162) était 14 bpm trop haute.",
       "Allure marathon : modèle dérivé (bande 5'00–5'12) au lieu d'une cible figée à 4'58.",
@@ -33,7 +33,8 @@
       "v2.5 : circuit maison passé de 6 à 8 exercices (25 min) — ajout du soléaire, de l'excentrique Achille et d'un leg curl ischios, tempo excentrique 3 s explicite partout. Source : fiche de renforcement traileur (V. Guerdin, sept. 2026), adaptée au contexte route — protocole d'échauffement et travail des stabilisateurs de cheville écartés, non pertinents sur marathon plat.",
       "v2.6 : semaines d'entrée décalées d'une marche après 3 semaines sans course (intervals.icu : 4,9 km/sem hors Wild 25 sur les 6 semaines précédentes, CTL 11) — S4 à 30/30/45 min et 1 natation, S5–S7 = anciennes S4–S6, décharge S8 à -25 %, long S9 85 min, retour au plan en S10. Longues S17–S19 lissées à 135/145/155 min. 4e séance déverrouillée en S21 (après la décharge S20) au lieu de S18. Seuil FC de référence 171 (intervals.icu), à reconfirmer au test de S11.",
       "v2.7 : longue S21 ramenée à 160 min (115 min d'endurance + 45 min d'allure) pour adoucir la marche S19 → S21. Première 4e séance (S21) seulement si S19 et S20 se sont passées sans signal à la hanche. Renfo du jeudi : identifiant propre (S4–S7, S26, S27), il partageait celui du lundi. Objectif de la phase Build aligné sur la longue réelle (S18).",
-      "v2.8 : deux courses « fun, effort maximal ». S10, sam. 21.11 : Course Sainte-Catherine à Saillon (5,53 km, 140 m D+), remplace le footing de 50 min du jeudi ; longue du dimanche plafonnée à 80–90 min ; natation du samedi supprimée ; test de S11 à J+3. S13, sam. 12.12 : Course de Noël de Sion (2,8–3 km), remplace le footing de 45 min du jeudi ; longue du dimanche à 110 min au lieu de 120 ; natation déplacée du samedi au mercredi."
+      "v2.8 : deux courses « fun, effort maximal ». S10, sam. 21.11 : Course Sainte-Catherine à Saillon (5,53 km, 140 m D+), remplace le footing de 50 min du jeudi ; longue du dimanche plafonnée à 80–90 min ; natation du samedi supprimée ; test de S11 à J+3. S13, sam. 12.12 : Course de Noël de Sion (2,8–3 km), remplace le footing de 45 min du jeudi ; longue du dimanche à 110 min au lieu de 120 ; natation déplacée du samedi au mercredi.",
+      "v2.9 : salle force max déplacée du jeudi au mardi en S10 et S13 (course le samedi). S13 : la séance de seuil devient un footing Z2 de 45 min, la Course de Noël tient lieu d'intensité ; premier seuil Z4 en S21. Plafond Z2 harmonisé à 148 bpm partout (72 % de réserve : 43 + 0,72 × 146 = 148,1) : footings 131–148, longues 135–148, plafond des longues 148 (étaient 145, 147 et 150)."
     ]
   },
   "preferences": {
@@ -84,7 +85,7 @@
       "km35_HR": "~168 (83 % réserve) — passage au seuil",
       "conclusion": "Le limiteur n'est pas le plafond aérobie, c'est la DURABILITÉ : +18 bpm de dérive sur le dernier tiers. Tout le plan v2 attaque ce point.",
       "implications": [
-        "Sorties longues plafonnées à 150 bpm — non négociable",
+        "Sorties longues plafonnées à 148 bpm — non négociable",
         "Blocs d'allure en FIN de longue, jamais au milieu",
         "Apport glucidique en course multiplié par deux"
       ]
@@ -173,13 +174,13 @@
     "operational": {
       "easyRun": {
         "low": 131,
-        "high": 145,
-        "note": "Footings. Si tu dépasses 148, tu ralentis."
+        "high": 148,
+        "note": "Footings. Plafond 148 (haut de la Z2, 72 % de réserve) : si tu dépasses, tu ralentis."
       },
       "longRun": {
         "low": 135,
-        "high": 147,
-        "note": "PLAFOND 150. C'est la règle la plus importante du plan."
+        "high": 148,
+        "note": "PLAFOND 148. C'est la règle la plus importante du plan."
       },
       "marathonPace": {
         "low": 145,
@@ -265,7 +266,8 @@
       },
       "focus": "Force maximale bas du corps : 3–5 reps, charges lourdes. C'est ce qui améliore l'économie de course. S8 et S9 = prise en main avec la coach (technique, charges modérées) ; lourd à partir de S10.",
       "coachBrief": "À dire à la coach, mot pour mot : « Je prépare un marathon en avril. Je veux de la force maximale et de la prévention de hanche latérale. Pas d'hypertrophie, pas de circuit métabolique, pas de HIIT. » Beaucoup de coaches partent par défaut sur du 3×12 en circuit : ça ajoute de la fatigue et ne donne pas le gain d'économie.",
-      "constraint": "Jamais de jambes lourdes à moins de 48 h de la sortie longue. Le jeudi respecte cette règle (sortie longue le dimanche). Le test de seuil du mardi 24 novembre tombe 5 jours après la salle du 19 — pas de conflit."
+      "constraint": "Jamais de jambes lourdes à moins de 48 h de la sortie longue. Le jeudi respecte cette règle (sortie longue le dimanche). Le test de seuil du mardi 24 novembre tombe 5 jours après la salle du 19 — pas de conflit.",
+      "scheduleExceptions": "S10 et S13 : salle le MARDI (course le samedi)."
     },
     {
       "weeks": [
@@ -455,7 +457,7 @@
     "pacing": {
       "rule": "L'allure vient du semi du 28 février (allure semi + 20–25 s/km). Rien n'est décidé avant.",
       "hrCeiling_first10km": 148,
-      "strategy": "km 0–10 : allure cible +7 s/km, FC plafonnée à 148. km 10–30 : allure cible, FC 150–157. km 30–42 : la FC monte, c'est normal — c'est là que les sorties longues sous 147 payent."
+      "strategy": "km 0–10 : allure cible +7 s/km, FC plafonnée à 148. km 10–30 : allure cible, FC 150–157. km 30–42 : la FC monte, c'est normal — c'est là que les sorties longues sous 148 payent."
     },
     "taper": {
       "startWeek": 28,
@@ -501,11 +503,11 @@
       },
       "keyWorkouts": [
         "Run Z2 131–148 (30→50 min)",
-        "Sortie longue Z2 plafond 147 (45→90 min)",
+        "Sortie longue Z2 plafond 148 (45→90 min)",
         "Natation 2×/sem",
         "Renfo maison lundi + jeudi",
         "TEST 30 min en S11",
-        "Course Sainte-Catherine, Saillon (S10, sam. 21.11) — fun, effort max"
+        "Course Sainte-Catherine, Saillon (S10, sam. 21.11) — fun, effort max ; salle au mardi cette semaine-là"
       ],
       "physiologicalGoals": [
         "Construire une base aérobie large",
@@ -517,16 +519,15 @@
       "name": "Build aérobie",
       "startWeek": 12,
       "endWeek": 18,
-      "focus": "Introduction du tempo Z3 et du seuil Z4, longs 110→150 min. Bloc de force lourde en salle. Noël allégé.",
+      "focus": "Introduction du tempo Z3, longs 110→145 min. Bloc de force lourde en salle. Noël allégé.",
       "weeklyHoursRange": {
         "low": 1.7,
         "high": 6.3
       },
       "keyWorkouts": [
         "Tempo Z3 148–160 (20→40 min)",
-        "Seuil Z4 160–170 (S13)",
         "Sortie longue 110→145 min",
-        "Salle force max le jeudi",
+        "Salle force max le jeudi (mardi en S13)",
         "Course de Noël, Sion (S13, sam. 12.12) — fun, effort max"
       ],
       "physiologicalGoals": [
@@ -901,11 +902,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "30 min en endurance — FC 131–145 bpm\nAllure indicative ~6'45/km, ~4.4 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "30 min en endurance — FC 131–148 bpm\nAllure indicative ~6'45/km, ~4.4 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -989,11 +990,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "30 min en endurance — FC 131–145 bpm\nAllure indicative ~6'45/km, ~4.4 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "30 min en endurance — FC 131–148 bpm\nAllure indicative ~6'45/km, ~4.4 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -1028,11 +1029,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "30 min en endurance — FC 131–145 bpm\nAllure indicative ~6'45/km, ~4.4 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "30 min en endurance — FC 131–148 bpm\nAllure indicative ~6'45/km, ~4.4 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             },
             {
@@ -1086,13 +1087,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "45 min en endurance — FC 135–147 bpm\nAllure indicative ~6'45/km, ~6.7 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "45 min en endurance — FC 135–148 bpm\nAllure indicative ~6'45/km, ~6.7 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -1137,11 +1138,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "35 min en endurance — FC 131–145 bpm\nAllure indicative ~6'44/km, ~5.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "35 min en endurance — FC 131–148 bpm\nAllure indicative ~6'44/km, ~5.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -1176,11 +1177,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "35 min en endurance — FC 131–145 bpm\nAllure indicative ~6'44/km, ~5.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "35 min en endurance — FC 131–148 bpm\nAllure indicative ~6'44/km, ~5.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -1237,13 +1238,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "60 min en endurance — FC 135–147 bpm\nAllure indicative ~6'44/km, ~8.9 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "60 min en endurance — FC 135–148 bpm\nAllure indicative ~6'44/km, ~8.9 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -1288,11 +1289,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": false,
-              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'42/km, ~6.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "40 min en endurance — FC 131–148 bpm\nAllure indicative ~6'42/km, ~6.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -1327,11 +1328,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'42/km, ~6.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "40 min en endurance — FC 131–148 bpm\nAllure indicative ~6'42/km, ~6.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -1388,13 +1389,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "70 min en endurance — FC 135–147 bpm\nAllure indicative ~6'42/km, ~10.4 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "70 min en endurance — FC 135–148 bpm\nAllure indicative ~6'42/km, ~10.4 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -1439,11 +1440,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": false,
-              "humanReadable": "45 min en endurance — FC 131–145 bpm\nAllure indicative ~6'41/km, ~6.7 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "45 min en endurance — FC 131–148 bpm\nAllure indicative ~6'41/km, ~6.7 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -1478,11 +1479,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'41/km, ~6.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "40 min en endurance — FC 131–148 bpm\nAllure indicative ~6'41/km, ~6.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -1539,13 +1540,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "75 min en endurance — FC 135–147 bpm\nAllure indicative ~6'41/km, ~11.2 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "75 min en endurance — FC 135–148 bpm\nAllure indicative ~6'41/km, ~11.2 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -1590,11 +1591,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "35 min en endurance — FC 131–145 bpm\nAllure indicative ~6'40/km, ~5.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "35 min en endurance — FC 131–148 bpm\nAllure indicative ~6'40/km, ~5.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -1629,11 +1630,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "30 min en endurance — FC 131–145 bpm\nAllure indicative ~6'40/km, ~4.5 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "30 min en endurance — FC 131–148 bpm\nAllure indicative ~6'40/km, ~4.5 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -1687,13 +1688,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "55 min en endurance — FC 135–147 bpm\nAllure indicative ~6'40/km, ~8.3 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "55 min en endurance — FC 135–148 bpm\nAllure indicative ~6'40/km, ~8.3 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -1738,11 +1739,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": false,
-              "humanReadable": "50 min en endurance — FC 131–145 bpm\nAllure indicative ~6'38/km, ~7.5 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "50 min en endurance — FC 131–148 bpm\nAllure indicative ~6'38/km, ~7.5 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -1777,11 +1778,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "45 min en endurance — FC 131–145 bpm\nAllure indicative ~6'38/km, ~6.8 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "45 min en endurance — FC 131–148 bpm\nAllure indicative ~6'38/km, ~6.8 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -1838,13 +1839,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "85 min en endurance — FC 135–147 bpm\nAllure indicative ~6'38/km, ~12.8 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "85 min en endurance — FC 135–148 bpm\nAllure indicative ~6'38/km, ~12.8 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -1889,11 +1890,20 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": false,
-              "humanReadable": "50 min en endurance — FC 131–145 bpm\nAllure indicative ~6'37/km, ~7.6 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "50 min en endurance — FC 131–148 bpm\nAllure indicative ~6'37/km, ~7.6 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "completed": false
+            },
+            {
+              "id": "w10-tue-gym",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Salle — force maximale",
+              "durationMinutes": 55,
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.\n\nCette semaine au MARDI (course le samedi) : 4 jours de récupération avant l'effort max.",
               "completed": false
             }
           ]
@@ -1919,12 +1929,10 @@
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w10-thu-gym",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Salle — force maximale",
-              "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "id": "w10-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
               "completed": false
             }
           ]
@@ -1974,12 +1982,12 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": false,
               "preferredDay": "sunday",
-              "humanReadable": "80–90 min en endurance — FC 135–147 bpm — PAS PLUS\nAllure indicative ~6'37/km, ~12.8 km\nLENDEMAIN DE COURSE : jambes lourdes, c'est normal. Départ très lent, les 20 premières minutes en bas de fourchette.\nPlafond FC 150. Si tu dépasses, tu ralentis. Pas de bascule au samedi cette semaine.",
+              "humanReadable": "80–90 min en endurance — FC 135–148 bpm — PAS PLUS\nAllure indicative ~6'37/km, ~12.8 km\nLENDEMAIN DE COURSE : jambes lourdes, c'est normal. Départ très lent, les 20 premières minutes en bas de fourchette.\nPlafond FC 148. Si tu dépasses, tu ralentis. Pas de bascule au samedi cette semaine.",
               "completed": false
             }
           ]
@@ -2062,11 +2070,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "35 min en endurance — FC 131–145 bpm\nAllure indicative ~6'36/km, ~5.3 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "35 min en endurance — FC 131–148 bpm\nAllure indicative ~6'36/km, ~5.3 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -2120,13 +2128,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "70 min en endurance — FC 135–147 bpm\nAllure indicative ~6'36/km, ~10.6 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "70 min en endurance — FC 135–148 bpm\nAllure indicative ~6'36/km, ~10.6 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -2206,11 +2214,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "45 min en endurance — FC 131–145 bpm\nAllure indicative ~6'35/km, ~6.8 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "45 min en endurance — FC 131–148 bpm\nAllure indicative ~6'35/km, ~6.8 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -2267,13 +2275,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "110 min en endurance — FC 135–147 bpm\nAllure indicative ~6'35/km, ~16.7 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "110 min en endurance — FC 135–148 bpm\nAllure indicative ~6'35/km, ~16.7 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -2285,8 +2293,8 @@
       "startDate": "2026-12-07",
       "endDate": "2026-12-13",
       "phase": "Build aérobie",
-      "focus": "Première séance au seuil (Z4) + Course de Noël (Sion) samedi",
-      "targetHours": 5.5,
+      "focus": "Course de Noël (Sion) samedi — seule intensité de la semaine",
+      "targetHours": 5.3,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -2311,17 +2319,27 @@
             {
               "id": "w13-tue-run",
               "sport": "run",
-              "type": "threshold",
-              "name": "Seuil Z4 — 4×5 min",
-              "durationMinutes": 55,
-              "distanceMeters": 9300,
-              "primaryZone": "Zone 4",
+              "type": "endurance",
+              "name": "Run Z2",
+              "durationMinutes": 45,
+              "distanceMeters": 6900,
+              "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 170
+                "high": 148
               },
-              "rpe": 8,
-              "humanReadable": "55 min :\nÉchauffement 15 min\n4×5 min au SEUIL — FC 160–170 bpm, récup 2 min en trottinant\nRetour au calme 14 min\n\nPremière intensité réelle du plan. Dur mais contrôlé — tu dois pouvoir faire la dernière répétition.",
+              "rpe": 3,
+              "strides": false,
+              "humanReadable": "45 min en endurance — FC 131–148 bpm\nAllure indicative ~6'33/km, ~6.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nRemplace la séance de seuil : la Course de Noël de samedi est l'intensité de la semaine. Footing avant la salle.",
+              "completed": false
+            },
+            {
+              "id": "w13-tue-gym",
+              "sport": "strength",
+              "type": "strength",
+              "name": "Salle — force maximale",
+              "durationMinutes": 55,
+              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.\n\nCette semaine au MARDI (course le samedi) : 4 jours de récupération avant l'effort max.",
               "completed": false
             }
           ]
@@ -2347,12 +2365,10 @@
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w13-thu-gym",
-              "sport": "strength",
-              "type": "strength",
-              "name": "Salle — force maximale",
-              "durationMinutes": 55,
-              "humanReadable": "45–60 min — FORCE MAXIMALE, bas du corps.\nÉchauffement : 10 min de footing ou vélo, gainage 3×1 min, chaise 1 min, squats à vide 15 en montant progressivement les charges.\n\n1. Squat ou presse : 4×4 @ charge lourde (RPE 8), 3 min de récup\n2. Soulevé de terre roumain : 3×5\n3. Fente bulgare lestée : 3×6/jambe\n4. Mollets chargés (debout) : 4×8 excentrique lent\n5. Abduction hanche à la poulie : 3×12/côté\n\n3–5 reps, charges élevées, longues récups. Phase excentrique contrôlée sur 3 s.\nPAS de circuit, PAS d'hypertrophie.\nSi fatigue des jambes le dimanche : réduire à 3 séries sur l'exercice principal.",
+              "id": "w13-thu",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
               "completed": false
             }
           ]
@@ -2402,12 +2418,12 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 6,
               "flexible": false,
               "preferredDay": "sunday",
-              "humanReadable": "110 min en endurance — FC 135–147 bpm\nAllure indicative ~6'33/km, ~16.8 km\nLENDEMAIN DE COURSE : jambes lourdes, c'est normal. Départ très lent, les 20 premières minutes en bas de fourchette.\nPlafond FC 150. Si tu dépasses, tu ralentis. Pas de bascule au samedi cette semaine.",
+              "humanReadable": "110 min en endurance — FC 135–148 bpm\nAllure indicative ~6'33/km, ~16.8 km\nLENDEMAIN DE COURSE : jambes lourdes, c'est normal. Départ très lent, les 20 premières minutes en bas de fourchette.\nPlafond FC 148. Si tu dépasses, tu ralentis. Pas de bascule au samedi cette semaine.",
               "completed": false
             }
           ]
@@ -2487,11 +2503,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "45 min en endurance — FC 131–145 bpm\nAllure indicative ~6'32/km, ~6.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "45 min en endurance — FC 131–148 bpm\nAllure indicative ~6'32/km, ~6.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -2548,13 +2564,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 6,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "130 min en endurance — FC 135–147 bpm\nAllure indicative ~6'32/km, ~19.9 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "130 min en endurance — FC 135–148 bpm\nAllure indicative ~6'32/km, ~19.9 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -2597,11 +2613,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'31/km, ~6.1 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "40 min en endurance — FC 131–148 bpm\nAllure indicative ~6'31/km, ~6.1 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -2672,13 +2688,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "60 min en endurance — FC 135–147 bpm\nAllure indicative ~6'31/km, ~9.2 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "60 min en endurance — FC 135–148 bpm\nAllure indicative ~6'31/km, ~9.2 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -2723,11 +2739,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": false,
-              "humanReadable": "45 min en endurance — FC 131–145 bpm\nAllure indicative ~6'29/km, ~6.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "45 min en endurance — FC 131–148 bpm\nAllure indicative ~6'29/km, ~6.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -2759,11 +2775,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "45 min en endurance — FC 131–145 bpm\nAllure indicative ~6'29/km, ~6.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "45 min en endurance — FC 131–148 bpm\nAllure indicative ~6'29/km, ~6.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -2820,13 +2836,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "90 min en endurance — FC 135–147 bpm\nAllure indicative ~6'29/km, ~13.9 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "90 min en endurance — FC 135–148 bpm\nAllure indicative ~6'29/km, ~13.9 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -2906,11 +2922,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "45 min en endurance — FC 131–145 bpm\nAllure indicative ~6'28/km, ~7.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "45 min en endurance — FC 131–148 bpm\nAllure indicative ~6'28/km, ~7.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -2967,13 +2983,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 6,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "135 min en endurance — FC 135–147 bpm\nAllure indicative ~6'28/km, ~20.9 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "135 min en endurance — FC 135–148 bpm\nAllure indicative ~6'28/km, ~20.9 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -3053,11 +3069,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "50 min en endurance — FC 131–145 bpm\nAllure indicative ~6'27/km, ~7.8 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "50 min en endurance — FC 131–148 bpm\nAllure indicative ~6'27/km, ~7.8 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -3114,13 +3130,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 6,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "145 min en endurance — FC 135–147 bpm\nAllure indicative ~6'27/km, ~22.5 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "145 min en endurance — FC 135–148 bpm\nAllure indicative ~6'27/km, ~22.5 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -3200,11 +3216,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "50 min en endurance — FC 131–145 bpm\nAllure indicative ~6'26/km, ~7.8 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "50 min en endurance — FC 131–148 bpm\nAllure indicative ~6'26/km, ~7.8 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -3261,13 +3277,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 8,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "155 min — ~25.3 km — LA SÉANCE CLÉ\n\nStructure :\n- 125 min en endurance, FC 135–147 bpm (~6'26/km)\n- 30 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
+              "humanReadable": "155 min — ~25.3 km — LA SÉANCE CLÉ\n\nStructure :\n- 125 min en endurance, FC 135–148 bpm (~6'26/km)\n- 30 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
               "completed": false
             }
           ]
@@ -3312,11 +3328,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": false,
-              "humanReadable": "45 min en endurance — FC 131–145 bpm\nAllure indicative ~6'24/km, ~7.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "45 min en endurance — FC 131–148 bpm\nAllure indicative ~6'24/km, ~7.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -3348,11 +3364,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'24/km, ~6.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "40 min en endurance — FC 131–148 bpm\nAllure indicative ~6'24/km, ~6.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -3409,13 +3425,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 6,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "120 min en endurance — FC 135–147 bpm\nAllure indicative ~6'24/km, ~18.8 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "120 min en endurance — FC 135–148 bpm\nAllure indicative ~6'24/km, ~18.8 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -3495,11 +3511,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "50 min en endurance — FC 131–145 bpm\nAllure indicative ~6'23/km, ~7.8 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "50 min en endurance — FC 131–148 bpm\nAllure indicative ~6'23/km, ~7.8 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -3563,13 +3579,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 8,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "160 min — ~26.8 km — LA SÉANCE CLÉ\n\nStructure :\n- 115 min en endurance, FC 135–147 bpm (~6'23/km)\n- 45 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
+              "humanReadable": "160 min — ~26.8 km — LA SÉANCE CLÉ\n\nStructure :\n- 115 min en endurance, FC 135–148 bpm (~6'23/km)\n- 45 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
               "completed": false
             }
           ]
@@ -3649,11 +3665,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "50 min en endurance — FC 131–145 bpm\nAllure indicative ~6'22/km, ~7.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "50 min en endurance — FC 131–148 bpm\nAllure indicative ~6'22/km, ~7.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -3717,13 +3733,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 8,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "180 min — ~30.2 km — LA SÉANCE CLÉ\n\nStructure :\n- 130 min en endurance, FC 135–147 bpm (~6'22/km)\n- 50 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
+              "humanReadable": "180 min — ~30.2 km — LA SÉANCE CLÉ\n\nStructure :\n- 130 min en endurance, FC 135–148 bpm (~6'22/km)\n- 50 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
               "completed": false
             }
           ]
@@ -3803,11 +3819,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'20/km, ~6.3 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "40 min en endurance — FC 131–148 bpm\nAllure indicative ~6'20/km, ~6.3 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             }
           ]
@@ -3855,13 +3871,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 6,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "120 min en endurance — FC 135–147 bpm\nAllure indicative ~6'20/km, ~18.9 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "120 min en endurance — FC 135–148 bpm\nAllure indicative ~6'20/km, ~18.9 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -3906,11 +3922,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'19/km, ~6.3 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\nInclure 4×1 min à allure semi pour réveiller les jambes.",
+              "humanReadable": "40 min en endurance — FC 131–148 bpm\nAllure indicative ~6'19/km, ~6.3 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\nInclure 4×1 min à allure semi pour réveiller les jambes.",
               "completed": false
             }
           ]
@@ -3942,11 +3958,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "30 min en endurance — FC 131–145 bpm\nAllure indicative ~6'19/km, ~4.7 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "30 min en endurance — FC 131–148 bpm\nAllure indicative ~6'19/km, ~4.7 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             }
           ]
@@ -4040,11 +4056,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "35 min en endurance — FC 131–145 bpm\nAllure indicative ~6'18/km, ~5.6 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "35 min en endurance — FC 131–148 bpm\nAllure indicative ~6'18/km, ~5.6 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -4076,11 +4092,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'18/km, ~6.3 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "40 min en endurance — FC 131–148 bpm\nAllure indicative ~6'18/km, ~6.3 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             }
           ]
@@ -4128,13 +4144,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "60 min en endurance — FC 135–147 bpm\nAllure indicative ~6'18/km, ~9.5 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "60 min en endurance — FC 135–148 bpm\nAllure indicative ~6'18/km, ~9.5 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -4214,11 +4230,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "50 min en endurance — FC 131–145 bpm\nAllure indicative ~6'16/km, ~8.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "50 min en endurance — FC 131–148 bpm\nAllure indicative ~6'16/km, ~8.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -4275,13 +4291,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 6,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "150 min en endurance — FC 135–147 bpm\nAllure indicative ~6'16/km, ~23.9 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "150 min en endurance — FC 135–148 bpm\nAllure indicative ~6'16/km, ~23.9 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -4361,11 +4377,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "50 min en endurance — FC 131–145 bpm\nAllure indicative ~6'15/km, ~8.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "50 min en endurance — FC 131–148 bpm\nAllure indicative ~6'15/km, ~8.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -4429,13 +4445,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 8,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "160 min — ~26.7 km — LA SÉANCE CLÉ\n\nStructure :\n- 130 min en endurance, FC 135–147 bpm (~6'15/km)\n- 30 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
+              "humanReadable": "160 min — ~26.7 km — LA SÉANCE CLÉ\n\nStructure :\n- 130 min en endurance, FC 135–148 bpm (~6'15/km)\n- 30 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
               "completed": false
             }
           ]
@@ -4515,11 +4531,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'14/km, ~6.4 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "40 min en endurance — FC 131–148 bpm\nAllure indicative ~6'14/km, ~6.4 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             }
           ]
@@ -4567,13 +4583,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 6,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "120 min en endurance — FC 135–147 bpm\nAllure indicative ~6'14/km, ~19.3 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "120 min en endurance — FC 135–148 bpm\nAllure indicative ~6'14/km, ~19.3 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -4653,11 +4669,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "35 min en endurance — FC 131–145 bpm\nAllure indicative ~6'12/km, ~5.6 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "35 min en endurance — FC 131–148 bpm\nAllure indicative ~6'12/km, ~5.6 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             }
           ]
@@ -4705,13 +4721,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "90 min en endurance — FC 135–147 bpm\nAllure indicative ~6'12/km, ~14.5 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "90 min en endurance — FC 135–148 bpm\nAllure indicative ~6'12/km, ~14.5 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -4791,11 +4807,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "30 min en endurance — FC 131–145 bpm\nAllure indicative ~6'11/km, ~4.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "30 min en endurance — FC 131–148 bpm\nAllure indicative ~6'11/km, ~4.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             }
           ]
@@ -4840,13 +4856,13 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
-                "high": 147
+                "high": 148
               },
               "rpe": 5,
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "60 min en endurance — FC 135–147 bpm\nAllure indicative ~6'11/km, ~9.7 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "60 min en endurance — FC 135–148 bpm\nAllure indicative ~6'11/km, ~9.7 km\nPlafond FC 148. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -4889,11 +4905,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "30 min en endurance — FC 131–145 bpm\nAllure indicative ~6'10/km, ~4.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\nInclure 4×30 s à allure marathon. Rien de plus.",
+              "humanReadable": "30 min en endurance — FC 131–148 bpm\nAllure indicative ~6'10/km, ~4.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\nInclure 4×30 s à allure marathon. Rien de plus.",
               "completed": false
             }
           ]
@@ -4925,11 +4941,11 @@
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
-                "high": 145
+                "high": 148
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "20 min en endurance — FC 131–145 bpm\nAllure indicative ~6'10/km, ~3.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "20 min en endurance — FC 131–148 bpm\nAllure indicative ~6'10/km, ~3.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -4977,7 +4993,7 @@
                 "high": 157
               },
               "rpe": 9,
-              "humanReadable": "Marathon d'Annecy — 42,195 km\n\nALLURE : celle fixée par le semi (allure semi + 20–25 s/km). Pas un autre chiffre.\n\nStratégie :\n- km 0–10 : allure cible +7 s/km. FC plafonnée à 148. Non négociable.\n- km 10–30 : allure cible, FC 150–157\n- km 30–42 : la FC va monter. C'est normal. C'est ici que 7 mois de sorties longues sous 147 payent.\n\nNutrition : 6 gels (35/60/85/110/135/160 min) + 1 L de boisson glucidique. Cible ~65 g de glucides/h. Testé et validé dès S21.\n\nRepères :\n- À Paris tu es parti juste et tu as dérivé au seuil au km 35.\n- Toute cette prépa a servi à repousser ce point.\n- Les quatre seuils de réussite sont écrits. Aucun n'est un échec.",
+              "humanReadable": "Marathon d'Annecy — 42,195 km\n\nALLURE : celle fixée par le semi (allure semi + 20–25 s/km). Pas un autre chiffre.\n\nStratégie :\n- km 0–10 : allure cible +7 s/km. FC plafonnée à 148. Non négociable.\n- km 10–30 : allure cible, FC 150–157\n- km 30–42 : la FC va monter. C'est normal. C'est ici que 7 mois de sorties longues sous 148 payent.\n\nNutrition : 6 gels (35/60/85/110/135/160 min) + 1 L de boisson glucidique. Cible ~65 g de glucides/h. Testé et validé dès S21.\n\nRepères :\n- À Paris tu es parti juste et tu as dérivé au seuil au km 35.\n- Toute cette prépa a servi à repousser ce point.\n- Les quatre seuils de réussite sont écrits. Aucun n'est un échec.",
               "completed": false
             }
           ]
