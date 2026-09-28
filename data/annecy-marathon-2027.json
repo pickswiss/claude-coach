@@ -17,7 +17,7 @@
     "planStartDate": "2026-09-14",
     "planEndDate": "2027-04-18",
     "totalWeeks": 31,
-    "revision": "v2.6 — entrée progressive S4–S9, longues S17–S19 lissées, 4e séance dès S21, seuil FC 171",
+    "revision": "v2.7 — longue S21 à 160 min, 4e séance S21 conditionnée à S19–S20, IDs renfo du jeudi",
     "changelog": [
       "Zones FC reconstruites en % de réserve (max 189 validé / repos 43). L'ancienne Z2 (148–162) était 14 bpm trop haute.",
       "Allure marathon : modèle dérivé (bande 5'00–5'12) au lieu d'une cible figée à 4'58.",
@@ -31,7 +31,8 @@
       "Nutrition : cible glucidique progressive + fenêtre de déficit oct-nov.",
       "v2.4 : le déficit s'arrête au 15 novembre, pas au 29 — il chevauchait le bloc de force avancé au 2 novembre.",
       "v2.5 : circuit maison passé de 6 à 8 exercices (25 min) — ajout du soléaire, de l'excentrique Achille et d'un leg curl ischios, tempo excentrique 3 s explicite partout. Source : fiche de renforcement traileur (V. Guerdin, sept. 2026), adaptée au contexte route — protocole d'échauffement et travail des stabilisateurs de cheville écartés, non pertinents sur marathon plat.",
-      "v2.6 : semaines d'entrée décalées d'une marche après 3 semaines sans course (intervals.icu : 4,9 km/sem hors Wild 25 sur les 6 semaines précédentes, CTL 11) — S4 à 30/30/45 min et 1 natation, S5–S7 = anciennes S4–S6, décharge S8 à -25 %, long S9 85 min, retour au plan en S10. Longues S17–S19 lissées à 135/145/155 min. 4e séance déverrouillée en S21 (après la décharge S20) au lieu de S18. Seuil FC de référence 171 (intervals.icu), à reconfirmer au test de S11."
+      "v2.6 : semaines d'entrée décalées d'une marche après 3 semaines sans course (intervals.icu : 4,9 km/sem hors Wild 25 sur les 6 semaines précédentes, CTL 11) — S4 à 30/30/45 min et 1 natation, S5–S7 = anciennes S4–S6, décharge S8 à -25 %, long S9 85 min, retour au plan en S10. Longues S17–S19 lissées à 135/145/155 min. 4e séance déverrouillée en S21 (après la décharge S20) au lieu de S18. Seuil FC de référence 171 (intervals.icu), à reconfirmer au test de S11.",
+      "v2.7 : longue S21 ramenée à 160 min (115 min d'endurance + 45 min d'allure) pour adoucir la marche S19 → S21. Première 4e séance (S21) seulement si S19 et S20 se sont passées sans signal à la hanche. Renfo du jeudi : identifiant propre (S4–S7, S26, S27), il partageait celui du lundi. Objectif de la phase Build aligné sur la longue réelle (S18)."
     ]
   },
   "preferences": {
@@ -287,7 +288,8 @@
     "conditions": [
       "Renfo tenu 2×/semaine sur les 3 semaines précédentes",
       "Aucun signal à la hanche",
-      "Semaine non marquée récupération"
+      "Semaine non marquée récupération",
+      "S21 (première occurrence) : seulement si S19 et S20 se sont passées sans aucun signal à la hanche"
     ],
     "note": "Jamais une constante. Environ 6 à 8 occurrences sur la prépa."
   },
@@ -527,7 +529,7 @@
       "physiologicalGoals": [
         "Développer la puissance aérobie et l'économie de course",
         "Introduire l'intensité absente des 31 semaines précédentes",
-        "Long 25 km en fin de phase"
+        "Long 145 min (~22,5 km) en fin de phase (S18)"
       ]
     },
     {
@@ -1031,7 +1033,7 @@
               "completed": false
             },
             {
-              "id": "w4-mon-str",
+              "id": "w4-thu-str",
               "sport": "strength",
               "type": "strength",
               "name": "Renfo maison — prévention",
@@ -1179,7 +1181,7 @@
               "completed": false
             },
             {
-              "id": "w5-mon-str",
+              "id": "w5-thu-str",
               "sport": "strength",
               "type": "strength",
               "name": "Renfo maison — prévention",
@@ -1330,7 +1332,7 @@
               "completed": false
             },
             {
-              "id": "w6-mon-str",
+              "id": "w6-thu-str",
               "sport": "strength",
               "type": "strength",
               "name": "Renfo maison — prévention",
@@ -1481,7 +1483,7 @@
               "completed": false
             },
             {
-              "id": "w7-mon-str",
+              "id": "w7-thu-str",
               "sport": "strength",
               "type": "strength",
               "name": "Renfo maison — prévention",
@@ -3452,7 +3454,7 @@
       "endDate": "2027-02-07",
       "phase": "Spécificité marathon",
       "focus": "Seuil Z4 + long qui finit sur 45 min d'allure + 4e séance déverrouillée",
-      "targetHours": 6.8,
+      "targetHours": 6.6,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -3568,7 +3570,7 @@
               },
               "rpe": 2,
               "conditional": true,
-              "humanReadable": "30 min TRÈS facile — FC < 131 bpm\n\nCONDITIONS, les trois à la fois :\n1. Le renfo a été tenu 2×/sem les 3 semaines précédentes\n2. Aucun signal à la hanche\n3. La semaine ne t'a pas déjà cassé\n\nSinon → natation à la place. Cette séance REMPLACE la natation, elle ne s'ajoute pas. Le compte reste à 6 séances.",
+              "humanReadable": "30 min TRÈS facile — FC < 131 bpm\n\nCONDITIONS, les quatre à la fois :\n1. Le renfo a été tenu 2×/sem les 3 semaines précédentes\n2. Aucun signal à la hanche\n3. La semaine ne t'a pas déjà cassé\n4. Première 4e séance de la prépa : S19 et S20 se sont passées sans AUCUN signal à la hanche\n\nSinon → natation à la place. Cette séance REMPLACE la natation, elle ne s'ajoute pas. Le compte reste à 6 séances.",
               "completed": false
             }
           ]
@@ -3581,9 +3583,9 @@
               "id": "w21-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 170 min",
-              "durationMinutes": 170,
-              "distanceMeters": 28400,
+              "name": "Sortie longue — 160 min",
+              "durationMinutes": 160,
+              "distanceMeters": 26800,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -3593,7 +3595,7 @@
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "170 min — ~28.4 km — LA SÉANCE CLÉ\n\nStructure :\n- 125 min en endurance, FC 135–147 bpm (~6'23/km)\n- 45 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
+              "humanReadable": "160 min — ~26.8 km — LA SÉANCE CLÉ\n\nStructure :\n- 115 min en endurance, FC 135–147 bpm (~6'23/km)\n- 45 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
               "completed": false
             }
           ]
@@ -4246,7 +4248,7 @@
               "completed": false
             },
             {
-              "id": "w26-mon-str",
+              "id": "w26-thu-str",
               "sport": "strength",
               "type": "strength",
               "name": "Renfo maison — maintien",
@@ -4393,7 +4395,7 @@
               "completed": false
             },
             {
-              "id": "w27-mon-str",
+              "id": "w27-thu-str",
               "sport": "strength",
               "type": "strength",
               "name": "Renfo maison — maintien",
