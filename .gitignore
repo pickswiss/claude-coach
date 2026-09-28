@@ -19,6 +19,9 @@ coverage/
 # Python virtualenv
 .venv/
 
+# Brouillons locaux
+scratch/
+
 # Editor
 .vscode/
 .idea/

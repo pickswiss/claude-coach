@@ -17,7 +17,7 @@
     "planStartDate": "2026-09-14",
     "planEndDate": "2027-04-18",
     "totalWeeks": 31,
-    "revision": "v2.5 — circuit maison enrichi (bas de jambe, excentrique ischios, tempo 3 s)",
+    "revision": "v2.6 — entrée progressive S4–S9, longues S17–S19 lissées, 4e séance dès S21, seuil FC 171",
     "changelog": [
       "Zones FC reconstruites en % de réserve (max 189 validé / repos 43). L'ancienne Z2 (148–162) était 14 bpm trop haute.",
       "Allure marathon : modèle dérivé (bande 5'00–5'12) au lieu d'une cible figée à 4'58.",
@@ -30,7 +30,8 @@
       "Décharge réelle ajoutée en S20. Corrections de phases, d'affûtage et de chronos.",
       "Nutrition : cible glucidique progressive + fenêtre de déficit oct-nov.",
       "v2.4 : le déficit s'arrête au 15 novembre, pas au 29 — il chevauchait le bloc de force avancé au 2 novembre.",
-      "v2.5 : circuit maison passé de 6 à 8 exercices (25 min) — ajout du soléaire, de l'excentrique Achille et d'un leg curl ischios, tempo excentrique 3 s explicite partout. Source : fiche de renforcement traileur (V. Guerdin, sept. 2026), adaptée au contexte route — protocole d'échauffement et travail des stabilisateurs de cheville écartés, non pertinents sur marathon plat."
+      "v2.5 : circuit maison passé de 6 à 8 exercices (25 min) — ajout du soléaire, de l'excentrique Achille et d'un leg curl ischios, tempo excentrique 3 s explicite partout. Source : fiche de renforcement traileur (V. Guerdin, sept. 2026), adaptée au contexte route — protocole d'échauffement et travail des stabilisateurs de cheville écartés, non pertinents sur marathon plat.",
+      "v2.6 : semaines d'entrée décalées d'une marche après 3 semaines sans course (intervals.icu : 4,9 km/sem hors Wild 25 sur les 6 semaines précédentes, CTL 11) — S4 à 30/30/45 min et 1 natation, S5–S7 = anciennes S4–S6, décharge S8 à -25 %, long S9 85 min, retour au plan en S10. Longues S17–S19 lissées à 135/145/155 min. 4e séance déverrouillée en S21 (après la décharge S20) au lieu de S18. Seuil FC de référence 171 (intervals.icu), à reconfirmer au test de S11."
     ]
   },
   "preferences": {
@@ -105,7 +106,7 @@
       }
     ],
     "constraints": [
-      "3 séances de course par semaine. Une 4e conditionnelle dès S18, jamais constante.",
+      "3 séances de course par semaine. Une 4e conditionnelle dès S21 (après la décharge S20), jamais constante.",
       "Renfo 2×/semaine — PRIORITÉ ABSOLUE. Si une semaine déraille, c'est la natation qui saute.",
       "Ordre de priorité : renfo > course > natation.",
       "Vendredi matin : BNI 6h30. Pas de séance.",
@@ -118,8 +119,8 @@
     "hrMax": 189,
     "hrRest": 43,
     "hrReserve": 146,
-    "lthr": null,
-    "lthrNote": "NON MESURÉ. Garmin annonce 163, l'ancien plan 170 — les deux sont incohérents avec Paris (155 de moyenne sur 3h49 impliquerait 95 % du seuil, ce qui est impossible). Le test de 30 min de S11 fixera la valeur réelle.",
+    "lthr": 171,
+    "lthrNote": "171 — valeur de référence provisoire, reprise du seuil FC (FTHR) d'intervals.icu. Cohérent avec Paris (155 de moyenne sur 3h49 = 91 % du seuil). À reconfirmer par le test de 30 min de S11. Les zones restent calculées en % de réserve ; la Z4 (160–170) plafonne juste sous ce seuil.",
     "hrMaxNote": "189 — VALIDÉ sur données brutes. Fichier FIT du 27.02.2026 (23,6 km, 2h33, ceinture pectorale) : montée progressive sur 2,5 min jusqu'à 189, 210 s au-dessus de 180 bpm, 105 s au-dessus de 185, et un kilomètre entier à 179 de moyenne. Ce n'est pas un artefact. Le 193 du profil Garmin n'est adossé à aucune activité : à corriger manuellement en 189 dans Paramètres utilisateur.",
     "run": {
       "hr": {
@@ -277,7 +278,7 @@
     }
   ],
   "fourthRunRule": {
-    "unlockWeek": 18,
+    "unlockWeek": 21,
     "day": "saturday",
     "duration": 30,
     "zone": "Zone 1",
@@ -490,14 +491,14 @@
       "name": "Base aérobie",
       "startWeek": 4,
       "endWeek": 11,
-      "focus": "Installer la routine et construire la durabilité : 3 runs sous 148 bpm, 2 renfo, 2 natations. Fenêtre de déficit alimentaire.",
+      "focus": "Installer la routine et construire la durabilité : 3 runs sous 148 bpm, 2 renfo, 2 natations (1 en S4). Fenêtre de déficit alimentaire.",
       "weeklyHoursRange": {
-        "low": 3.9,
+        "low": 3.2,
         "high": 5.8
       },
       "keyWorkouts": [
-        "Run Z2 131–148 (35→50 min)",
-        "Sortie longue Z2 plafond 147 (60→100 min)",
+        "Run Z2 131–148 (30→50 min)",
+        "Sortie longue Z2 plafond 147 (45→100 min)",
         "Natation 2×/sem",
         "Renfo maison lundi + jeudi",
         "TEST 30 min en S11"
@@ -520,7 +521,7 @@
       "keyWorkouts": [
         "Tempo Z3 148–160 (20→40 min)",
         "Seuil Z4 160–170 (S13)",
-        "Sortie longue 110→150 min",
+        "Sortie longue 110→145 min",
         "Salle force max le jeudi"
       ],
       "physiologicalGoals": [
@@ -539,7 +540,7 @@
         "high": 7.0
       },
       "keyWorkouts": [
-        "Long 160→180 min finissant sur 30→50 min d'allure",
+        "Long 155→180 min finissant sur 30→50 min d'allure",
         "Allure marathon et seuil en alternance le mardi",
         "Décharge réelle en S20",
         "Pré-semi S23"
@@ -950,8 +951,8 @@
       "startDate": "2026-10-05",
       "endDate": "2026-10-11",
       "phase": "Base aérobie",
-      "focus": "Installer la routine — 3 runs, 2 renfo, 2 natations",
-      "targetHours": 4.2,
+      "focus": "Installer la routine — 3 runs courts, 2 renfo, 1 natation",
+      "targetHours": 3.2,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -978,8 +979,8 @@
               "sport": "run",
               "type": "endurance",
               "name": "Run Z2",
-              "durationMinutes": 35,
-              "distanceMeters": 5200,
+              "durationMinutes": 30,
+              "distanceMeters": 4400,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
@@ -987,7 +988,7 @@
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "35 min en endurance — FC 131–145 bpm\nAllure indicative ~6'45/km, ~5.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "30 min en endurance — FC 131–145 bpm\nAllure indicative ~6'45/km, ~4.4 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -1017,8 +1018,8 @@
               "sport": "run",
               "type": "endurance",
               "name": "Run Z2",
-              "durationMinutes": 35,
-              "distanceMeters": 5200,
+              "durationMinutes": 30,
+              "distanceMeters": 4400,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
@@ -1026,7 +1027,7 @@
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "35 min en endurance — FC 131–145 bpm\nAllure indicative ~6'45/km, ~5.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "30 min en endurance — FC 131–145 bpm\nAllure indicative ~6'45/km, ~4.4 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             },
             {
@@ -1058,13 +1059,10 @@
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w4-sat-swim",
-              "sport": "swim",
-              "type": "endurance",
-              "name": "Natation aérobie",
-              "durationMinutes": 35,
-              "distanceMeters": 1500,
-              "humanReadable": "35 min — ~1500 m\nAllure souple, technique. Plaisir avant tout.",
+              "id": "w4-sat",
+              "sport": "rest",
+              "type": "rest",
+              "name": "Repos",
               "completed": false
             }
           ]
@@ -1077,9 +1075,9 @@
               "id": "w4-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 60 min",
-              "durationMinutes": 60,
-              "distanceMeters": 8900,
+              "name": "Sortie longue — 45 min",
+              "durationMinutes": 45,
+              "distanceMeters": 6700,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -1089,7 +1087,7 @@
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "60 min en endurance — FC 135–147 bpm\nAllure indicative ~6'45/km, ~8.9 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "45 min en endurance — FC 135–147 bpm\nAllure indicative ~6'45/km, ~6.7 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -1102,7 +1100,7 @@
       "endDate": "2026-10-18",
       "phase": "Base aérobie",
       "focus": "Progression douce — lignes droites le jeudi",
-      "targetHours": 4.5,
+      "targetHours": 4.2,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -1129,8 +1127,8 @@
               "sport": "run",
               "type": "endurance",
               "name": "Run Z2",
-              "durationMinutes": 40,
-              "distanceMeters": 5900,
+              "durationMinutes": 35,
+              "distanceMeters": 5200,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
@@ -1138,7 +1136,7 @@
               },
               "rpe": 3,
               "strides": false,
-              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'44/km, ~5.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "35 min en endurance — FC 131–145 bpm\nAllure indicative ~6'44/km, ~5.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -1168,8 +1166,8 @@
               "sport": "run",
               "type": "endurance",
               "name": "Run Z2",
-              "durationMinutes": 40,
-              "distanceMeters": 5900,
+              "durationMinutes": 35,
+              "distanceMeters": 5200,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
@@ -1177,7 +1175,7 @@
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'44/km, ~5.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "35 min en endurance — FC 131–145 bpm\nAllure indicative ~6'44/km, ~5.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -1228,9 +1226,9 @@
               "id": "w5-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 70 min",
-              "durationMinutes": 70,
-              "distanceMeters": 10400,
+              "name": "Sortie longue — 60 min",
+              "durationMinutes": 60,
+              "distanceMeters": 8900,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -1240,7 +1238,7 @@
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "70 min en endurance — FC 135–147 bpm\nAllure indicative ~6'44/km, ~10.4 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "60 min en endurance — FC 135–147 bpm\nAllure indicative ~6'44/km, ~8.9 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -1252,8 +1250,8 @@
       "startDate": "2026-10-19",
       "endDate": "2026-10-25",
       "phase": "Base aérobie",
-      "focus": "Volume en hausse — long 75 min",
-      "targetHours": 4.7,
+      "focus": "Volume en hausse — long 70 min",
+      "targetHours": 4.5,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -1280,8 +1278,8 @@
               "sport": "run",
               "type": "endurance",
               "name": "Run Z2",
-              "durationMinutes": 45,
-              "distanceMeters": 6700,
+              "durationMinutes": 40,
+              "distanceMeters": 6000,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
@@ -1289,7 +1287,7 @@
               },
               "rpe": 4,
               "strides": false,
-              "humanReadable": "45 min en endurance — FC 131–145 bpm\nAllure indicative ~6'42/km, ~6.7 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
+              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'42/km, ~6.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.",
               "completed": false
             }
           ]
@@ -1379,9 +1377,9 @@
               "id": "w6-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 75 min",
-              "durationMinutes": 75,
-              "distanceMeters": 11200,
+              "name": "Sortie longue — 70 min",
+              "durationMinutes": 70,
+              "distanceMeters": 10400,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -1391,7 +1389,7 @@
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "75 min en endurance — FC 135–147 bpm\nAllure indicative ~6'42/km, ~11.2 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "70 min en endurance — FC 135–147 bpm\nAllure indicative ~6'42/km, ~10.4 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -1403,8 +1401,8 @@
       "startDate": "2026-10-26",
       "endDate": "2026-11-01",
       "phase": "Base aérobie",
-      "focus": "Volume consolidé — long 80 min",
-      "targetHours": 4.8,
+      "focus": "Volume consolidé — long 75 min",
+      "targetHours": 4.7,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -1470,8 +1468,8 @@
               "sport": "run",
               "type": "endurance",
               "name": "Run Z2",
-              "durationMinutes": 45,
-              "distanceMeters": 6700,
+              "durationMinutes": 40,
+              "distanceMeters": 6000,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
@@ -1479,7 +1477,7 @@
               },
               "rpe": 4,
               "strides": true,
-              "humanReadable": "45 min en endurance — FC 131–145 bpm\nAllure indicative ~6'41/km, ~6.7 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "40 min en endurance — FC 131–145 bpm\nAllure indicative ~6'41/km, ~6.0 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -1530,9 +1528,9 @@
               "id": "w7-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 80 min",
-              "durationMinutes": 80,
-              "distanceMeters": 12000,
+              "name": "Sortie longue — 75 min",
+              "durationMinutes": 75,
+              "distanceMeters": 11200,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -1542,7 +1540,7 @@
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "80 min en endurance — FC 135–147 bpm\nAllure indicative ~6'41/km, ~12.0 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "75 min en endurance — FC 135–147 bpm\nAllure indicative ~6'41/km, ~11.2 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -1554,8 +1552,8 @@
       "startDate": "2026-11-02",
       "endDate": "2026-11-08",
       "phase": "Base aérobie",
-      "focus": "DÉCHARGE — -30 %, recharger",
-      "targetHours": 3.9,
+      "focus": "DÉCHARGE — -25 %, recharger",
+      "targetHours": 3.8,
       "isRecoveryWeek": true,
       "days": [
         {
@@ -1621,8 +1619,8 @@
               "sport": "run",
               "type": "endurance",
               "name": "Run Z2",
-              "durationMinutes": 35,
-              "distanceMeters": 5200,
+              "durationMinutes": 30,
+              "distanceMeters": 4500,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 131,
@@ -1630,7 +1628,7 @@
               },
               "rpe": 3,
               "strides": true,
-              "humanReadable": "35 min en endurance — FC 131–145 bpm\nAllure indicative ~6'40/km, ~5.2 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
+              "humanReadable": "30 min en endurance — FC 131–145 bpm\nAllure indicative ~6'40/km, ~4.5 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
               "completed": false
             },
             {
@@ -1678,9 +1676,9 @@
               "id": "w8-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 60 min",
-              "durationMinutes": 60,
-              "distanceMeters": 9000,
+              "name": "Sortie longue — 55 min",
+              "durationMinutes": 55,
+              "distanceMeters": 8300,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -1690,7 +1688,7 @@
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "60 min en endurance — FC 135–147 bpm\nAllure indicative ~6'40/km, ~9.0 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "55 min en endurance — FC 135–147 bpm\nAllure indicative ~6'40/km, ~8.3 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -1702,8 +1700,8 @@
       "startDate": "2026-11-09",
       "endDate": "2026-11-15",
       "phase": "Base aérobie",
-      "focus": "Reprise — long 90 min",
-      "targetHours": 5.4,
+      "focus": "Reprise — long 85 min",
+      "targetHours": 5.3,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -1829,9 +1827,9 @@
               "id": "w9-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 90 min",
-              "durationMinutes": 90,
-              "distanceMeters": 13600,
+              "name": "Sortie longue — 85 min",
+              "durationMinutes": 85,
+              "distanceMeters": 12800,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -1841,7 +1839,7 @@
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "90 min en endurance — FC 135–147 bpm\nAllure indicative ~6'38/km, ~13.6 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "85 min en endurance — FC 135–147 bpm\nAllure indicative ~6'38/km, ~12.8 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -2865,7 +2863,7 @@
       "endDate": "2027-01-10",
       "phase": "Build aérobie",
       "focus": "Tempo 35 min — remontée progressive après les fêtes",
-      "targetHours": 5.8,
+      "targetHours": 5.9,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -2987,9 +2985,9 @@
               "id": "w17-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 130 min",
-              "durationMinutes": 130,
-              "distanceMeters": 20100,
+              "name": "Sortie longue — 135 min",
+              "durationMinutes": 135,
+              "distanceMeters": 20900,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -2999,7 +2997,7 @@
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "130 min en endurance — FC 135–147 bpm\nAllure indicative ~6'28/km, ~20.1 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "135 min en endurance — FC 135–147 bpm\nAllure indicative ~6'28/km, ~20.9 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -3011,7 +3009,7 @@
       "startDate": "2027-01-11",
       "endDate": "2027-01-17",
       "phase": "Build aérobie",
-      "focus": "Pic Build — tempo 40 min chronométré (checkpoint) + 4e séance déverrouillée",
+      "focus": "Pic Build — tempo 40 min chronométré (checkpoint)",
       "targetHours": 6.3,
       "isRecoveryWeek": false,
       "days": [
@@ -3115,20 +3113,13 @@
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w18-sat-run",
-              "sport": "run",
-              "type": "recovery",
-              "name": "4e séance — conditionnelle",
-              "durationMinutes": 30,
-              "distanceMeters": 4651,
-              "primaryZone": "Zone 1",
-              "targetHR": {
-                "low": 110,
-                "high": 131
-              },
-              "rpe": 2,
-              "conditional": true,
-              "humanReadable": "30 min TRÈS facile — FC < 131 bpm\n\nCONDITIONS, les trois à la fois :\n1. Le renfo a été tenu 2×/sem les 3 semaines précédentes\n2. Aucun signal à la hanche\n3. La semaine ne t'a pas déjà cassé\n\nSinon → natation à la place. Cette séance REMPLACE la natation, elle ne s'ajoute pas. Le compte reste à 6 séances.",
+              "id": "w18-sat-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation aérobie",
+              "durationMinutes": 35,
+              "distanceMeters": 1500,
+              "humanReadable": "35 min — ~1500 m\nAllure souple, technique. Plaisir avant tout.",
               "completed": false
             }
           ]
@@ -3141,9 +3132,9 @@
               "id": "w18-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 150 min",
-              "durationMinutes": 150,
-              "distanceMeters": 23300,
+              "name": "Sortie longue — 145 min",
+              "durationMinutes": 145,
+              "distanceMeters": 22500,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -3153,7 +3144,7 @@
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "150 min en endurance — FC 135–147 bpm\nAllure indicative ~6'27/km, ~23.3 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "145 min en endurance — FC 135–147 bpm\nAllure indicative ~6'27/km, ~22.5 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
               "completed": false
             }
           ]
@@ -3269,20 +3260,13 @@
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w19-sat-run",
-              "sport": "run",
-              "type": "recovery",
-              "name": "4e séance — conditionnelle",
-              "durationMinutes": 30,
-              "distanceMeters": 4663,
-              "primaryZone": "Zone 1",
-              "targetHR": {
-                "low": 110,
-                "high": 131
-              },
-              "rpe": 2,
-              "conditional": true,
-              "humanReadable": "30 min TRÈS facile — FC < 131 bpm\n\nCONDITIONS, les trois à la fois :\n1. Le renfo a été tenu 2×/sem les 3 semaines précédentes\n2. Aucun signal à la hanche\n3. La semaine ne t'a pas déjà cassé\n\nSinon → natation à la place. Cette séance REMPLACE la natation, elle ne s'ajoute pas. Le compte reste à 6 séances.",
+              "id": "w19-sat-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation aérobie",
+              "durationMinutes": 35,
+              "distanceMeters": 1500,
+              "humanReadable": "35 min — ~1500 m\nAllure souple, technique. Plaisir avant tout.",
               "completed": false
             }
           ]
@@ -3295,9 +3279,9 @@
               "id": "w19-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 160 min",
-              "durationMinutes": 160,
-              "distanceMeters": 26100,
+              "name": "Sortie longue — 155 min",
+              "durationMinutes": 155,
+              "distanceMeters": 25300,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
@@ -3307,7 +3291,7 @@
               "flexible": true,
               "preferredDay": "sunday",
               "alternateDay": "saturday",
-              "humanReadable": "160 min — ~26.1 km — LA SÉANCE CLÉ\n\nStructure :\n- 130 min en endurance, FC 135–147 bpm (~6'26/km)\n- 30 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
+              "humanReadable": "155 min — ~25.3 km — LA SÉANCE CLÉ\n\nStructure :\n- 125 min en endurance, FC 135–147 bpm (~6'26/km)\n- 30 min à allure marathon pour FINIR (~5'06/km, FC 145–157)\n\nOn termine SUR le bloc d'allure. Pas de retour au calme : tu rentres, point.\nC'est le seul moyen de reproduire les km 32–42.\nNutrition : voir la cible glucidique de la semaine.",
               "completed": false
             }
           ]
@@ -3467,7 +3451,7 @@
       "startDate": "2027-02-01",
       "endDate": "2027-02-07",
       "phase": "Spécificité marathon",
-      "focus": "Seuil Z4 + long qui finit sur 45 min d'allure",
+      "focus": "Seuil Z4 + long qui finit sur 45 min d'allure + 4e séance déverrouillée",
       "targetHours": 6.8,
       "isRecoveryWeek": false,
       "days": [
