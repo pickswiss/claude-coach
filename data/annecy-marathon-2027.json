@@ -17,7 +17,7 @@
     "planStartDate": "2026-09-14",
     "planEndDate": "2027-04-18",
     "totalWeeks": 31,
-    "revision": "v2.7 — longue S21 à 160 min, 4e séance S21 conditionnée à S19–S20, IDs renfo du jeudi",
+    "revision": "v2.8 — courses fun : Sainte-Catherine Saillon (S10), Course de Noël Sion (S13)",
     "changelog": [
       "Zones FC reconstruites en % de réserve (max 189 validé / repos 43). L'ancienne Z2 (148–162) était 14 bpm trop haute.",
       "Allure marathon : modèle dérivé (bande 5'00–5'12) au lieu d'une cible figée à 4'58.",
@@ -32,7 +32,8 @@
       "v2.4 : le déficit s'arrête au 15 novembre, pas au 29 — il chevauchait le bloc de force avancé au 2 novembre.",
       "v2.5 : circuit maison passé de 6 à 8 exercices (25 min) — ajout du soléaire, de l'excentrique Achille et d'un leg curl ischios, tempo excentrique 3 s explicite partout. Source : fiche de renforcement traileur (V. Guerdin, sept. 2026), adaptée au contexte route — protocole d'échauffement et travail des stabilisateurs de cheville écartés, non pertinents sur marathon plat.",
       "v2.6 : semaines d'entrée décalées d'une marche après 3 semaines sans course (intervals.icu : 4,9 km/sem hors Wild 25 sur les 6 semaines précédentes, CTL 11) — S4 à 30/30/45 min et 1 natation, S5–S7 = anciennes S4–S6, décharge S8 à -25 %, long S9 85 min, retour au plan en S10. Longues S17–S19 lissées à 135/145/155 min. 4e séance déverrouillée en S21 (après la décharge S20) au lieu de S18. Seuil FC de référence 171 (intervals.icu), à reconfirmer au test de S11.",
-      "v2.7 : longue S21 ramenée à 160 min (115 min d'endurance + 45 min d'allure) pour adoucir la marche S19 → S21. Première 4e séance (S21) seulement si S19 et S20 se sont passées sans signal à la hanche. Renfo du jeudi : identifiant propre (S4–S7, S26, S27), il partageait celui du lundi. Objectif de la phase Build aligné sur la longue réelle (S18)."
+      "v2.7 : longue S21 ramenée à 160 min (115 min d'endurance + 45 min d'allure) pour adoucir la marche S19 → S21. Première 4e séance (S21) seulement si S19 et S20 se sont passées sans signal à la hanche. Renfo du jeudi : identifiant propre (S4–S7, S26, S27), il partageait celui du lundi. Objectif de la phase Build aligné sur la longue réelle (S18).",
+      "v2.8 : deux courses « fun, effort maximal ». S10, sam. 21.11 : Course Sainte-Catherine à Saillon (5,53 km, 140 m D+), remplace le footing de 50 min du jeudi ; longue du dimanche plafonnée à 80–90 min ; natation du samedi supprimée ; test de S11 à J+3. S13, sam. 12.12 : Course de Noël de Sion (2,8–3 km), remplace le footing de 45 min du jeudi ; longue du dimanche à 110 min au lieu de 120 ; natation déplacée du samedi au mercredi."
     ]
   },
   "preferences": {
@@ -496,14 +497,15 @@
       "focus": "Installer la routine et construire la durabilité : 3 runs sous 148 bpm, 2 renfo, 2 natations (1 en S4). Fenêtre de déficit alimentaire.",
       "weeklyHoursRange": {
         "low": 3.2,
-        "high": 5.8
+        "high": 5.3
       },
       "keyWorkouts": [
         "Run Z2 131–148 (30→50 min)",
-        "Sortie longue Z2 plafond 147 (45→100 min)",
+        "Sortie longue Z2 plafond 147 (45→90 min)",
         "Natation 2×/sem",
         "Renfo maison lundi + jeudi",
-        "TEST 30 min en S11"
+        "TEST 30 min en S11",
+        "Course Sainte-Catherine, Saillon (S10, sam. 21.11) — fun, effort max"
       ],
       "physiologicalGoals": [
         "Construire une base aérobie large",
@@ -524,7 +526,8 @@
         "Tempo Z3 148–160 (20→40 min)",
         "Seuil Z4 160–170 (S13)",
         "Sortie longue 110→145 min",
-        "Salle force max le jeudi"
+        "Salle force max le jeudi",
+        "Course de Noël, Sion (S13, sam. 12.12) — fun, effort max"
       ],
       "physiologicalGoals": [
         "Développer la puissance aérobie et l'économie de course",
@@ -1853,8 +1856,8 @@
       "startDate": "2026-11-16",
       "endDate": "2026-11-22",
       "phase": "Base aérobie",
-      "focus": "Pic base — long 100 min",
-      "targetHours": 5.8,
+      "focus": "Course Sainte-Catherine (Saillon) samedi + long 80–90 min",
+      "targetHours": 5.0,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -1916,23 +1919,6 @@
           "dayOfWeek": "Thursday",
           "workouts": [
             {
-              "id": "w10-thu-run",
-              "sport": "run",
-              "type": "endurance",
-              "name": "Run Z2",
-              "durationMinutes": 50,
-              "distanceMeters": 7600,
-              "primaryZone": "Zone 2",
-              "targetHR": {
-                "low": 131,
-                "high": 145
-              },
-              "rpe": 4,
-              "strides": true,
-              "humanReadable": "50 min en endurance — FC 131–145 bpm\nAllure indicative ~6'37/km, ~7.6 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
-              "completed": false
-            },
-            {
               "id": "w10-thu-gym",
               "sport": "strength",
               "type": "strength",
@@ -1961,13 +1947,15 @@
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w10-sat-swim",
-              "sport": "swim",
-              "type": "endurance",
-              "name": "Natation aérobie",
-              "durationMinutes": 35,
-              "distanceMeters": 1500,
-              "humanReadable": "35 min — ~1500 m\nAllure souple, technique. Plaisir avant tout.",
+              "id": "w10-sat-race",
+              "sport": "race",
+              "type": "race",
+              "name": "Course Sainte-Catherine — Saillon",
+              "durationMinutes": 50,
+              "distanceMeters": 9300,
+              "primaryZone": "Zone 5",
+              "rpe": 10,
+              "humanReadable": "Course Sainte-Catherine — Saillon — 1 tour, 5,53 km, 140 m D+ — samedi 21 novembre\n\nCourse FUN, effort MAXIMAL. Remplace le footing de 50 min de la semaine.\n\nÉchauffement 15 min : footing progressif en Z2\nCourse : 5,53 km à fond. Le D+ se paie : pars un cran sous ton max, vide tout sur le dernier kilomètre.\nRetour au calme 10 min très facile\n\nSéance totale ~50 min, ~9,3 km (échauffement et retour au calme compris).\nLendemain : sortie longue plafonnée à 80–90 min en Z2.",
               "completed": false
             }
           ]
@@ -1980,19 +1968,18 @@
               "id": "w10-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 100 min",
-              "durationMinutes": 100,
-              "distanceMeters": 15100,
+              "name": "Sortie longue — 80–90 min",
+              "durationMinutes": 85,
+              "distanceMeters": 12800,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
                 "high": 147
               },
               "rpe": 5,
-              "flexible": true,
+              "flexible": false,
               "preferredDay": "sunday",
-              "alternateDay": "saturday",
-              "humanReadable": "100 min en endurance — FC 135–147 bpm\nAllure indicative ~6'37/km, ~15.1 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "80–90 min en endurance — FC 135–147 bpm — PAS PLUS\nAllure indicative ~6'37/km, ~12.8 km\nLENDEMAIN DE COURSE : jambes lourdes, c'est normal. Départ très lent, les 20 premières minutes en bas de fourchette.\nPlafond FC 150. Si tu dépasses, tu ralentis. Pas de bascule au samedi cette semaine.",
               "completed": false
             }
           ]
@@ -2298,8 +2285,8 @@
       "startDate": "2026-12-07",
       "endDate": "2026-12-13",
       "phase": "Build aérobie",
-      "focus": "Première séance au seuil (Z4)",
-      "targetHours": 5.6,
+      "focus": "Première séance au seuil (Z4) + Course de Noël (Sion) samedi",
+      "targetHours": 5.5,
       "isRecoveryWeek": false,
       "days": [
         {
@@ -2344,10 +2331,13 @@
           "dayOfWeek": "Wednesday",
           "workouts": [
             {
-              "id": "w13-wed",
-              "sport": "rest",
-              "type": "rest",
-              "name": "Repos",
+              "id": "w13-wed-swim",
+              "sport": "swim",
+              "type": "endurance",
+              "name": "Natation aérobie",
+              "durationMinutes": 35,
+              "distanceMeters": 1500,
+              "humanReadable": "35 min — ~1500 m\nAllure souple, technique. Plaisir avant tout.",
               "completed": false
             }
           ]
@@ -2356,23 +2346,6 @@
           "date": "2026-12-10",
           "dayOfWeek": "Thursday",
           "workouts": [
-            {
-              "id": "w13-thu-run",
-              "sport": "run",
-              "type": "endurance",
-              "name": "Run Z2",
-              "durationMinutes": 45,
-              "distanceMeters": 6900,
-              "primaryZone": "Zone 2",
-              "targetHR": {
-                "low": 131,
-                "high": 145
-              },
-              "rpe": 4,
-              "strides": true,
-              "humanReadable": "45 min en endurance — FC 131–145 bpm\nAllure indicative ~6'33/km, ~6.9 km\nLa FC commande, pas l'allure. Si la FC monte, tu ralentis.\n\nFinir par 6×20 s en accélération progressive, récup 1 min marche.",
-              "completed": false
-            },
             {
               "id": "w13-thu-gym",
               "sport": "strength",
@@ -2402,13 +2375,15 @@
           "dayOfWeek": "Saturday",
           "workouts": [
             {
-              "id": "w13-sat-swim",
-              "sport": "swim",
-              "type": "endurance",
-              "name": "Natation aérobie",
-              "durationMinutes": 35,
-              "distanceMeters": 1500,
-              "humanReadable": "35 min — ~1500 m\nAllure souple, technique. Plaisir avant tout.",
+              "id": "w13-sat-race",
+              "sport": "race",
+              "type": "race",
+              "name": "Course de Noël — Sion (Challenge entreprises)",
+              "durationMinutes": 48,
+              "distanceMeters": 8300,
+              "primaryZone": "Zone 5",
+              "rpe": 10,
+              "humanReadable": "Course de Noël — Sion — Challenge entreprises — 2,8–3 km — samedi 12 décembre\n\nCourse FUN, effort MAXIMAL. Remplace le footing de 45 min de la semaine.\n\nÉchauffement 20 min : footing progressif en Z2, puis 3–4 accélérations de 20 s (récup 1 min)\nCourse : 2,8–3 km à fond. C'est court : ça part vite et ça pique jusqu'au bout.\nRetour au calme 15 min très facile\n\nSéance totale ~48 min, ~8,3 km (échauffement et retour au calme compris).\nLendemain : sortie longue 110 min en Z2.",
               "completed": false
             }
           ]
@@ -2421,19 +2396,18 @@
               "id": "w13-sun-long",
               "sport": "run",
               "type": "long",
-              "name": "Sortie longue — 120 min",
-              "durationMinutes": 120,
-              "distanceMeters": 18300,
+              "name": "Sortie longue — 110 min",
+              "durationMinutes": 110,
+              "distanceMeters": 16800,
               "primaryZone": "Zone 2",
               "targetHR": {
                 "low": 135,
                 "high": 147
               },
               "rpe": 6,
-              "flexible": true,
+              "flexible": false,
               "preferredDay": "sunday",
-              "alternateDay": "saturday",
-              "humanReadable": "120 min en endurance — FC 135–147 bpm\nAllure indicative ~6'33/km, ~18.3 km\nPlafond FC 150. Si tu dépasses, tu ralentis — même si ça semble ridiculement lent.\nC'est exactement ce qui construit la durabilité qui t'a manqué à Paris.",
+              "humanReadable": "110 min en endurance — FC 135–147 bpm\nAllure indicative ~6'33/km, ~16.8 km\nLENDEMAIN DE COURSE : jambes lourdes, c'est normal. Départ très lent, les 20 premières minutes en bas de fourchette.\nPlafond FC 150. Si tu dépasses, tu ralentis. Pas de bascule au samedi cette semaine.",
               "completed": false
             }
           ]
