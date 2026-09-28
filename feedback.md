@@ -22,7 +22,7 @@
 
 ### Robustesse environnement
 
-- sqlite3 CLI absent — Claude Code passe par npx claude-coach query (plus lent)
+- [résolu 2026-09-28] sqlite3 CLI absent — Claude Code passait par npx claude-coach query (plus lent). Installé (3.45.1) ; les 5 tests de `tests/cli/db.test.ts` qui en dépendaient passent.
 - Scripts custom peuvent boucler (Claude Code a doublé les semaines au 1er run du script de transformation)
 
 ### À tester en usage réel

@@ -16,6 +16,9 @@ coverage/
 # SQLite databases
 *.db
 
+# Python virtualenv
+.venv/
+
 # Editor
 .vscode/
 .idea/
