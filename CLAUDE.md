@@ -49,12 +49,25 @@ Toujours parser le JSON embarqué (`<script type="application/json" id="plan-dat
 
 Règles validées le 2026-10-06 pour envoyer les séances planifiées au calendrier intervals.icu (catégorie WORKOUT). Toute écriture reste soumise à validation explicite de Julien (voir « Lecture seule par défaut »).
 
-- **Footings et sorties Z2** : une seule étape, cible en % FC max, ex. `- 30m 69-78% HR` (69–78 % de 189 ≈ 131–148 bpm). La syntaxe en bpm (`131-148bpm`, avec ou sans `HR`) n'est pas parsée par intervals.icu : l'étape est créée sans cible.
+- **Footings Z2** : une seule étape, cible en % FC max, ex. `- 30m 69-78% HR` (69–78 % de 189 ≈ 131–148 bpm). La syntaxe en bpm (`131-148bpm`, avec ou sans `HR`) n'est pas parsée par intervals.icu : l'étape est créée sans cible.
+- **Sorties longues** : une seule étape en `71-78% HR` (plancher 135 du plan), ex. `- 60m 71-78% HR`.
+- **Footings avec lignes droites** : lignes droites structurées et incluses dans la durée du plan. Étape FC de (durée plan − 8) min, puis bloc de répétition entouré de lignes vides :
+
+  ```
+  - 27m 69-78% HR
+
+  6x
+  - 20s
+  - 1m intensity=rest
+  ```
+
+  **Exception** à la règle « chaque étape a sa cible » : les étapes de lignes droites (20 s d'effort, 1 min de récup) n'ont volontairement pas de cible.
+
 - **Séances avec allure** : allures absolues `x:xx/km Pace` (ex. `- 1km 4:45/km Pace`, `- 10m 6:00-5:40/km Pace`), durée ou distance toujours avant la cible.
 - **Natation** : type Swim, distances en `mtr` (`m` = minutes), allures en /100m (ex. `- 200mtr 2:35/100m Pace`).
 - **Renfo** : type WeightTraining, détail des exercices dans la description, sans cibles.
 - **Bug MCP** : le seuil d'allure course est renvoyé en m/s et affiché à tort en min:sec par le serveur MCP (3,33 m/s = 5:00/km, affiché « 3:20 /km »). Ne pas le « corriger ». Le seuil natation (0,833 m/s = 2:00/100m) s'affiche correctement.
-- **Toujours** : récapitulatif (date, nom, type, durée, texte workout) avant création et attente du OK ; vérifier le calendrier pour n'avoir aucun doublon ; après création, relire `workout_doc` et vérifier que chaque étape a sa cible. `workout_parsed: true` renvoyé par le MCP ne suffit pas : il est vrai même quand la cible a sauté.
+- **Toujours** : récapitulatif (date, nom, type, durée, texte workout) avant création et attente du OK ; vérifier le calendrier pour n'avoir aucun doublon ; après création, relire `workout_doc` et vérifier que chaque étape a sa cible (sauf lignes droites, voir ci-dessus). `workout_parsed: true` renvoyé par le MCP ne suffit pas : il est vrai même quand la cible a sauté.
 - **Ne jamais inventer** d'échauffement, de découpage ou d'allure absents du plan sans le signaler.
 
 ## Decisions log
